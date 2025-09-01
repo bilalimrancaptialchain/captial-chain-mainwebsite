@@ -1,0 +1,646 @@
+{
+  "navigation": {
+    "home": "Home",
+    "partnership": "Partnership",
+    "blog": "Blog",
+    "aboutUs": "About Us",
+    "contactUs": "Contact Us",
+    "termsOfService": "Terms of Service",
+    "faq": "FAQ"
+  },
+  "header": {
+    "loginSignup": "Login/Signup",
+    "startTradingNow": "Start Trading Now"
+  },
+  "hero": {
+    "title": "The World's First",
+    "titleHighlight": "Decentralized",
+    "titleEnd": "Prop Firm"
+  },
+  "mission": {
+    "title": "When our",
+    "titleHighlight1": "beloved prop trading industry",
+    "titleMiddle": "is threatened by",
+    "titleHighlight2": "shady businesses",
+    "description": "We are driven by a mission to save it through decentralization. By distributing power among traders and leveraging smart contracts as fair, transparent middleman between traders and real investors, we aim to rebuild trust and integrity in the industry.",
+    "learnMoreButton": "Learn More About Our Mission"
+  },
+  "summerCampaign": {
+    "title": "Till the",
+    "titleHighlight": "end of the summer",
+    "subtitle": "every capital chain trader is",
+    "subtitleHighlight": "profitable",
+    "description": "Whether you passed the challenge or failed, all traders who participated in challenges will be whitelisted for CChain token Airdrop directly. The bigger account size you have, the bigger allocation you will receive.",
+    "additionalInfo": "Each point earned will be calculated and converted into token quantities after the ICO announcement, depending on the total number of participating communities.",
+    "values": {
+      "5k": "5K",
+      "10k": "10K",
+      "25k": "25K",
+      "50k": "50K",
+      "100k": "100K"
+    },
+    "points": {
+      "1point": "1 Point",
+      "2points": "2 Points",
+      "3points": "3 Points",
+      "4points": "4 Points",
+      "5points": "5 Points"
+    }
+  },
+  "tradingSolution": {
+    "title": "We have a",
+    "titleHighlight1": "trading solution",
+    "titleMiddle": "for",
+    "titleHighlight2": "every type of trader",
+    "comingSoon": "Coming Soon...",
+    "stayTuned": "Stay tuned for updates",
+    "cards": {
+      "decentralized": {
+        "text": "The First",
+        "highlight1": "Decentralized",
+        "text2": "platform and ruled by its",
+        "highlight2": "community"
+      },
+      "nativeToken": {
+        "text": "With",
+        "highlight1": "native Token",
+        "text2": ", earn by",
+        "highlight2": "airdrop"
+      },
+      "profitSplit": {
+        "highlight1": "20% Profit split",
+        "text": "from the challenge phase"
+      },
+      "noTimeLimit": {
+        "highlight1": "No time limit",
+        "text": "challenge"
+      },
+      "tradelocker": "Fast, Easy to use, and AI-powered, with built-in AI bots that turn your strategies into automated trades",
+      "volumetrica": "Fast, Smart, and Feature-Rich – Access to 500+ cryptocurrencies with free premium tools",
+      "metatrader5": "Coming Soon..."
+    }
+  },
+  "tradingChallenge": {
+    "title": "Choose Your",
+    "titleHighlight": "Trading Challenge",
+    "standard": "Standard",
+    "atomic": "Atomic",
+    "oneStep": "One Step",
+    "twoStep": "Two Step",
+    "evaluation": "Evaluation",
+    "step1": "Step 1",
+    "step2": "Step 2",
+    "funded": "Funded",
+    "pricing": "Pricing",
+    "startChallenge": "Start Challenge",
+    "refundableNotice": "One-Time 100% Refundable Fee"
+  },
+  "roadmap": {
+    "subtitle": "Road of Revolution",
+    "title": "Capital Chain",
+    "titleHighlight": "Roadmap",
+    "quarters": {
+      "quarter1": "Quarter-1",
+      "quarter2": "Quarter-2",
+      "quarter3": "Quarter-3",
+      "quarter4": "Quarter-4"
+    },
+    "items": {
+      "item1": {
+        "title": "Ordinary Prop",
+        "description": ["+ Research", "+ Development trader side"]
+      },
+      "item2": {
+        "title": "Ordinary Prop",
+        "description": [
+          "+ Traders side Prop Firm launch",
+          "+ Token smart contract Audit"
+        ]
+      },
+      "item3": {
+        "title": "Investors Side",
+        "description": [
+          "+ Decentralized Smart Contracts development",
+          "+ Decentralization"
+        ]
+      },
+      "item4": {
+        "title": "Ordinary Prop",
+        "description": [
+          "+ Oracle Development Investors",
+          "+ Traders side Prop Firm launch",
+          "+ ICO"
+        ]
+      },
+      "item5": {
+        "title": "Implementation",
+        "description": [
+          "+ Token smart contract Audit",
+          "+ Decentralized Side Beta Launch"
+        ]
+      },
+      "item6": {
+        "title": "Implementation",
+        "description": [
+          "+ Investors Decentralized Side Implement",
+          "+ Token release and Airdrop"
+        ]
+      }
+    }
+  },
+  "partnership": {
+    "howDoesItWork": "How Does It Work?",
+    "getStartedNow": "Get Started Now",
+    "affiliateLogin": "Affiliate Login",
+    "propTrading": {
+      "title": "Be a",
+      "titleHighlight1": "Pioneer",
+      "titleTopEnd": "in the",
+      "titleMiddle": "Prop trading",
+      "titleHighlight2": "decentralization",
+      "titleEnd": "revolution",
+      "subtitle": "and earn up to 18%",
+      "getStarted": "Get started"
+    },
+    "commissionModel": {
+      "title": "Commission model",
+      "subtitle": "More growth, Exponential gain.",
+      "tiers": {
+        "pioneer": {
+          "title": "Pioneer",
+          "description": "20-100 traders affiliates",
+          "commission": "12% commission"
+        },
+        "expert": {
+          "title": "Expert",
+          "description": "100-300 traders",
+          "commission": "15% commission"
+        },
+        "legend": {
+          "title": "Legend",
+          "description": "300+ traders",
+          "commission": "18% commission"
+        }
+      },
+      "partnershipMessage": {
+        "title": "Not only",
+        "titleHighlight1": "affiliate",
+        "titleTopEnd": "commission,",
+        "titleMiddle": "Be partner in",
+        "titleHighlight2": "future growth.",
+        "titleEnd": "",
+        "description": "At Capital Chain, our community is our most valuable asset. We believe in empowering the pioneers within it — our affiliates. They are not just partners in registration fees; they are strategic partners in our long-term growth. Affiliates receive exclusive airdrops and allocations of the CCHAIN token as additional incentives. We offer three allocation tiers based on the size of your community — the larger your community, the greater your allocation. Each point earned will be calculated and converted into token quantities after the ICO announcement, depending on the total number of participating communities."
+      }
+    },
+    "howItWorks": {
+      "steps": {
+        "step1": {
+          "title": "Sign Up",
+          "description": "Create your affiliate account and get your unique referral link"
+        },
+        "step2": {
+          "title": "Share Your Link",
+          "description": "Promote your link through social media, blogs, or direct outreach"
+        },
+        "step3": {
+          "title": "Earn Commissions",
+          "description": "Get paid for every successful referral that completes a challenge"
+        },
+        "step4": {
+          "title": "Track Progress",
+          "description": "Monitor your earnings and performance through our dashboard"
+        },
+        "step5": {
+          "title": "Start Earning Today!",
+          "description": "Join thousands of successful affiliates already earning with Capital Chain"
+        }
+      },
+      "finalStep": {
+        "title": "Start Earning Today!",
+        "description": "Join thousands of successful affiliates already earning with Capital Chain"
+      }
+    },
+    "ranks": {
+      "tiers": {
+        "pioneer": {
+          "name": "Pioneer",
+          "points": "18 Points"
+        },
+        "legend": {
+          "name": "Legend",
+          "points": "100 Points"
+        },
+        "immortal": {
+          "name": "Immortal",
+          "points": "350 Points"
+        }
+      },
+      "features": {
+        "commissions": {
+          "title": "Beyond compare Commissions",
+          "description": "Industry-leading commission rates that scale with your community size"
+        },
+        "tokens": {
+          "title": "Game-Changing Token Allocations",
+          "description": "Exclusive CCHAIN token airdrops based on your tier and community size"
+        },
+        "discount": {
+          "title": "Your Referees Get a 10% Discount via Your Link",
+          "description": "Every trader you refer gets an instant 10% discount on their first challenge"
+        },
+        "dashboard": {
+          "title": "Easily Track Your Earnings in the Affiliate Dashboard",
+          "description": "Track clicks, signups, and commissions in real-time through your affiliate dashboard"
+        }
+      }
+    }
+  },
+  "footer": {
+    "description": "The World's First Decentralized Prop Firm.",
+    "categories": {
+      "Platform": "Platform",
+      "Company": "Company",
+      "Legal": "Legal",
+      "QuickAccess": "Quick Access"
+    },
+    "links": {
+      "tradingPlatforms": "Trading Platforms",
+      "pricing": "Pricing",
+      "airdropProgram": "Airdrop Program",
+      "partnership": "Partnership",
+      "aboutUs": "About Us",
+      "contact": "Contact",
+      "blog": "Blog",
+      "termsOfService": "Terms of Service",
+      "riskDisclosure": "Risk Disclosure",
+      "homepage": "Homepage",
+      "contactUs": "Contact us",
+      "faq": "FAQ",
+      "checkout": "Checkout"
+    },
+    "disclaimer": "Disclaimer:",
+    "disclaimerText1": "Trading in financial markets involves significant risk and may result in the loss of your capital. The services provided by Capital Chain L.L.C FZ, registered under license number 2532140 and headquartered at Meydan Grandstand, 6th Floor, Meydan Road, Nad Al Sheba, Dubai, U.A.E, are strictly for educational and evaluation purposes and do not constitute investment advice or any form of financial recommendation.",
+    "disclaimerText2": "Capital Chain L.L.C FZ is not a broker, investment advisor, or a provider of financial guarantees. All evaluation programs are designed to assess trading skills and risk management capabilities.",
+    "disclaimerText3": "Past performance is not indicative of future results. Virtual trading results do not guarantee real trading success.",
+    "disclaimerText4": "Please ensure you fully understand the risks involved and seek independent advice if necessary before participating in any trading activities.",
+    "disclaimerText5": "By using our services, you acknowledge that you have read, understood, and agree to be bound by these terms and conditions.",
+    "newsletterTitle": "Stay Updated",
+    "newsletterDescription": "Subscribe to our newsletter for the latest updates and insights.",
+    "emailPlaceholder": "Enter your email address"
+  },
+  "contact": {
+    "emailTeam": "Email our team",
+    "weAreHereToHelp": "We are here to help",
+    "supportEmail": "support@capitalchain.co",
+    "location": {
+      "title": "Capital Chain Location",
+      "address": "Meydan Grandstand, 6th floor, Meydan Road, Nad Al Sheba, Dubai, U.A.E.",
+      "viewOnMap": "View on Map"
+    },
+    "form": {
+      "emailAddress": "Email Address",
+      "emailPlaceholder": "Email:",
+      "fullName": "Full Name",
+      "namePlaceholder": "Your Name",
+      "topic": "Topic",
+      "topicPlaceholder": "Subject",
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your project or inquiry...",
+      "submit": "Submit"
+    }
+  },
+  "faq": {
+    "searchQuestion": "You Can Search your question:",
+    "frequentlyAsked": "Find it among Frequently Asked Questions:",
+    "contactCustomerService": "Or just contact our customers service",
+    "categories": {
+      "gettingStarted": {
+        "title": "Getting Started",
+        "description": "Learn the basics of our platform and how to get started"
+      },
+      "accountManagement": {
+        "title": "Account Management",
+        "description": "Manage your account settings and preferences"
+      },
+      "paymentsBilling": {
+        "title": "Payments & Billing",
+        "description": "Information about payments, billing and transactions"
+      },
+      "security": {
+        "title": "Security",
+        "description": "Keep your account and data secure"
+      },
+      "technicalSupport": {
+        "title": "Technical Support",
+        "description": "Troubleshooting and technical assistance"
+      },
+      "apiDocumentation": {
+        "title": "API Documentation",
+        "description": "Developer resources and API guides"
+      }
+    },
+    "questions": {
+      "howToCreateAccount": "How do I create an account?",
+      "whatDoINeedToGetStarted": "What do I need to get started?",
+      "howToChangePassword": "How do I change my password?",
+      "howToUpdateProfile": "How do I update my profile?",
+      "paymentMethods": "What payment methods do you accept?",
+      "billingHistory": "How do I view my billing history?",
+      "twoFactorAuth": "How do I enable two-factor authentication?",
+      "compromisedAccount": "What should I do if my account is compromised?",
+      "slowPlatform": "The platform is running slowly, what should I do?",
+      "errorMessage": "I'm getting an error message, how do I fix it?",
+      "apiKey": "How do I get an API key?",
+      "rateLimits": "What are the rate limits for the API?"
+    },
+    "answers": {
+      "createAccountAnswer": "To create an account, click on the 'Sign Up' button and fill in your details. You will need to provide a valid email address and create a secure password. After submitting the form, check your email for a verification link to activate your account.",
+      "getStartedAnswer": "You just need a valid email address and a secure password. Make sure your password contains at least 8 characters with a mix of letters, numbers, and special characters for better security.",
+      "changePasswordAnswer": "Go to Settings > Security > Change Password. Enter your current password, then your new password twice to confirm. Make sure your new password is strong and unique.",
+      "updateProfileAnswer": "Navigate to your profile page and click the edit button. You can update your personal information, profile picture, and other preferences from there.",
+      "paymentMethodsAnswer": "We accept all major credit cards (Visa, MasterCard, American Express), PayPal, and bank transfers. All payments are processed securely through our encrypted payment gateway.",
+      "billingHistoryAnswer": "Go to Account > Billing to view your complete payment history. You can download invoices, view transaction details, and manage your payment methods from this section.",
+      "twoFactorAuthAnswer": "Go to Settings > Security > Two-Factor Authentication and follow the setup guide. You can use an authenticator app like Google Authenticator or receive SMS codes for added security.",
+      "compromisedAccountAnswer": "Immediately change your password and contact our support team. Enable two-factor authentication if you haven't already, and review your recent account activity for any suspicious actions.",
+      "slowPlatformAnswer": "Try clearing your browser cache or switching to a different browser. Also, check your internet connection and close any unnecessary browser tabs. If the problem persists, contact our technical support team.",
+      "errorMessageAnswer": "Please contact our support team with the exact error message you're seeing, along with details about what you were trying to do when the error occurred. Include your browser type and version for faster troubleshooting.",
+      "apiKeyAnswer": "Go to Developer Settings and generate a new API key.",
+      "rateLimitsAnswer": "The standard rate limit is 1000 requests per hour."
+    },
+    "contentSections": {
+      "stepByStepGuide": "Step-by-Step Guide",
+      "importantNotes": "Important Notes",
+      "additionalResources": "Additional Resources",
+      "stepByStepDescription": "Follow these detailed instructions to complete the process successfully. Each step is designed to be clear and easy to understand. FundingPips, founded in November 2022, is built by traders for traders. We understand firsthand the challenges traders face in this industry, and our goal is to change the game. As a trusted trading firm headquartered in Dubai, we are committed to providing traders with the best tools, resources, and support to unlock their full potential and succeed.",
+      "importantNotesDescription": "Please keep these important points in mind while following the instructions. These notes will help you avoid common mistakes.",
+      "additionalResourcesDescription": "For more detailed information and advanced configurations, please refer to our comprehensive documentation and support materials."
+    },
+    "relatedPosts": {
+      "understandingPlatform": "Understanding Capital Chain Platform",
+      "tradingStrategies": "Trading Strategies and Tips",
+      "securityBestPractices": "Security Best Practices",
+      "apiIntegration": "API Integration Guide",
+      "accountVerification": "Account Verification Process"
+    },
+    "mostViewed": {
+      "blockchainTechnology": "How to get started with blockchain technology",
+      "cryptoWallets": "Understanding cryptocurrency wallets",
+      "smartContracts": "Smart contracts explained for beginners",
+      "defiProtocols": "DeFi protocols and their benefits",
+      "nftMarketplace": "NFT marketplace guide",
+      "stakingRewards": "Staking rewards and how they work"
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "firstText": "Welcome to Capital Chain, a pioneering force in the blockchain and cryptocurrency industry.",
+    "secondText": "Established in Dubai's Meydan Free Zone, we are committed to revolutionizing digital finance through innovative solutions.",
+    "greenText": "Our Mission",
+    "whiteText": "We strive to create a seamless bridge between traditional finance and the digital economy, empowering individuals and businesses to thrive in the new financial landscape.",
+    "missionTitle": "What is our mission?",
+    "missionDescription": "We're not just building a firm — we're building a movement for the next generation of trading.",
+    "missionBoxes": {
+      "trustTransparency": "Restore trust and transparency through on-chain verification and smart contract Funding-Payout control.",
+      "decentralizedControl": "Decentralized control by empowering traders and community leaders through blockchain, not corporations.",
+      "protectTraders": "Protect traders from abuse by creating an automated and transparent ecosystem.",
+      "healthyEnvironment": "Foster a healthy environment for growth, collaboration, and financial success — for traders, by traders."
+    }
+  },
+  "team": {
+    "title": "Capital Chain Administrations",
+    "positions": {
+      "ceo": "CEO",
+      "cmo": "CMO",
+      "headOfEngineering": "Head of engineering",
+      "riskManager": "Risk Manager",
+      "businessDevelopmentManager": "Business Development Manager",
+      "headOfDesign": "Head of design",
+      "headOfFinance": "Head of Finance",
+      "humanResourceManager": "Human resource manager"
+    }
+  },
+  "blog": {
+    "searchPlaceholder": "Search For Articles",
+    "views": "views",
+    "previous": "Previous",
+    "next": "Next",
+    "posts": {
+      "completeCryptoGuide": "Complete Guide to Cryptocurrency Trading",
+      "bitcoinAnalysis2024": "Bitcoin Market Analysis for 2024",
+      "riskManagement": "Risk Management Strategies in Trading",
+      "technicalAnalysis": "Technical Analysis for Beginners",
+      "choosingExchange": "Choosing the Right Exchange Platform",
+      "blockchainFuture": "The Future of Blockchain Technology",
+      "defiProtocols": "DeFi Protocols and Yield Farming",
+      "nftTrends": "NFT Market Trends and Opportunities",
+      "cryptoRegulations": "Cryptocurrency Regulations Worldwide",
+      "smartContractDev": "Smart Contract Development Guide",
+      "cryptoMining": "Cryptocurrency Mining Explained",
+      "portfolioDiversification": "Portfolio Diversification Strategies",
+      "stakingPassiveIncome": "Staking and Passive Income in Crypto",
+      "layer2Solutions": "Layer 2 Solutions and Scalability",
+      "cryptoTax": "Cryptocurrency Tax Implications",
+      "securityBestPractices": "Security Best Practices for Crypto",
+      "altcoinAnalysis": "Altcoin Analysis and Selection",
+      "marketPsychology": "Market Psychology and Trading",
+      "institutionalAdoption": "Institutional Adoption of Crypto",
+      "web3DApps": "Web3 and Decentralized Applications"
+    },
+    "descriptions": {
+      "completeCryptoGuideDesc": "Learn the fundamentals of cryptocurrency trading, including market analysis, risk management, and profitable strategies for both beginners and experienced traders.",
+      "bitcoinAnalysis2024Desc": "Comprehensive analysis of Bitcoin price trends and future predictions for the cryptocurrency market in the upcoming year.",
+      "riskManagementDesc": "Essential risk management techniques to protect your capital and maximize profits in cryptocurrency trading.",
+      "technicalAnalysisDesc": "Master the basics of technical analysis and learn how to use indicators effectively in your trading decisions.",
+      "choosingExchangeDesc": "Important factors to consider when selecting a secure and reliable cryptocurrency exchange for your trading needs.",
+      "blockchainFutureDesc": "Exploring the potential applications of blockchain technology and its impact on various industries worldwide.",
+      "defiProtocolsDesc": "Understanding decentralized finance protocols and how to maximize returns through yield farming strategies.",
+      "nftTrendsDesc": "Analyzing the current NFT market landscape and identifying potential investment opportunities in digital assets.",
+      "cryptoRegulationsDesc": "Overview of cryptocurrency regulations across different countries and their impact on the global market.",
+      "smartContractDevDesc": "Step-by-step guide to developing and deploying smart contracts on various blockchain platforms.",
+      "cryptoMiningDesc": "Complete guide to cryptocurrency mining, including hardware requirements, profitability, and environmental considerations.",
+      "portfolioDiversificationDesc": "Learn how to build a diversified cryptocurrency portfolio to minimize risk and maximize long-term returns.",
+      "stakingPassiveIncomeDesc": "Explore various staking opportunities and passive income strategies in the cryptocurrency ecosystem.",
+      "layer2SolutionsDesc": "Understanding Layer 2 scaling solutions and their role in improving blockchain performance and reducing fees.",
+      "cryptoTaxDesc": "Navigate the complex world of cryptocurrency taxation and learn how to properly report your trading activities.",
+      "securityBestPracticesDesc": "Essential security measures to protect your cryptocurrency investments from hacks, scams, and theft.",
+      "altcoinAnalysisDesc": "Framework for analyzing and selecting promising altcoins for your investment portfolio.",
+      "marketPsychologyDesc": "Understanding market psychology and emotional factors that influence cryptocurrency trading decisions.",
+      "institutionalAdoptionDesc": "Examining the growing trend of institutional cryptocurrency adoption and its impact on market dynamics.",
+      "web3DAppsDesc": "Introduction to Web3 technology and the development of decentralized applications on blockchain platforms."
+    }
+  },
+  "testimonials": {
+    "johnSmith": {
+      "name": "John Smith",
+      "position": "Senior Trader",
+      "content": "Chapital Chain has revolutionized my trading experience. The platform's advanced tools and real-time analytics have significantly improved my trading performance."
+    },
+    "sarahJohnson": {
+      "name": "Sarah Johnson",
+      "position": "Investment Manager",
+      "content": "The educational resources and community support at Chapital Chain are exceptional. I've learned more in 6 months than I did in years of trading elsewhere."
+    },
+    "michaelChen": {
+      "name": "Michael Chen",
+      "position": "Day Trader",
+      "content": "Outstanding platform with lightning-fast execution and comprehensive market analysis. The customer support team is always ready to help when needed."
+    },
+    "emilyDavis": {
+      "name": "Emily Davis",
+      "position": "Portfolio Manager",
+      "content": "Chapital Chain's innovative approach to trading has helped me diversify my portfolio effectively. The risk management tools are top-notch."
+    },
+    "alexRodriguez": {
+      "name": "Alex Rodriguez",
+      "position": "Crypto Trader",
+      "content": "The 12% drawdown gave me breathing space. I could trade properly without pressure and focus on my strategy."
+    },
+    "davidWilson": {
+      "name": "David Wilson",
+      "position": "Crypto Trader",
+      "content": "The seamless integration of traditional and crypto trading on one platform is amazing. Chapital Chain truly understands modern traders' needs."
+    }
+  },
+  "termsOfUse": {
+    "disciplineConsistency": "Discipline And Consistency",
+    "tradingBehaviourRules": "Trading Behaviour and Rules",
+    "toxicTradingFlow": "Toxic Trading Flow",
+    "tradingInstruments": "Trading Instruments",
+    "accountCredentials": "Account Credentials",
+    "rewards": "Rewards",
+    "scalingUp": "Scaling Up",
+    "mergingAccounts": "Merging Accounts",
+    "refunds": "Refunds",
+    "inactivity": "Inactivity",
+    "ipAddress": "IP Address",
+    "descriptions": {
+      "disciplineConsistencyDesc": "This section covers the importance of maintaining discipline and consistency in trading activities. Traders must adhere to established rules and maintain consistent behavior throughout their trading journey.",
+      "tradingBehaviourRulesDesc": "All trading activities must comply with our established behavioral guidelines and rules. This includes proper risk management, adherence to position sizing, and following our trading protocols.",
+      "toxicTradingFlowDesc": "Certain trading behaviors are considered toxic and are strictly prohibited. This includes revenge trading, over-leveraging, and any activities that violate our risk management principles.",
+      "tradingInstrumentsDesc": "Information about approved trading instruments, including forex pairs, commodities, indices, and cryptocurrencies that are available for trading on our platform.",
+      "accountCredentialsDesc": "Guidelines for managing account credentials, including password security, two-factor authentication requirements, and account access protocols.",
+      "rewardsDesc": "Details about our reward system, including profit sharing, performance bonuses, and incentive programs available to qualified traders.",
+      "scalingUpDesc": "Information about account scaling opportunities, including criteria for account size increases and performance requirements for advancement.",
+      "mergingAccountsDesc": "Policies and procedures for merging multiple trading accounts, including eligibility requirements and the merging process.",
+      "refundsDesc": "Our refund policy, including conditions under which refunds may be granted and the process for requesting refunds.",
+      "inactivityDesc": "Policies regarding account inactivity, including dormancy periods, account maintenance, and reactivation procedures.",
+      "ipAddressDesc": "Guidelines regarding IP address usage, including restrictions on VPN usage, geographic limitations, and security protocols."
+    }
+  },
+  "search": {
+    "searchResults": "Search Results",
+    "noResults": "No results found",
+    "searchPlaceholder": "Search articles..."
+  },
+  "terms": {
+    "items": {
+      "disciplineConsistency": {
+        "title": "Discipline And Consistency",
+        "content": "This section covers the importance of maintaining discipline and consistency in trading activities. Traders must adhere to established rules and maintain consistent behavior throughout their trading journey."
+      },
+      "tradingBehaviorRules": {
+        "title": "Trading Behaviour and Rules",
+        "content": "All trading activities must comply with our established behavioral guidelines and rules. This includes proper risk management, adherence to position sizing, and following our trading protocols."
+      },
+      "toxicTradingFlow": {
+        "title": "Toxic Trading Flow",
+        "content": "Certain trading behaviors are considered toxic and are strictly prohibited. This includes revenge trading, over-leveraging, and any activities that violate our risk management principles."
+      },
+      "tradingInstruments": {
+        "title": "Trading Instruments",
+        "content": "Information about approved trading instruments, including forex pairs, commodities, indices, and cryptocurrencies that are available for trading on our platform."
+      },
+      "accountCredentials": {
+        "title": "Account Credentials",
+        "content": "Guidelines for managing account credentials, including password security, two-factor authentication requirements, and account access protocols."
+      },
+      "rewards": {
+        "title": "Rewards",
+        "content": "Details about our reward system, including profit sharing, performance bonuses, and incentive programs available to qualified traders."
+      },
+      "scalingUp": {
+        "title": "Scaling Up",
+        "content": "Information about account scaling opportunities, including criteria for account size increases and performance requirements for advancement."
+      },
+      "mergingAccounts": {
+        "title": "Merging Accounts",
+        "content": "Policies and procedures for merging multiple trading accounts, including eligibility requirements and the merging process."
+      },
+      "refunds": {
+        "title": "Refunds",
+        "content": "Our refund policy, including conditions under which refunds may be granted and the process for requesting refunds."
+      },
+      "inactivity": {
+        "title": "Inactivity",
+        "content": "Policies regarding account inactivity, including dormancy periods, account maintenance, and reactivation procedures."
+      },
+      "ipAddress": {
+        "title": "IP Address",
+        "content": "Guidelines regarding IP address usage, including restrictions on VPN usage, geographic limitations, and security protocols."
+      }
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "readMore": "Read More",
+    "returnToHome": "Return to home",
+    "mostViewedArticles": "Most Viewed Articles",
+    "articles": "articles",
+    "questionsInCategory": "questions in this category",
+    "relatedPosts": "Related Posts",
+    "searchYourQuestion": "You Can Search your question:",
+    "findAmongFAQ": "Find it among Frequently Asked Questions:",
+    "contactCustomerService": "Or just contact our customers service",
+    "viewAll": "View All",
+    "previous": "Previous",
+    "next": "Next",
+    "close": "Close",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "confirm": "Confirm",
+    "back": "Back",
+    "continue": "Continue",
+    "finish": "Finish",
+    "views": "views"
+  },
+  "contactForm": {
+    "yourEmail": "Your Email",
+    "yourName": "Your Name",
+    "topic": "Topic",
+    "askUsAnything": "Ask us anything:",
+    "stillConfused": "Still Confused?",
+    "description": "For any questions, concerns, or support, you can easily reach out to Capital Chain Customer Service through the available contact options. We're here to assist you every step of the way."
+  },
+  "chat": {
+    "onlineChat": "Online Chat",
+    "welcomeToChat": "Welcome to online chat",
+    "clickToStart": "Click the chat icon to start conversation",
+    "welcomeMessage": "Hello! Welcome to Chapital Chain online chat. Which Chapital Chain model are you seeking information for?",
+    "selectOption": "Please select one of the {{option}} options:",
+    "finalSelection": "Great! You've selected {{option}}. One of our representatives will contact you soon.",
+    "typeMessage": "Type your message...",
+    "sendFile": "Send file",
+    "send": "Send",
+    "tradingModels": "Trading Models",
+    "propTrading": "Prop Trading",
+    "copyTrading": "Copy Trading",
+    "algoTrading": "Algo Trading",
+    "accountTypes": "Account Types",
+    "challengeAccount": "Challenge Account",
+    "fundedAccount": "Funded Account",
+    "demoAccount": "Demo Account",
+    "support": "Support",
+    "technicalSupport": "Technical Support",
+    "accountHelp": "Account Help",
+    "billing": "Billing",
+    "partnership": "Partnership",
+    "affiliateProgram": "Affiliate Program",
+    "introducingBroker": "Introducing Broker",
+    "whiteLabel": "White Label",
+    "other": "Other",
+    "companyName": "Chapital Chain"
+  }
+}

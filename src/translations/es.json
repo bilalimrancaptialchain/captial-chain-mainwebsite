@@ -1,0 +1,655 @@
+{
+  "navigation": {
+    "home": "Inicio",
+    "partnership": "Asociación",
+    "blog": "Blog",
+    "aboutUs": "Acerca de Nosotros",
+    "contactUs": "Contáctanos",
+    "termsOfService": "Términos de Servicio",
+    "faq": "Preguntas Frecuentes"
+  },
+  "header": {
+    "loginSignup": "Iniciar Sesión/Registrarse",
+    "startTradingNow": "Comenzar a Operar Ahora"
+  },
+  "hero": {
+    "title": "La Primera",
+    "titleHighlight": "Descentralizada",
+    "titleEnd": "Firma de Prop del Mundo"
+  },
+  "mission": {
+    "title": "Cuando nuestra",
+    "titleHighlight1": "querida industria de trading de prop",
+    "titleMiddle": "está amenazada por",
+    "titleHighlight2": "negocios turbios",
+    "description": "Estamos impulsados por una misión de salvarla a través de la descentralización. Al distribuir el poder entre los traders y aprovechar los contratos inteligentes como intermediarios justos y transparentes entre traders e inversores reales, nuestro objetivo es reconstruir la confianza e integridad en la industria.",
+    "learnMoreButton": "Aprende Más Sobre Nuestra Misión"
+  },
+  "summerCampaign": {
+    "title": "Hasta el",
+    "titleHighlight": "final del verano",
+    "subtitle": "cada trader de capital chain es",
+    "subtitleHighlight": "rentable",
+    "description": "Ya sea que hayas pasado el desafío o fallado, todos los traders que participaron en desafíos serán incluidos en la lista blanca para el Airdrop del token CChain directamente. Cuanto mayor sea el tamaño de tu cuenta, mayor será la asignación que recibirás.",
+    "additionalInfo": "Cada punto ganado será calculado y convertido en cantidades de tokens después del anuncio de la ICO, dependiendo del número total de comunidades participantes.",
+    "values": {
+      "5k": "5K",
+      "10k": "10K",
+      "25k": "25K",
+      "50k": "50K",
+      "100k": "100K"
+    },
+    "points": {
+      "1point": "1 Punto",
+      "2points": "2 Puntos",
+      "3points": "3 Puntos",
+      "4points": "4 Puntos",
+      "5points": "5 Puntos"
+    }
+  },
+  "tradingSolution": {
+    "title": "Tenemos una",
+    "titleHighlight1": "solución de trading",
+    "titleMiddle": "para",
+    "titleHighlight2": "cada tipo de trader",
+    "comingSoon": "Próximamente...",
+    "stayTuned": "Mantente atento a las actualizaciones",
+    "cards": {
+      "decentralized": {
+        "text": "La Primera plataforma",
+        "highlight1": "Descentralizada",
+        "text2": "y gobernada por su",
+        "highlight2": "comunidad"
+      },
+      "nativeToken": {
+        "text": "Con",
+        "highlight1": "Token nativo",
+        "text2": ", gana por",
+        "highlight2": "airdrop"
+      },
+      "profitSplit": {
+        "highlight1": "20% de división de ganancias",
+        "text": "de la fase de desafío"
+      },
+      "noTimeLimit": {
+        "highlight1": "Sin límite de tiempo",
+        "text": "desafío"
+      },
+      "tradelocker": "Rápido, fácil de usar y potenciado por IA, con bots de IA integrados que convierten tus estrategias en operaciones automatizadas",
+      "volumetrica": "Rápido, inteligente y rico en funciones: acceso a más de 500 criptomonedas con herramientas premium gratuitas",
+      "metatrader5": "Próximamente..."
+    }
+  },
+  "tradingChallenge": {
+    "title": "Elige Tu",
+    "titleHighlight": "Desafío de Trading",
+    "standard": "Estándar",
+    "atomic": "Atómico",
+    "oneStep": "Un Paso",
+    "twoStep": "Dos Pasos",
+    "evaluation": "Evaluación",
+    "step1": "Paso 1",
+    "step2": "Paso 2",
+    "funded": "Financiado",
+    "pricing": "Precios",
+    "startChallenge": "Iniciar Desafío",
+    "refundableNotice": "Tarifa 100% Reembolsable de Una Sola Vez"
+  },
+  "roadmap": {
+    "subtitle": "Camino de la Revolución",
+    "title": "Capital Chain",
+    "titleHighlight": "Hoja de Ruta",
+    "quarters": {
+      "quarter1": "Trimestre-1",
+      "quarter2": "Trimestre-2",
+      "quarter3": "Trimestre-3",
+      "quarter4": "Trimestre-4"
+    },
+    "items": {
+      "item1": {
+        "title": "Prop Ordinario",
+        "description": ["+ Investigación", "+ Desarrollo lado del trader"]
+      },
+      "item2": {
+        "title": "Prop Ordinario",
+        "description": [
+          "+ Lanzamiento de Prop Firm lado traders",
+          "+ Auditoría de contrato inteligente de token"
+        ]
+      },
+      "item3": {
+        "title": "Lado de Inversores",
+        "description": [
+          "+ Desarrollo de Contratos Inteligentes Descentralizados",
+          "+ Descentralización"
+        ]
+      },
+      "item4": {
+        "title": "Prop Ordinario",
+        "description": [
+          "+ Desarrollo de Oracle para Inversores",
+          "+ Lanzamiento de Prop Firm lado traders",
+          "+ ICO"
+        ]
+      },
+      "item5": {
+        "title": "Implementación",
+        "description": [
+          "+ Auditoría de contrato inteligente de token",
+          "+ Lanzamiento Beta del Lado Descentralizado"
+        ]
+      },
+      "item6": {
+        "title": "Implementación",
+        "description": [
+          "+ Implementación del Lado Descentralizado de Inversores",
+          "+ Lanzamiento de token y Airdrop"
+        ]
+      }
+    }
+  },
+  "partnership": {
+    "howDoesItWork": "Cómo Funciona?",
+    "getStartedNow": "Comenzar Ahora",
+    "affiliateLogin": "Iniciar Sesión de Afiliado",
+    "propTrading": {
+      "title": "Sé un",
+      "titleHighlight1": "Pionero",
+      "titleTopEnd": "en la",
+      "titleMiddle": "Prop trading",
+      "titleHighlight2": "descentralización",
+      "titleEnd": "revolución",
+      "subtitle": "y gana hasta 18%",
+      "getStarted": "Comenzar"
+    },
+    "commissionModel": {
+      "title": "Modelo de comisión",
+      "subtitle": "Más crecimiento, Ganancia exponencial.",
+      "tiers": {
+        "pioneer": {
+          "title": "Pionero",
+          "description": "20-100 afiliados traders",
+          "commission": "12% comisión"
+        },
+        "expert": {
+          "title": "Experto",
+          "description": "100-300 traders",
+          "commission": "15% comisión"
+        },
+        "legend": {
+          "title": "Leyenda",
+          "description": "300+ traders",
+          "commission": "18% comisión"
+        }
+      },
+      "partnershipMessage": {
+        "title": "No solo",
+        "titleHighlight1": "afiliado",
+        "titleTopEnd": "comisión,",
+        "titleMiddle": "Sé socio en",
+        "titleHighlight2": "crecimiento futuro.",
+        "titleEnd": "",
+        "description": "En Capital Chain, nuestra comunidad es nuestro activo más valioso. Creemos en empoderar a los pioneros dentro de ella — nuestros afiliados. No son solo socios en las tarifas de registro; son socios estratégicos en nuestro crecimiento a largo plazo. Los afiliados reciben airdrops exclusivos y asignaciones del token CCHAIN como incentivos adicionales. Ofrecemos tres niveles de asignación basados en el tamaño de tu comunidad — mientras más grande sea tu comunidad, mayor será tu asignación. Cada punto ganado será calculado y convertido en cantidades de tokens después del anuncio del ICO, dependiendo del número total de comunidades participantes."
+      }
+    },
+    "howItWorks": {
+      "steps": {
+        "step1": {
+          "title": "Regístrate",
+          "description": "Crea tu cuenta de afiliado y obtén tu enlace de referencia único"
+        },
+        "step2": {
+          "title": "Comparte tu Enlace",
+          "description": "Promociona tu enlace a través de redes sociales, blogs o contacto directo"
+        },
+        "step3": {
+          "title": "Gana Comisiones",
+          "description": "Recibe pagos por cada referencia exitosa que complete un desafío"
+        },
+        "step4": {
+          "title": "Rastrea el Progreso",
+          "description": "Monitorea tus ganancias y rendimiento a través de nuestro panel"
+        },
+        "step5": {
+          "title": "¡Comienza a Ganar Hoy!",
+          "description": "Únete a miles de afiliados exitosos que ya están ganando con Capital Chain"
+        }
+      },
+      "finalStep": {
+        "title": "¡Comienza a Ganar Hoy!",
+        "description": "Únete a miles de afiliados exitosos que ya están ganando con Capital Chain"
+      }
+    },
+    "ranks": {
+      "tiers": {
+        "pioneer": {
+          "name": "Pionero",
+          "points": "18 Puntos"
+        },
+        "legend": {
+          "name": "Leyenda",
+          "points": "100 Puntos"
+        },
+        "immortal": {
+          "name": "Inmortal",
+          "points": "350 Puntos"
+        }
+      },
+      "features": {
+        "commissions": {
+          "title": "Comisiones Incomparables",
+          "description": "Tasas de comisión líderes en la industria que escalan con el tamaño de tu comunidad"
+        },
+        "tokens": {
+          "title": "Asignaciones de Tokens Revolucionarias",
+          "description": "Airdrops exclusivos de tokens CCHAIN basados en tu nivel y tamaño de comunidad"
+        },
+        "discount": {
+          "title": "Tus Referidos Obtienen un 10% de Descuento a través de tu Enlace",
+          "description": "Cada trader que refiere obtiene un descuento instantáneo del 10% en su primer desafío"
+        },
+        "dashboard": {
+          "title": "Rastrea Fácilmente tus Ganancias en el Panel de Afiliados",
+          "description": "Rastrea clics, registros y comisiones en tiempo real a través de tu panel de afiliados"
+        }
+      }
+    }
+  },
+  "footer": {
+    "description": "La Primera Empresa de Trading Descentralizada del Mundo.",
+    "categories": {
+      "Platform": "Plataforma",
+      "Company": "Empresa",
+      "Legal": "Legal",
+      "QuickAccess": "Acceso Rápido"
+    },
+    "links": {
+      "tradingPlatforms": "Plataformas de Trading",
+      "pricing": "Precios",
+      "airdropProgram": "Programa Airdrop",
+      "partnership": "Asociación",
+      "aboutUs": "Acerca de Nosotros",
+      "contact": "Contacto",
+      "blog": "Blog",
+      "termsOfService": "Términos de Servicio",
+      "riskDisclosure": "Divulgación de Riesgos",
+      "homepage": "Página Principal",
+      "contactUs": "Contáctanos",
+      "faq": "Preguntas Frecuentes",
+      "checkout": "Finalizar Compra"
+    },
+    "disclaimer": "Descargo de responsabilidad:",
+    "disclaimerText1": "Operar en los mercados financieros implica un riesgo significativo y puede resultar en la pérdida de su capital. Los servicios proporcionados por Capital Chain L.L.C FZ, registrada bajo el número de licencia 2532140 y con sede en Meydan Grandstand, 6º Piso, Meydan Road, Nad Al Sheba, Dubai, U.A.E, son estrictamente para fines educativos y de evaluación y no constituyen asesoramiento de inversión o cualquier forma de recomendación financiera.",
+    "disclaimerText2": "Capital Chain L.L.C FZ no es un broker, asesor de inversiones o proveedor de garantías financieras. Todos los programas de evaluación están diseñados para evaluar las habilidades de trading y las capacidades de gestión de riesgos.",
+    "disclaimerText3": "El rendimiento pasado no es indicativo de resultados futuros. Los resultados de trading virtual no garantizan el éxito en trading real.",
+    "disclaimerText4": "Por favor, asegúrese de comprender completamente los riesgos involucrados y busque asesoramiento independiente si es necesario antes de participar en cualquier actividad de trading.",
+    "disclaimerText5": "Al usar nuestros servicios, usted reconoce que ha leído, entendido y acepta estar sujeto a estos términos y condiciones.",
+    "newsletterTitle": "Mantente Actualizado",
+    "newsletterDescription": "Suscríbete a nuestro boletín para las últimas actualizaciones e insights.",
+    "emailPlaceholder": "Ingresa tu dirección de email"
+  },
+  "contact": {
+    "emailTeam": "Envía un email a nuestro equipo",
+    "weAreHereToHelp": "Estamos aquí para ayudar",
+    "supportEmail": "support@capitalchain.co",
+    "location": {
+      "title": "Ubicación de Capital Chain",
+      "address": "Meydan Grandstand, 6º piso, Meydan Road, Nad Al Sheba, Dubai, U.A.E.",
+      "viewOnMap": "Ver en el Mapa"
+    },
+    "form": {
+      "emailAddress": "Dirección de Email",
+      "emailPlaceholder": "Email:",
+      "fullName": "Nombre Completo",
+      "namePlaceholder": "Tu Nombre",
+      "topic": "Tema",
+      "topicPlaceholder": "Asunto",
+      "message": "Mensaje",
+      "messagePlaceholder": "Cuéntanos sobre tu proyecto o consulta...",
+      "submit": "Enviar"
+    }
+  },
+  "faq": {
+    "searchQuestion": "Puedes buscar tu pregunta:",
+    "frequentlyAsked": "Encuéntrala entre las Preguntas Frecuentes:",
+    "contactCustomerService": "O simplemente contacta nuestro servicio al cliente",
+    "categories": {
+      "gettingStarted": {
+        "title": "Primeros Pasos",
+        "description": "Aprende los conceptos básicos de nuestra plataforma y cómo empezar"
+      },
+      "accountManagement": {
+        "title": "Gestión de Cuenta",
+        "description": "Gestiona la configuración y preferencias de tu cuenta"
+      },
+      "paymentsBilling": {
+        "title": "Pagos y Facturación",
+        "description": "Información sobre pagos, facturación y transacciones"
+      },
+      "security": {
+        "title": "Seguridad",
+        "description": "Mantén tu cuenta y datos seguros"
+      },
+      "technicalSupport": {
+        "title": "Soporte Técnico",
+        "description": "Solución de problemas y asistencia técnica"
+      },
+      "apiDocumentation": {
+        "title": "Documentación API",
+        "description": "Recursos para desarrolladores y guías de API"
+      }
+    },
+    "questions": {
+      "howToCreateAccount": "¿Cómo creo una cuenta?",
+      "whatDoINeedToGetStarted": "¿Qué necesito para empezar?",
+      "howToChangePassword": "¿Cómo cambio mi contraseña?",
+      "howToUpdateProfile": "¿Cómo actualizo mi perfil?",
+      "whatPaymentMethods": "¿Qué métodos de pago aceptan?",
+      "howToViewBillingHistory": "¿Cómo veo mi historial de facturación?",
+      "howToEnableTwoFactor": "¿Cómo habilito la autenticación de dos factores?",
+      "whatIfAccountCompromised": "¿Qué debo hacer si mi cuenta está comprometida?",
+      "platformRunningSlow": "La plataforma funciona lentamente, ¿qué debo hacer?",
+      "gettingErrorMessage": "Estoy recibiendo un mensaje de error, ¿cómo lo soluciono?",
+      "howToGetApiKey": "¿Cómo obtengo una clave API?",
+      "whatAreRateLimits": "¿Cuáles son los límites de velocidad para la API?",
+      "paymentMethods": "¿Qué métodos de pago aceptan?",
+      "billingHistory": "¿Cómo veo mi historial de facturación?",
+      "twoFactorAuth": "¿Cómo habilito la autenticación de dos factores?",
+      "compromisedAccount": "¿Qué debo hacer si mi cuenta está comprometida?",
+      "slowPlatform": "La plataforma funciona lentamente, ¿qué debo hacer?",
+      "errorMessage": "Estoy recibiendo un mensaje de error, ¿cómo lo soluciono?",
+      "apiKey": "¿Cómo obtengo una clave API?",
+      "rateLimits": "¿Cuáles son los límites de velocidad para la API?"
+    },
+    "answers": {
+      "createAccountAnswer": "Para crear una cuenta, haz clic en el botón 'Registrarse' y completa tus datos. Necesitarás proporcionar una dirección de email válida y crear una contraseña segura. Después de enviar el formulario, revisa tu email para encontrar un enlace de verificación para activar tu cuenta.",
+      "getStartedAnswer": "Solo necesitas una dirección de email válida y una contraseña segura. Asegúrate de que tu contraseña contenga al menos 8 caracteres con una mezcla de letras, números y caracteres especiales para mayor seguridad.",
+      "changePasswordAnswer": "Ve a Configuración > Seguridad > Cambiar Contraseña. Ingresa tu contraseña actual, luego tu nueva contraseña dos veces para confirmar. Asegúrate de que tu nueva contraseña sea fuerte y única.",
+      "updateProfileAnswer": "Navega a tu página de perfil y haz clic en el botón editar. Puedes actualizar tu información personal, foto de perfil y otras preferencias desde allí.",
+      "paymentMethodsAnswer": "Aceptamos todas las principales tarjetas de crédito (Visa, MasterCard, American Express), PayPal y transferencias bancarias. Todos los pagos se procesan de forma segura a través de nuestra pasarela de pago encriptada.",
+      "billingHistoryAnswer": "Ve a Cuenta > Facturación para ver tu historial completo de pagos. Puedes descargar facturas, ver detalles de transacciones y gestionar tus métodos de pago desde esta sección.",
+      "twoFactorAnswer": "Ve a Configuración > Seguridad > Autenticación de Dos Factores y sigue la guía de configuración. Puedes usar una aplicación de autenticación como Google Authenticator o recibir códigos SMS para mayor seguridad.",
+      "compromisedAccountAnswer": "Cambia inmediatamente tu contraseña y contacta a nuestro equipo de soporte. Habilita la autenticación de dos factores si aún no lo has hecho, y revisa tu actividad reciente de cuenta para cualquier acción sospechosa.",
+      "slowPlatformAnswer": "Intenta limpiar la caché de tu navegador o cambiar a un navegador diferente. También, verifica tu conexión a internet y cierra cualquier pestaña innecesaria del navegador. Si el problema persiste, contacta a nuestro equipo de soporte técnico.",
+      "errorMessageAnswer": "Por favor contacta a nuestro equipo de soporte con el mensaje de error exacto que estás viendo, junto con detalles sobre lo que estabas tratando de hacer cuando ocurrió el error. Incluye tu tipo de navegador y versión para una solución más rápida.",
+      "apiKeyAnswer": "Ve a Configuración de Desarrollador y genera una nueva clave API.",
+      "rateLimitsAnswer": "El límite de velocidad estándar es de 1000 solicitudes por hora.",
+      "twoFactorAuthAnswer": "Ve a Configuración > Seguridad > Autenticación de Dos Factores y sigue la guía de configuración. Puedes usar una aplicación de autenticación como Google Authenticator o recibir códigos SMS para mayor seguridad."
+    },
+    "contentSections": {
+      "stepByStepGuide": "Guía Paso a Paso",
+      "importantNotes": "Notas Importantes",
+      "additionalResources": "Recursos Adicionales",
+      "stepByStepDescription": "Sigue estas instrucciones detalladas para completar el proceso exitosamente. Cada paso está diseñado para ser claro y fácil de entender. FundingPips, fundada en noviembre de 2022, está construida por traders para traders. Entendemos de primera mano los desafíos que enfrentan los traders en esta industria, y nuestro objetivo es cambiar el juego. Como una firma de trading confiable con sede en Dubai, estamos comprometidos a proporcionar a los traders las mejores herramientas, recursos y soporte para desbloquear su potencial completo y tener éxito.",
+      "importantNotesDescription": "Por favor mantén estos puntos importantes en mente mientras sigues las instrucciones. Estas notas te ayudarán a evitar errores comunes.",
+      "additionalResourcesDescription": "Para información más detallada y configuraciones avanzadas, por favor consulta nuestra documentación completa y materiales de soporte."
+    },
+    "relatedPosts": {
+      "understandingPlatform": "Entendiendo la Plataforma Capital Chain",
+      "tradingStrategies": "Estrategias y Consejos de Trading",
+      "securityBestPractices": "Mejores Prácticas de Seguridad",
+      "apiIntegration": "Guía de Integración API",
+      "accountVerification": "Proceso de Verificación de Cuenta"
+    },
+    "mostViewed": {
+      "blockchainTechnology": "Cómo empezar con la tecnología blockchain",
+      "cryptoWallets": "Entendiendo las carteras de criptomonedas",
+      "smartContracts": "Contratos inteligentes explicados para principiantes",
+      "defiProtocols": "Protocolos DeFi y sus beneficios",
+      "nftMarketplace": "Guía del mercado NFT",
+      "stakingRewards": "Recompensas de staking y cómo funcionan"
+    }
+  },
+  "about": {
+    "title": "Acerca de Nosotros",
+    "firstText": "Bienvenido a Chapital Chain, una fuerza pionera en la industria blockchain y criptomonedas.",
+    "secondText": "Establecidos en la Zona Franca de Meydan de Dubái, estamos comprometidos a revolucionar las finanzas digitales a través de soluciones innovadoras.",
+    "greenText": "Nuestra Misión",
+    "whiteText": "Nos esforzamos por crear un puente perfecto entre las finanzas tradicionales y la economía digital, empoderando a individuos y empresas para prosperar en el nuevo panorama financiero.",
+    "missionTitle": "Cuál es nuestra misión?",
+    "missionDescription": "No solo estamos construyendo una empresa — estamos construyendo un movimiento para la próxima generación de trading.",
+    "missionBoxes": {
+      "trustTransparency": "Restaurar la confianza y transparencia a través de la verificación en cadena y el control de Financiamiento-Pago de contratos inteligentes.",
+      "decentralizedControl": "Control descentralizado empoderando a traders y líderes comunitarios a través de blockchain, no corporaciones.",
+      "protectTraders": "Proteger a los traders del abuso creando un ecosistema automatizado y transparente.",
+      "healthyEnvironment": "Fomentar un ambiente saludable para el crecimiento, colaboración y éxito financiero — para traders, por traders."
+    }
+  },
+  "team": {
+    "title": "Administraciones de Capital Chain",
+    "positions": {
+      "ceo": "CEO",
+      "cmo": "CMO",
+      "headOfEngineering": "Jefe de Ingeniería",
+      "riskManager": "Gerente de Riesgos",
+      "businessDevelopmentManager": "Gerente de Desarrollo de Negocios",
+      "headOfDesign": "Jefe de Diseño",
+      "headOfFinance": "Jefe de Finanzas",
+      "humanResourceManager": "Gerente de Recursos Humanos"
+    }
+  },
+  "blog": {
+    "searchPlaceholder": "Buscar Artículos",
+    "views": "vistas",
+    "previous": "Anterior",
+    "next": "Siguiente",
+    "posts": {
+      "completeCryptoGuide": "Guía Completa para el Trading de Criptomonedas",
+      "bitcoinAnalysis2024": "Análisis del Mercado de Bitcoin para 2024",
+      "riskManagement": "Estrategias de Gestión de Riesgos en Trading",
+      "technicalAnalysis": "Análisis Técnico para Principiantes",
+      "choosingExchange": "Elegir la Plataforma de Intercambio Correcta",
+      "blockchainFuture": "El Futuro de la Tecnología Blockchain",
+      "defiProtocols": "Protocolos DeFi y Yield Farming",
+      "nftTrends": "Tendencias del Mercado NFT y Oportunidades",
+      "cryptoRegulations": "Regulaciones de Criptomonedas en Todo el Mundo",
+      "smartContractDev": "Guía de Desarrollo de Contratos Inteligentes",
+      "cryptoMining": "Minería de Criptomonedas Explicada",
+      "portfolioDiversification": "Estrategias de Diversificación de Portafolio",
+      "stakingPassiveIncome": "Staking e Ingresos Pasivos en Cripto",
+      "layer2Solutions": "Soluciones Layer 2 y Escalabilidad",
+      "cryptoTax": "Implicaciones Fiscales de las Criptomonedas",
+      "securityBestPractices": "Mejores Prácticas de Seguridad para Cripto",
+      "altcoinAnalysis": "Análisis y Selección de Altcoins",
+      "marketPsychology": "Psicología del Mercado y Trading",
+      "institutionalAdoption": "Adopción Institucional de Cripto",
+      "web3DApps": "Web3 y Aplicaciones Descentralizadas"
+    },
+    "descriptions": {
+      "completeCryptoGuideDesc": "Aprende los fundamentos del trading de criptomonedas, incluyendo análisis de mercado, gestión de riesgos y estrategias rentables tanto para principiantes como para traders experimentados.",
+      "bitcoinAnalysis2024Desc": "Análisis completo de las tendencias de precios de Bitcoin y predicciones futuras para el mercado de criptomonedas en el próximo año.",
+      "riskManagementDesc": "Técnicas esenciales de gestión de riesgos para proteger tu capital y maximizar las ganancias en el trading de criptomonedas.",
+      "technicalAnalysisDesc": "Domina los fundamentos del análisis técnico y aprende a usar indicadores de manera efectiva en tus decisiones de trading.",
+      "choosingExchangeDesc": "Factores importantes a considerar al seleccionar un intercambio de criptomonedas seguro y confiable para tus necesidades de trading.",
+      "blockchainFutureDesc": "Explorando las aplicaciones potenciales de la tecnología blockchain y su impacto en varias industrias en todo el mundo.",
+      "defiProtocolsDesc": "Entendiendo los protocolos de finanzas descentralizadas y cómo maximizar los retornos a través de estrategias de yield farming.",
+      "nftTrendsDesc": "Analizando el panorama actual del mercado NFT e identificando oportunidades potenciales de inversión en activos digitales.",
+      "cryptoRegulationsDesc": "Visión general de las regulaciones de criptomonedas en diferentes países y su impacto en el mercado global.",
+      "smartContractDevDesc": "Guía paso a paso para desarrollar e implementar contratos inteligentes en varias plataformas blockchain.",
+      "cryptoMiningDesc": "Guía completa para la minería de criptomonedas, incluyendo requisitos de hardware, rentabilidad y consideraciones ambientales.",
+      "portfolioDiversificationDesc": "Aprende cómo construir un portafolio diversificado de criptomonedas para minimizar el riesgo y maximizar los retornos a largo plazo.",
+      "stakingPassiveIncomeDesc": "Explora varias oportunidades de staking y estrategias de ingresos pasivos en el ecosistema de criptomonedas.",
+      "layer2SolutionsDesc": "Entendiendo las soluciones de escalado Layer 2 y su papel en mejorar el rendimiento de blockchain y reducir las tarifas.",
+      "cryptoTaxDesc": "Navega el mundo complejo de la tributación de criptomonedas y aprende cómo reportar adecuadamente tus actividades de trading.",
+      "securityBestPracticesDesc": "Medidas de seguridad esenciales para proteger tus inversiones en criptomonedas de hacks, estafas y robos.",
+      "altcoinAnalysisDesc": "Marco para analizar y seleccionar altcoins prometedoras para tu portafolio de inversión.",
+      "marketPsychologyDesc": "Entendiendo la psicología del mercado y factores emocionales que influyen en las decisiones de trading de criptomonedas.",
+      "institutionalAdoptionDesc": "Examinando la tendencia creciente de adopción institucional de criptomonedas y su impacto en la dinámica del mercado.",
+      "web3DAppsDesc": "Introducción a la tecnología Web3 y el desarrollo de aplicaciones descentralizadas en plataformas blockchain."
+    }
+  },
+  "testimonials": {
+    "johnSmith": {
+      "name": "John Smith",
+      "position": "Trader Senior",
+      "content": "Chapital Chain ha revolucionado mi experiencia de trading. Las herramientas avanzadas de la plataforma y los análisis en tiempo real han mejorado significativamente mi rendimiento de trading."
+    },
+    "sarahJohnson": {
+      "name": "Sarah Johnson",
+      "position": "Gerente de Inversiones",
+      "content": "Los recursos educativos y el apoyo de la comunidad en Chapital Chain son excepcionales. He aprendido más en 6 meses de lo que aprendí en años de trading en otros lugares."
+    },
+    "michaelChen": {
+      "name": "Michael Chen",
+      "position": "Day Trader",
+      "content": "Plataforma excepcional con ejecución ultrarrápida y análisis de mercado completo. El equipo de atención al cliente siempre está listo para ayudar cuando es necesario."
+    },
+    "emilyDavis": {
+      "name": "Emily Davis",
+      "position": "Gerente de Portafolio",
+      "content": "El enfoque innovador de Chapital Chain para el trading me ha ayudado a diversificar mi portafolio de manera efectiva. Las herramientas de gestión de riesgo son de primera clase."
+    },
+    "alexRodriguez": {
+      "name": "Alex Rodriguez",
+      "position": "Trader de Cripto",
+      "content": "El 12% de drawdown me dio espacio para respirar. Pude operar adecuadamente sin presión y enfocarme en mi estrategia."
+    },
+    "davidWilson": {
+      "name": "David Wilson",
+      "position": "Trader de Cripto",
+      "content": "La integración perfecta del trading tradicional y de cripto en una plataforma es increíble. Chapital Chain realmente entiende las necesidades de los traders modernos."
+    }
+  },
+  "termsOfUse": {
+    "disciplineConsistency": "Disciplina y Consistencia",
+    "tradingBehaviourRules": "Comportamiento de Trading y Reglas",
+    "toxicTradingFlow": "Flujo de Trading Tóxico",
+    "tradingInstruments": "Instrumentos de Trading",
+    "accountCredentials": "Credenciales de Cuenta",
+    "rewards": "Recompensas",
+    "scalingUp": "Escalamiento",
+    "mergingAccounts": "Fusión de Cuentas",
+    "refunds": "Reembolsos",
+    "inactivity": "Inactividad",
+    "ipAddress": "Dirección IP",
+    "descriptions": {
+      "disciplineConsistencyDesc": "Esta sección cubre la importancia de mantener disciplina y consistencia en las actividades de trading. Los traders deben adherirse a las reglas establecidas y mantener un comportamiento consistente a lo largo de su jornada de trading.",
+      "tradingBehaviourRulesDesc": "Todas las actividades de trading deben cumplir con nuestras pautas de comportamiento y reglas establecidas. Esto incluye gestión adecuada de riesgos, adherencia al dimensionamiento de posiciones y seguimiento de nuestros protocolos de trading.",
+      "toxicTradingFlowDesc": "Ciertos comportamientos de trading se consideran tóxicos y están estrictamente prohibidos. Esto incluye trading de venganza, sobre-apalancamiento y cualquier actividad que viole nuestros principios de gestión de riesgos.",
+      "tradingInstrumentsDesc": "Información sobre instrumentos de trading aprobados, incluyendo pares de forex, commodities, índices y criptomonedas que están disponibles para trading en nuestra plataforma.",
+      "accountCredentialsDesc": "Pautas para gestionar credenciales de cuenta, incluyendo seguridad de contraseñas, requisitos de autenticación de dos factores y protocolos de acceso a cuenta.",
+      "rewardsDesc": "Detalles sobre nuestro sistema de recompensas, incluyendo participación en ganancias, bonos de rendimiento y programas de incentivos disponibles para traders calificados.",
+      "scalingUpDesc": "Información sobre oportunidades de escalamiento de cuenta, incluyendo criterios para aumentos de tamaño de cuenta y requisitos de rendimiento para avance.",
+      "mergingAccountsDesc": "Políticas y procedimientos para fusionar múltiples cuentas de trading, incluyendo requisitos de elegibilidad y el proceso de fusión.",
+      "refundsDesc": "Nuestra política de reembolsos, incluyendo condiciones bajo las cuales se pueden otorgar reembolsos y el proceso para solicitar reembolsos.",
+      "inactivityDesc": "Políticas relacionadas con la inactividad de cuenta, incluyendo períodos de inactividad, mantenimiento de cuenta y procedimientos de reactivación.",
+      "ipAddressDesc": "Pautas relacionadas con el uso de direcciones IP, incluyendo restricciones en el uso de VPN, limitaciones geográficas y protocolos de seguridad."
+    }
+  },
+  "search": {
+    "searchResults": "Resultados de Búsqueda",
+    "noResults": "No se encontraron resultados",
+    "searchPlaceholder": "Buscar artículos..."
+  },
+  "terms": {
+    "items": {
+      "disciplineConsistency": {
+        "title": "Disciplina y Consistencia",
+        "content": "Esta sección cubre la importancia de mantener disciplina y consistencia en las actividades de trading. Los traders deben adherirse a las reglas establecidas y mantener un comportamiento consistente a lo largo de su viaje de trading."
+      },
+      "tradingBehaviorRules": {
+        "title": "Comportamiento y Reglas de Trading",
+        "content": "Todas las actividades de trading deben cumplir con nuestras pautas de comportamiento y reglas establecidas. Esto incluye una gestión adecuada del riesgo, adherencia al tamaño de posición y seguimiento de nuestros protocolos de trading."
+      },
+      "toxicTradingFlow": {
+        "title": "Flujo de Trading Tóxico",
+        "content": "Ciertos comportamientos de trading se consideran tóxicos y están estrictamente prohibidos. Esto incluye trading de venganza, sobre-apalancamiento y cualquier actividad que viole nuestros principios de gestión de riesgo."
+      },
+      "tradingInstruments": {
+        "title": "Instrumentos de Trading",
+        "content": "Información sobre instrumentos de trading aprobados, incluyendo pares de forex, commodities, índices y criptomonedas que están disponibles para trading en nuestra plataforma."
+      },
+      "accountCredentials": {
+        "title": "Credenciales de Cuenta",
+        "content": "Pautas para gestionar credenciales de cuenta, incluyendo seguridad de contraseñas, requisitos de autenticación de dos factores y protocolos de acceso a cuenta."
+      },
+      "rewards": {
+        "title": "Recompensas",
+        "content": "Detalles sobre nuestro sistema de recompensas, incluyendo participación en ganancias, bonos de rendimiento y programas de incentivos disponibles para traders calificados."
+      },
+      "scalingUp": {
+        "title": "Escalamiento",
+        "content": "Información sobre oportunidades de escalamiento de cuenta, incluyendo criterios para aumentos de tamaño de cuenta y requisitos de rendimiento para avance."
+      },
+      "mergingAccounts": {
+        "title": "Fusión de Cuentas",
+        "content": "Políticas y procedimientos para fusionar múltiples cuentas de trading, incluyendo requisitos de elegibilidad y el proceso de fusión."
+      },
+      "refunds": {
+        "title": "Reembolsos",
+        "content": "Nuestra política de reembolsos, incluyendo condiciones bajo las cuales se pueden otorgar reembolsos y el proceso para solicitar reembolsos."
+      },
+      "inactivity": {
+        "title": "Inactividad",
+        "content": "Políticas relacionadas con la inactividad de cuenta, incluyendo períodos de inactividad, mantenimiento de cuenta y procedimientos de reactivación."
+      },
+      "ipAddress": {
+        "title": "Dirección IP",
+        "content": "Pautas sobre el uso de direcciones IP, incluyendo restricciones en el uso de VPN, limitaciones geográficas y protocolos de seguridad."
+      }
+    }
+  },
+  "common": {
+    "loading": "Cargando...",
+    "readMore": "Leer Más",
+    "returnToHome": "Volver al inicio",
+    "mostViewedArticles": "Artículos Más Vistos",
+    "articles": "artículos",
+    "questionsInCategory": "preguntas en esta categoría",
+    "relatedPosts": "Publicaciones Relacionadas",
+    "searchYourQuestion": "Puedes buscar tu pregunta:",
+    "findAmongFAQ": "Encuéntrala entre las Preguntas Frecuentes:",
+    "contactCustomerService": "O simplemente contacta nuestro servicio al cliente",
+    "viewAll": "Ver Todo",
+    "previous": "Anterior",
+    "next": "Siguiente",
+    "close": "Cerrar",
+    "submit": "Enviar",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "confirm": "Confirmar",
+    "back": "Atrás",
+    "continue": "Continuar",
+    "finish": "Finalizar",
+    "views": "visualizaciones"
+  },
+  "contactForm": {
+    "yourEmail": "Tu Correo Electrónico",
+    "yourName": "Tu Nombre",
+    "topic": "Tema",
+    "askUsAnything": "Pregúntanos cualquier cosa:",
+    "stillConfused": "Aún Confundido?",
+    "description": "Para cualquier pregunta, inquietud o soporte, puedes contactar fácilmente al Servicio al Cliente de Capital Chain a través de las opciones de contacto disponibles. Estamos aquí para asistirte en cada paso del camino."
+  },
+  "chat": {
+    "onlineChat": "Chat en Línea",
+    "welcomeToChat": "Bienvenido al chat en línea",
+    "clickToStart": "Haz clic en el icono de chat para comenzar",
+    "welcomeMessage": "¡Hola! Bienvenido al chat en línea de Chapital Chain. ¿Qué información busca sobre nuestros modelos?",
+    "selectOption": "Por favor seleccione una de las opciones de {{option}}:",
+    "finalSelection": "¡Excelente! Has seleccionado {{option}}. Uno de nuestros representantes se pondrá en contacto contigo pronto.",
+    "typeMessage": "Escribe tu mensaje...",
+    "sendFile": "Enviar archivo",
+    "send": "Enviar",
+    "tradingModels": "Modelos de Trading",
+    "propTrading": "Prop Trading",
+    "copyTrading": "Copy Trading",
+    "algoTrading": "Algo Trading",
+    "accountTypes": "Tipos de Cuenta",
+    "challengeAccount": "Cuenta Challenge",
+    "fundedAccount": "Cuenta Fondeada",
+    "demoAccount": "Cuenta Demo",
+    "support": "Soporte",
+    "technicalSupport": "Soporte Técnico",
+    "accountHelp": "Ayuda de Cuenta",
+    "billing": "Facturación",
+    "partnership": "Asociación",
+    "affiliateProgram": "Afiliados",
+    "introducingBroker": "IB",
+    "whiteLabel": "White Label",
+    "other": "Otros",
+    "companyName": "Chapital Chain"
+  }
+}
