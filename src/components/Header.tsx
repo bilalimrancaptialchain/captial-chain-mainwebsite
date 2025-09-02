@@ -114,7 +114,7 @@ export default function Header() {
             <Link href="/" className="flex items-center">
               <Image
                 src="/images/logo.png"
-                alt="Chapital Chain"
+                alt="Capital Chain"
                 width={120}
                 height={40}
                 loading="lazy"
@@ -154,7 +154,7 @@ export default function Header() {
                   >
                     <Image
                       src="/images/logo.png"
-                      alt="Chapital Chain"
+                      alt="Capital Chain"
                       width={120}
                       height={40}
                       loading="lazy"

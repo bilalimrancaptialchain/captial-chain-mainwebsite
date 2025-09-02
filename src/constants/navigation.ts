@@ -11,7 +11,7 @@ export const navigationItems = [
     ],
   },
   { name: "Terms of Service", href: "/terms-of-use" },
-  { name: "FAQ", href: "/faq" },
+  { name: "FAQ", href: "https://help.capitalchain.co" },
 ];
 
 export type NavigationItem = {

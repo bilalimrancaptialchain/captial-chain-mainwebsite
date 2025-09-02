@@ -108,7 +108,10 @@
     "items": {
       "item1": {
         "title": "Prop Ordinario",
-        "description": ["+ Investigación", "+ Desarrollo lado del trader"]
+        "description": [
+          "+ Investigación",
+          "+ Desarrollo lado del trader"
+        ]
       },
       "item2": {
         "title": "Prop Ordinario",
@@ -402,7 +405,7 @@
   },
   "about": {
     "title": "Acerca de Nosotros",
-    "firstText": "Bienvenido a Chapital Chain, una fuerza pionera en la industria blockchain y criptomonedas.",
+    "firstText": "Bienvenido a Capital Chain, una fuerza pionera en la industria blockchain y criptomonedas.",
     "secondText": "Establecidos en la Zona Franca de Meydan de Dubái, estamos comprometidos a revolucionar las finanzas digitales a través de soluciones innovadoras.",
     "greenText": "Nuestra Misión",
     "whiteText": "Nos esforzamos por crear un puente perfecto entre las finanzas tradicionales y la economía digital, empoderando a individuos y empresas para prosperar en el nuevo panorama financiero.",
@@ -482,12 +485,12 @@
     "johnSmith": {
       "name": "John Smith",
       "position": "Trader Senior",
-      "content": "Chapital Chain ha revolucionado mi experiencia de trading. Las herramientas avanzadas de la plataforma y los análisis en tiempo real han mejorado significativamente mi rendimiento de trading."
+      "content": "Capital Chain ha revolucionado mi experiencia de trading. Las herramientas avanzadas de la plataforma y los análisis en tiempo real han mejorado significativamente mi rendimiento de trading."
     },
     "sarahJohnson": {
       "name": "Sarah Johnson",
       "position": "Gerente de Inversiones",
-      "content": "Los recursos educativos y el apoyo de la comunidad en Chapital Chain son excepcionales. He aprendido más en 6 meses de lo que aprendí en años de trading en otros lugares."
+      "content": "Los recursos educativos y el apoyo de la comunidad en Capital Chain son excepcionales. He aprendido más en 6 meses de lo que aprendí en años de trading en otros lugares."
     },
     "michaelChen": {
       "name": "Michael Chen",
@@ -497,7 +500,7 @@
     "emilyDavis": {
       "name": "Emily Davis",
       "position": "Gerente de Portafolio",
-      "content": "El enfoque innovador de Chapital Chain para el trading me ha ayudado a diversificar mi portafolio de manera efectiva. Las herramientas de gestión de riesgo son de primera clase."
+      "content": "El enfoque innovador de Capital Chain para el trading me ha ayudado a diversificar mi portafolio de manera efectiva. Las herramientas de gestión de riesgo son de primera clase."
     },
     "alexRodriguez": {
       "name": "Alex Rodriguez",
@@ -507,7 +510,7 @@
     "davidWilson": {
       "name": "David Wilson",
       "position": "Trader de Cripto",
-      "content": "La integración perfecta del trading tradicional y de cripto en una plataforma es increíble. Chapital Chain realmente entiende las necesidades de los traders modernos."
+      "content": "La integración perfecta del trading tradicional y de cripto en una plataforma es increíble. Capital Chain realmente entiende las necesidades de los traders modernos."
     }
   },
   "termsOfUse": {
@@ -544,48 +547,48 @@
   "terms": {
     "items": {
       "disciplineConsistency": {
-        "title": "Disciplina y Consistencia",
-        "content": "Esta sección cubre la importancia de mantener disciplina y consistencia en las actividades de trading. Los traders deben adherirse a las reglas establecidas y mantener un comportamiento consistente a lo largo de su viaje de trading."
+        "title": "Introducción",
+        "content": "<p>Capital Chain («la Compañía») ofrece servicios de trading propietario a través de programas de evaluación que permiten a los traders («el Cliente» o «Trader») demostrar sus habilidades y disciplina. Al registrarse y participar en cualquier programa de evaluación o cuenta financiada ofrecida por Capital Chain, el Cliente acepta en su totalidad estos Términos de Uso. El incumplimiento de estos Términos puede dar lugar al cierre inmediato de la cuenta del Cliente sin reembolso ni derecho a recompensas.</p><br/><p>Los programas de Capital Chain están diseñados únicamente con fines educativos y de evaluación. El Cliente reconoce que durante el proceso de evaluación no se realizan operaciones con dinero real, y que las recompensas o pagos ofrecidos en la etapa financiada se basan en un rendimiento simulado según las políticas internas de la Compañía.</p><br/>"
       },
-      "tradingBehaviorRules": {
+      "tradingBehaviourAndRules": {
         "title": "Comportamiento y Reglas de Trading",
-        "content": "Todas las actividades de trading deben cumplir con nuestras pautas de comportamiento y reglas establecidas. Esto incluye una gestión adecuada del riesgo, adherencia al tamaño de posición y seguimiento de nuestros protocolos de trading."
+        "content": "<p>En Capital Chain ofrecemos programas de evaluación en modelos de Dos Fases y Una Fase, disponibles en versiones Normal y Atomic. Para convertirte en un trader Master (financiado), debes superar con éxito la(s) etapa(s) de evaluación. Es fundamental demostrar un sistema de trading consistente y una sólida gestión del riesgo. Una vez que alcances tu objetivo de beneficios, todo tu período de evaluación será revisado manualmente por nuestro Equipo de Riesgo en un plazo de dos días hábiles.</p><br/><p>En caso de incumplir cualquiera de las reglas mencionadas en esta sección, todas las posiciones serán cerradas de inmediato, la cuenta del Cliente será cerrada y se revocará el derecho a cualquier recompensa.</p><br/><p><strong>2.1. Fase Student (Dos Fases – Fase I)</strong></p><p>La Fase Student está diseñada para poner a prueba tus habilidades de trading. En esta fase debes alcanzar un objetivo de beneficios del <strong>8%</strong> (ejemplo: $4,000 en una cuenta de $50,000) sin incumplir ninguna otra regla y completar al menos <strong>4 días de trading</strong>.</p><br/><p><strong>2.2. Fase Practitioner (Dos Fases – Fase II)</strong></p><p>La Fase Practitioner está diseñada para confirmar los resultados de la Fase Student. En esta fase debes alcanzar un objetivo de beneficios del <strong>5%</strong> sin incumplir ninguna otra regla y completar al menos <strong>4 días de trading</strong>.</p><br/><p><strong>2.3. Modelo de Una Fase (Normal/Atomic)</strong></p><p>En el modelo de Una Fase, el trader debe alcanzar un objetivo de beneficios del <strong>10%</strong> (ejemplo: $5,000 en una cuenta de $50,000) con un mínimo de <strong>4 días de trading</strong> y respetando todas las demás reglas.</p><br/><p><strong>2.4. Pérdida Máxima Diaria</strong></p><p>La pérdida máxima diaria es la cantidad que el trader puede perder en un solo día. Para esta regla, se utiliza el valor más alto entre equity y balance:</p><ul><li><strong>Cuentas de Dos Fases (Normal y Atomic):</strong> Límite diario del 5% del equity/balance inicial.</li><li><strong>Cuentas de Una Fase (Normal y Atomic):</strong> Límite diario del 3% del equity/balance inicial.</li></ul><p><em>Ejemplo:</em> En una cuenta de $100,000 bajo el modelo de Dos Fases, la pérdida máxima diaria es de $5,000. El equity del día (PnL flotante + operaciones cerradas del día) no debe superar este límite. El límite se reinicia a las 00:00 CE(S)T/hora del servidor cada día.</p><br/><p><strong>2.6. Trading en Noticias y Mantener Posiciones en el Fin de Semana</strong></p><ul><li><strong>Durante la Evaluación (Student/Practitioner/Una Fase):</strong> Se permite mantener operaciones abiertas durante el fin de semana y operar en eventos de noticias sin restricciones.</li><li><strong>Durante la Etapa Master:</strong> El trading en noticias y mantener posiciones de un día para otro o durante el fin de semana está totalmente permitido en todas las cuentas Master. No hay restricciones sobre beneficios generados en torno a noticias de alto impacto.</li></ul><br/><p><strong>2.7. Estrategia de Trading</strong></p><p>Puedes operar como desees. Se permite usar Expert Advisors (EAs), operar en noticias, mantener operaciones durante el fin de semana y usar tamaños de lote tan grandes como lo permita el apalancamiento — siempre que la actividad no caiga en las categorías prohibidas:</p><ul><li><strong>Gap Trading:</strong> Abrir operaciones en la apertura del mercado únicamente para aprovechar gaps sin análisis.</li><li><strong>Trading de Alta Frecuencia (HFT):</strong> Uso de algoritmos para colocar cientos de órdenes en milisegundos.</li><li><strong>Spam del servidor:</strong> Sobrecargar el servidor con solicitudes excesivas en poco tiempo.</li><li><strong>Arbitraje de Latencia:</strong> Aprovechar diferencias entre el feed de Capital Chain y otro bróker.</li><li><strong>Flujo de trading tóxico:</strong> Según la definición de la Sección 3.</li><li><strong>Hedging entre múltiples cuentas:</strong> Abrir posiciones opuestas en dos o más cuentas para eliminar el riesgo. (El hedging interno en una sola cuenta sí está permitido).</li><li><strong>Arbitraje inverso:</strong> Tomar posiciones contrarias en instrumentos correlacionados.</li><li><strong>Tick Scalping:</strong> Abrir y cerrar operaciones en segundos para microbeneficios.</li><li><strong>Copy Trading o gestión de terceros:</strong> Copiar señales de otra cuenta o gestionar cuentas externas.</li></ul><br/><p><strong>Importante:</strong> El uso de EAs de gestión de riesgo está permitido, pero cualquier otro EA automatizado no lo está y resultará en el cierre de la cuenta.</p><br/><p><strong>¡Recuerda!</strong> TUS IDEAS, NUESTRO RIESGO — Para obtener financiación y crecer como trader, debes demostrar habilidad y disciplina. No puedes engañar para entrar.</p><br/>"
       },
       "toxicTradingFlow": {
         "title": "Flujo de Trading Tóxico",
-        "content": "Ciertos comportamientos de trading se consideran tóxicos y están estrictamente prohibidos. Esto incluye trading de venganza, sobre-apalancamiento y cualquier actividad que viole nuestros principios de gestión de riesgo."
+        "content": "<p>El «Flujo de Trading Tóxico» se refiere a comportamientos de trading que explotan vacíos, manipulan la ejecución o generan resultados insostenibles que no representan habilidad real. Capital Chain se reserva el derecho de determinar, a su sola discreción, si una actividad constituye flujo tóxico. Ejemplos incluyen:</p><br/><p><strong>Sobreapalancamiento</strong></p><p>Abrir posiciones excesivamente grandes en relación con el tamaño de la cuenta, utilizando un nivel de riesgo desproporcionado respecto al equity o la capacidad de margen. Queda prohibido usar apalancamiento que suponga sobreexposición.</p><br/><p><strong>Límite máximo de lotes (solo cuentas Master de 2 pasos)</strong></p><table><thead><tr><th>Tamaño de la cuenta</th><th>Exposición máxima en lotes</th></tr></thead><tbody><tr><td>$25,000</td><td>10 lotes</td></tr><tr><td>$50,000</td><td>20 lotes</td></tr><tr><td>$100,000</td><td>40 lotes</td></tr><tr><td>$5,000 / $10,000</td><td>Sin límite</td></tr></tbody></table><p>Este límite aplica solo a las operaciones abiertas simultáneamente. Los beneficios obtenidos de operaciones que excedan el límite serán descontados.</p><br/><p><strong>Comportamiento de apuestas</strong></p><p>Operar sin análisis, con entradas aleatorias o usando estrategias peligrosas como martingala o revenge trading.</p><br/><p><strong>Sobreoperar</strong></p><p>Abrir un número excesivo de operaciones sin un sistema consistente. Más de 50 operaciones diarias o 250 semanales sin un plan estructurado se considera sobreoperar.</p><br/><p><strong>Arbitraje de latencia</strong></p><p>Aprovechar retrasos entre el feed de Capital Chain y otro bróker.</p><br/><p><strong>Operaciones inversas</strong></p><p>Abrir posiciones contrarias en múltiples cuentas para asegurar beneficios garantizados en un lado.</p><br/><p><strong>Tick scalping o HFT</strong></p><p>Operaciones muy cortas (menos de 30 segundos) repetidas para microbeneficios.</p><br/><p><strong>Gestión externa de cuentas</strong></p><p>Operar en nombre de terceros o copiar operaciones desde otras cuentas.</p><br/><p><strong>Consecuencias</strong></p><ul><li>Primera infracción: advertencia y revisión por el Equipo de Riesgo.</li><li>Segunda infracción: cierre inmediato de la cuenta, eliminación de beneficios y prohibición permanente.</li></ul><br/>"
       },
-      "tradingInstruments": {
-        "title": "Instrumentos de Trading",
-        "content": "Información sobre instrumentos de trading aprobados, incluyendo pares de forex, commodities, índices y criptomonedas que están disponibles para trading en nuestra plataforma."
+      "tradingInstrumentsSpreadsCommissionsAndLeverage": {
+        "title": "Instrumentos de Trading, Spreads, Comisiones y Apalancamiento",
+        "content": "<p>Capital Chain ofrece una amplia variedad de instrumentos financieros para operar:</p><br/><ul><li><strong>Pares de divisas:</strong> principales, menores y exóticas.</li><li><strong>Metales:</strong> Oro (XAUUSD) y Plata (XAGUSD).</li><li><strong>Commodities:</strong> Productos energéticos, incluido el petróleo.</li><li><strong>Índices:</strong> Principales índices globales.</li><li><strong>Criptomonedas:</strong> Una selección de criptomonedas.</li></ul><br/><p><strong>4.1. Apalancamiento</strong></p><ul><li>Forex: 1:100</li><li>Metales (Oro/Plata): 1:25</li><li>Commodities: 1:25</li><li>Índices: 1:2</li><li>Criptomonedas: 1:1</li></ul><br/><p><strong>4.2. Spreads y Comisiones</strong></p><ul><li>Forex y Metales: $5 por lote de comisión.</li><li>Índices y Commodities: Sin comisión.</li><li>Criptomonedas: 0,04% de comisión por operación.</li></ul><br/><p>Los spreads son variables y dependen de las condiciones del mercado. Capital Chain garantiza que los spreads se mantengan competitivos en línea con los estándares del mercado.</p><br/><p><strong>4.3. Plataformas</strong></p><p>Los traders pueden acceder a sus cuentas mediante MT5, TradeLocker y Volumetrica. Cada plataforma puede tener sus propias limitaciones técnicas o características, y es responsabilidad del trader familiarizarse con la que elija antes de operar.</p><br/>"
       },
-      "accountCredentials": {
-        "title": "Credenciales de Cuenta",
-        "content": "Pautas para gestionar credenciales de cuenta, incluyendo seguridad de contraseñas, requisitos de autenticación de dos factores y protocolos de acceso a cuenta."
+      "accountsAndAccess": {
+        "title": "Cuentas y Acceso",
+        "content": "<p>Capital Chain ofrece cuentas de evaluación en diferentes tamaños, incluyendo $5,000, $10,000, $25,000, $50,000, $100,000 y $200,000. Los traders pueden mantener múltiples cuentas simultáneamente, sujeto a las reglas de fusión de cuentas.</p><br/><p>Las credenciales de la cuenta se entregan después de la compra. Los traders no pueden cambiar la contraseña de la cuenta ni compartir los datos de acceso con terceros. Cualquier patrón sospechoso de acceso, como conflictos de direcciones IP o inicios de sesión simultáneos desde diferentes regiones, puede resultar en la revisión o suspensión de la cuenta.</p><br/><p>Las cuentas que permanezcan inactivas (sin operaciones) por más de tres meses pueden ser deshabilitadas.</p><br/>"
       },
-      "rewards": {
-        "title": "Recompensas",
-        "content": "Detalles sobre nuestro sistema de recompensas, incluyendo participación en ganancias, bonos de rendimiento y programas de incentivos disponibles para traders calificados."
+      "profitSharingAndWithdrawals": {
+        "title": "Distribución de Beneficios y Retiros",
+        "content": "<p>Capital Chain recompensa a los traders Master exitosos a través de un modelo de reparto de beneficios:</p><br/><ul><li><strong>Reparto estándar:</strong> 80% de los beneficios para el trader, 20% para Capital Chain.</li><li><strong>Primer retiro:</strong> Disponible después de 21 días de trading desde la primera operación.</li><li><strong>Retiros posteriores:</strong> Cada 10 días hábiles.</li><li><strong>Monto mínimo de retiro:</strong> $100.</li><li><strong>Monto máximo de retiro:</strong> Sin límite.</li><li><strong>Métodos de pago:</strong> Criptomonedas (ETH, SOL, USDT, USDC) y transferencia bancaria.</li><li><strong>Tiempo de procesamiento:</strong> Dentro de 24 horas.</li></ul><br/><p><strong>6.1. Regla de Consistencia</strong></p><p>Para garantizar un comportamiento de trading estable, ninguna operación individual puede representar más del <strong>25%</strong> de las ganancias generadas en un ciclo de retiro. Las ganancias que superen este límite no serán elegibles para retiro.</p><br/><p><strong>6.2. Reembolso de la Tarifa de Evaluación</strong></p><p>La tarifa de evaluación pagada al inicio del desafío se reembolsa al trader con su primer retiro exitoso.</p><br/>"
       },
-      "scalingUp": {
-        "title": "Escalamiento",
-        "content": "Información sobre oportunidades de escalamiento de cuenta, incluyendo criterios para aumentos de tamaño de cuenta y requisitos de rendimiento para avance."
+      "scalingPlan": {
+        "title": "Plan de Escalado",
+        "content": "<p>Capital Chain fomenta que los traders crezcan sus cuentas mediante un plan de escalado estructurado. Los traders que demuestran de forma consistente rentabilidad y disciplina son elegibles para aumentos en el tamaño de su cuenta.</p><br/><ul><li><strong>Launchpad (Nivel 1):</strong> Tras 4 retiros exitosos y alcanzar un 10% de beneficio acumulado → aumento del 20% en el tamaño de la cuenta.</li><li><strong>Ascender (Nivel 2):</strong> Tras 8 retiros exitosos y alcanzar un 20% de beneficio acumulado → aumento del 30% en el tamaño de la cuenta.</li><li><strong>Trailblazer (Nivel 3):</strong> Tras 12 retiros exitosos y alcanzar un 30% de beneficio acumulado → aumento del 40% en el tamaño de la cuenta.</li><li><strong>Hot Seat (Etapa Final):</strong> Tras 16 retiros exitosos y alcanzar un 40% de beneficio acumulado → el saldo de la cuenta se duplica, bono mensual y 100% de reparto de beneficios para el trader.</li></ul><br/><p>El plan de escalado permite a los traders gestionar capitales cada vez mayores, sin límite, dependiendo de su rendimiento.</p><br/>"
       },
-      "mergingAccounts": {
+      "mergeAccounts": {
         "title": "Fusión de Cuentas",
-        "content": "Políticas y procedimientos para fusionar múltiples cuentas de trading, incluyendo requisitos de elegibilidad y el proceso de fusión."
+        "content": "<p>Los traders pueden solicitar la fusión de varias cuentas financiadas en una sola cuenta más grande, sujeto a las siguientes reglas:</p><br/><ul><li>Solo se pueden fusionar cuentas del mismo tipo (Una Fase con Una Fase, Dos Fases con Dos Fases).</li><li>Las cuentas deben estar en buen estado y en la etapa Master.</li><li>Tras la fusión, el saldo de la nueva cuenta será igual a la suma de las cuentas fusionadas.</li></ul><br/><p><em>Ejemplo:</em> Dos cuentas financiadas de Dos Fases de $50,000 pueden fusionarse en una sola cuenta de $100,000.</p><br/>"
       },
-      "refunds": {
-        "title": "Reembolsos",
-        "content": "Nuestra política de reembolsos, incluyendo condiciones bajo las cuales se pueden otorgar reembolsos y el proceso para solicitar reembolsos."
+      "loyaltyRewardsAndTokenAllocation": {
+        "title": "Recompensas de Lealtad y Asignación de Tokens",
+        "content": "<p>Capital Chain ofrece beneficios adicionales a los primeros usuarios y traders leales a través de su sistema de recompensas tokenizadas. Los traders que se unan durante la fase inicial de lanzamiento serán elegibles para recibir asignaciones del token CCHAIN.</p><br/><p><strong>9.1. Elegibilidad</strong></p><ul><li>Traders que compren y completen desafíos de evaluación durante la fase de lanzamiento.</li><li>Traders que alcancen con éxito el estatus Master.</li><li>Traders con actividad y rentabilidad consistentes.</li></ul><br/><p><strong>9.2. Criterios de Asignación</strong></p><ul><li>Momento de la inscripción (prioridad a los primeros usuarios).</li><li>Número y tamaño de las cuentas financiadas mantenidas.</li><li>Rentabilidad y consistencia en el trading.</li></ul><br/><p><strong>9.3. Utilidad del Token</strong></p><p>Los tokens CCHAIN podrán usarse para:</p><br/><ul><li>Descuentos en tarifas de desafíos.</li><li>Porcentajes mejorados de reparto de beneficios.</li><li>Participación en eventos de gobernanza.</li><li>Beneficios futuros dentro del ecosistema de Capital Chain.</li></ul><br/><p><em>Ejemplo:</em> Un trader que se una durante el primer mes, supere un desafío de $25,000 y alcance el estatus Master recibirá un airdrop de tokens CCHAIN además de su reparto de beneficios habitual.</p><br/>"
       },
-      "inactivity": {
-        "title": "Inactividad",
-        "content": "Políticas relacionadas con la inactividad de cuenta, incluyendo períodos de inactividad, mantenimiento de cuenta y procedimientos de reactivación."
+      "policiesAndRestrictions": {
+        "title": "Políticas y Restricciones",
+        "content": "<p><strong>10.1. KYC (Conoce a tu Cliente)</strong></p><p>Capital Chain requiere que todos los traders que soliciten retiros completen el proceso de verificación KYC. Se debe proporcionar una identificación gubernamental válida y comprobante de residencia. Las cuentas que no completen KYC no serán elegibles para retiros.</p><br/><p><strong>10.2. Restricciones Geográficas</strong></p><p>Capital Chain acepta traders de todo el mundo, con excepción de residentes en los <strong>Emiratos Árabes Unidos (EAU)</strong>. Los traders deben asegurarse de cumplir con las leyes locales antes de registrarse.</p><br/><p><strong>10.3. Política de Reembolsos</strong></p><p>Las tarifas de evaluación no son reembolsables a menos que la Compañía ofrezca explícitamente una promoción de reembolso. Sin embargo, la tarifa se reembolsa con el primer retiro exitoso, tal como se especifica en la Sección 6.2.</p><br/><p><strong>10.4. Inactividad</strong></p><p>Si una cuenta financiada no presenta actividad de trading durante un período continuo de 21 días, puede ser deshabilitada. Los traders pueden solicitar reactivación contactando con soporte.</p><br/>"
       },
-      "ipAddress": {
-        "title": "Dirección IP",
-        "content": "Pautas sobre el uso de direcciones IP, incluyendo restricciones en el uso de VPN, limitaciones geográficas y protocolos de seguridad."
+      "finalClauses": {
+        "title": "Cláusulas Finales",
+        "content": "<p>Al participar en cualquier programa de Capital Chain, el Cliente confirma que ha leído, comprendido y aceptado todos los Términos de Uso. La Compañía se reserva el derecho de actualizar o modificar estos Términos en cualquier momento. Las actualizaciones se comunicarán a través del sitio web oficial.</p><br/><p>Capital Chain no será responsable de pérdidas directas o indirectas derivadas del uso de sus servicios. El Cliente reconoce que el trading conlleva riesgos y acepta que participa de manera voluntaria y bajo su propia discreción.</p><br/><p><strong>Capital Chain – Tus Ideas, Nuestro Riesgo.</strong></p><br/>"
       }
     }
   },
@@ -627,7 +630,7 @@
     "onlineChat": "Chat en Línea",
     "welcomeToChat": "Bienvenido al chat en línea",
     "clickToStart": "Haz clic en el icono de chat para comenzar",
-    "welcomeMessage": "¡Hola! Bienvenido al chat en línea de Chapital Chain. ¿Qué información busca sobre nuestros modelos?",
+    "welcomeMessage": "¡Hola! Bienvenido al chat en línea de Capital Chain. ¿Qué información busca sobre nuestros modelos?",
     "selectOption": "Por favor seleccione una de las opciones de {{option}}:",
     "finalSelection": "¡Excelente! Has seleccionado {{option}}. Uno de nuestros representantes se pondrá en contacto contigo pronto.",
     "typeMessage": "Escribe tu mensaje...",
@@ -650,6 +653,6 @@
     "introducingBroker": "IB",
     "whiteLabel": "White Label",
     "other": "Otros",
-    "companyName": "Chapital Chain"
+    "companyName": "Capital Chain"
   }
 }

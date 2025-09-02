@@ -40,7 +40,7 @@ export default function AboutUs() {
             title={t("about.title")}
             firstText={t("about.firstText")}
             secondText={t("about.secondText")}
-            firstTextBoldParts={["Chapital Chain", "pioneering force"]}
+            firstTextBoldParts={["Capital Chain", "pioneering force"]}
             secondTextBoldParts={["Dubai's Meydan Free Zone"]}
           />
         </div>

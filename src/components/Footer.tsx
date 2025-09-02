@@ -80,7 +80,7 @@ export default function Footer() {
             <div className="mb-6">
               <Image
                 src="/images/logo.png"
-                alt="Chapital Chain"
+                alt="Capital Chain"
                 width={150}
                 loading="lazy"
                 height={40}
@@ -99,6 +99,8 @@ export default function Footer() {
                   <a
                     key={index}
                     href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-gray-400 hover:text-white transition-colors duration-200 p-2 rounded-lg hover:bg-gray-800"
                     aria-label={social.label}
                   >
@@ -123,11 +125,10 @@ export default function Footer() {
                         <a
                           href={link.href}
                           onClick={(e) => handleFooterLinkClick(link.href, e)}
-                          className={`font-display transition-colors duration-200 text-sm ${
-                            isActiveLink(link.href)
+                          className={`font-display transition-colors duration-200 text-sm ${isActiveLink(link.href)
                               ? "text-active"
                               : "text-white hover:text-active"
-                          }`}
+                            }`}
                         >
                           {link.name}
                         </a>
@@ -196,8 +197,8 @@ export default function Footer() {
                     className="w-5 h-5 text-active bg-gray-800 border-gray-600 rounded focus:ring-active focus:ring-2 accent-active"
                     aria-describedby="newsletter-consent-label"
                   />
-                  <label 
-                    htmlFor="newsletter-consent" 
+                  <label
+                    htmlFor="newsletter-consent"
                     id="newsletter-consent-label"
                     className="text-sm text-gray-300 cursor-pointer font-display"
                   >
@@ -214,11 +215,10 @@ export default function Footer() {
               </div>
               {submitMessage && (
                 <p
-                  className={`text-sm font-display ${
-                    submitMessage.includes("Successfully")
+                  className={`text-sm font-display ${submitMessage.includes("Successfully")
                       ? "text-green-400"
                       : "text-red-400"
-                  }`}
+                    }`}
                 >
                   {submitMessage}
                 </p>

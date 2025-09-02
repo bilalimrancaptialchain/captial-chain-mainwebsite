@@ -20,24 +20,24 @@ const vazirmatn = Vazirmatn({
 
 export const metadata: Metadata = {
   title: "Capital Chain - Advanced Trading Solutions & Business Management Platform",
-  description: "Chapital Chain offers cutting-edge trading solutions, comprehensive business management tools, and innovative financial services. Join our platform for professional trading, portfolio management, and business growth opportunities.",
+  description: "Capital Chain offers cutting-edge trading solutions, comprehensive business management tools, and innovative financial services. Join our platform for professional trading, portfolio management, and business growth opportunities.",
   keywords: "trading platform, business management, financial services, portfolio management, trading solutions, investment platform",
-  authors: [{ name: "Chapital Chain" }],
-  creator: "Chapital Chain",
-  publisher: "Chapital Chain",
+  authors: [{ name: "Capital Chain" }],
+  creator: "Capital Chain",
+  publisher: "Capital Chain",
   robots: "index, follow",
   openGraph: {
-    title: "Chapital Chain - Advanced Trading Solutions",
+    title: "Capital Chain - Advanced Trading Solutions",
     description: "Professional trading platform with comprehensive business management tools and innovative financial services.",
     type: "website",
     locale: "en_US",
-    siteName: "Chapital Chain",
+    siteName: "Capital Chain",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Chapital Chain - Advanced Trading Solutions",
+    title: "Capital Chain - Advanced Trading Solutions",
     description: "Professional trading platform with comprehensive business management tools.",
-    creator: "@chapitalchain",
+    creator: "@Capitalchain",
   },
   icons: {
     icon: "/favicon.webp",

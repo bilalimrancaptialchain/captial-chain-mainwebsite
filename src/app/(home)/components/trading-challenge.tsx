@@ -568,9 +568,9 @@ const PricingCard = ({
         {pricing ? (
           <p className="md:text-6xl text-4xl text-white font-bold mb-8">
             ${pricing.price}{" "}
-            <span className="text-3xl text-white/32 font-light line-through">
+            {/* <span className="text-3xl text-white/32 font-light line-through">
               ${pricing.originalPrice}
-            </span>
+            </span> */}
           </p>
         ) : (
           <p className="md:text-2xl text-lg text-red-400 font-bold mb-8">

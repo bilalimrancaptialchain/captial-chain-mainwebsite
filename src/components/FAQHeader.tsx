@@ -41,7 +41,7 @@ export default function FAQHeader() {
             >
               <Image
                 src="/images/logo.png"
-                alt="Chapital Chain"
+                alt="Capital Chain"
                 width={120}
                 height={40}
                 loading="lazy"
@@ -76,7 +76,7 @@ export default function FAQHeader() {
             >
               <Image
                 src="/images/logo.png"
-                alt="Chapital Chain"
+                alt="Capital Chain"
                 width={100}
                 height={32}
                 loading="lazy"
@@ -105,7 +105,7 @@ export default function FAQHeader() {
                   <SheetTitle className="text-white text-left">
                     <Image
                       src="/images/logo.png"
-                      alt="Chapital Chain"
+                      alt="Capital Chain"
                       width={120}
                       height={40}
                       loading="lazy"

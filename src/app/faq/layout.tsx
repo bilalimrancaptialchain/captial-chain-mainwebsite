@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "FAQ - Chapital Chain",
+  title: "FAQ - Capital Chain",
   description: "Frequently Asked Questions - Capital Chain Platform",
 };
 

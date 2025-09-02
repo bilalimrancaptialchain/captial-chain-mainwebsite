@@ -28,7 +28,7 @@ export default function TermsContent({ data }: TermsContentProps) {
   return (
     <div className="flex flex-col lg:flex-row gap-8 max-w-7xl mx-auto">
       {/* Left Section - Terms List */}
-      <motion.div 
+      <motion.div
         className="bg-terms-background rounded-lg border-[0.5px] border-faq p-9 px-4 w-fit"
         variants={termsLeftPanelVariants}
         initial="hidden"
@@ -41,11 +41,10 @@ export default function TermsContent({ data }: TermsContentProps) {
             <motion.button
               key={item.id}
               onClick={() => setActiveItem(item.id)}
-              className={`w-full text-left p-4 rounded-lg transition-all duration-300 cursor-pointer border ${
-                activeItem === item.id
+              className={`w-full text-left p-4 rounded-lg transition-all duration-300 cursor-pointer border ${activeItem === item.id
                   ? "border-[#00e0e0] text-[#00e0e0] bg-[#00e0e0]/10"
                   : "text-white hover:border-[#00e0e0]/50 border-transparent"
-              }`}
+                }`}
               variants={termsListItemVariants}
               whileHover="hover"
               whileTap="tap"
@@ -67,7 +66,7 @@ export default function TermsContent({ data }: TermsContentProps) {
       </motion.div>
 
       {/* Right Section - Content Display */}
-      <motion.div 
+      <motion.div
         className="bg-terms-background rounded-lg border-[0.5px] border-faq p-9 h-fit min-h-96 flex items-start flex-col justify-center"
         variants={termsRightPanelVariants}
         initial="hidden"
@@ -84,11 +83,11 @@ export default function TermsContent({ data }: TermsContentProps) {
               animate="visible"
               exit="exit"
             >
-              <motion.div 
+              <motion.div
                 className="flex items-center gap-3 mb-3"
                 variants={termsTitleVariants}
               >
-                <motion.span 
+                <motion.span
                   className="flex items-center justify-center text-2xl font-bold text-active"
                   variants={termsNumberBadgeVariants}
                 >
@@ -98,13 +97,14 @@ export default function TermsContent({ data }: TermsContentProps) {
                   {t(activeContent.titleKey)}
                 </h3>
               </motion.div>
-              <motion.div 
+              <motion.div
                 className="prose prose-invert max-w-none"
                 variants={termsTextVariants}
               >
-                <p className="text-white/80 leading-relaxed text-lg">
-                  {t(activeContent.contentKey)}
-                </p>
+                <div
+                  className="prose prose-invert max-w-none text-white/80 leading-relaxed text-lg"
+                  dangerouslySetInnerHTML={{ __html: t(activeContent.contentKey) }}
+                />
               </motion.div>
             </motion.div>
           )}
