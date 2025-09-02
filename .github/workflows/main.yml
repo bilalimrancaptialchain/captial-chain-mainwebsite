@@ -1,0 +1,39 @@
+name: Build & Deploy (Bluehost SFTP)
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch: {}
+
+concurrency:
+  group: "prod-deploy"
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: staging
+      url: https://staging.capitalchain.co  # optional: shows link in Actions UI
+
+    permissions:
+      contents: read
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - run: npm ci
+      - run: npm run build   # you have output:'export' so this writes to /out
+
+      - name: Add .htaccess to out
+        run: |
+          if [ -f "public/.htaccess" ]; then
+            cp -f public/.htaccess out/.htaccess
+          fi
+
+      
