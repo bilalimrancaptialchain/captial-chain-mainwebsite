@@ -76,6 +76,7 @@ export interface Challenge {
   live_account_configuration: {
     daily_drawdown: string;
     maximum_drawdown: string;
+    target_profit: string;
     payout_rules: {
       minimum_trading_days: number;
       consistency_rule: string;
@@ -112,7 +113,7 @@ export const dataChalengeType: ChallengeData[] = [
     image: "/images/home/target.png",
     step1: "10%",
     step2: "5%",
-    funded: "Unlimited",
+    funded: "∞",
   },
   {
     id: 2,
@@ -215,6 +216,7 @@ export const tradingChallengeData: TradingChallengeData = {
       live_account_configuration: {
         daily_drawdown: "3%",
         maximum_drawdown: "7%",
+        target_profit:"∞",
         payout_rules: {
           minimum_trading_days: 30,
           consistency_rule: "25%",
@@ -251,6 +253,7 @@ export const tradingChallengeData: TradingChallengeData = {
       live_account_configuration: {
         daily_drawdown: "5%",
         maximum_drawdown: "12%",
+        target_profit:"∞",
         payout_rules: {
           minimum_trading_days: 30,
           consistency_rule: "25%",
@@ -281,6 +284,7 @@ export const tradingChallengeData: TradingChallengeData = {
       live_account_configuration: {
         daily_drawdown: "3%",
         maximum_drawdown: "6%",
+        target_profit: "∞",
         payout_rules: {
           minimum_trading_days: 30,
           consistency_rule: "25%",
@@ -317,6 +321,7 @@ export const tradingChallengeData: TradingChallengeData = {
       live_account_configuration: {
         daily_drawdown: "5%",
         maximum_drawdown: "10%",
+        target_profit:"∞",
         payout_rules: {
           minimum_trading_days: 30,
           consistency_rule: "25%",
@@ -408,17 +413,17 @@ export const challengeDetails: Record<string, ChallengeDetails> = {
     profitTarget: {
       step1: "10%",
       step2: "5%",
-      funded: "Unlimited",
+      funded: "10%",
     },
     maximumLossLimit: {
       step1: "6%",
-      step2: "10%",
-      funded: "10%",
+      step2: "5%",
+      funded: "6%",
     },
     dailyLossLimit: {
       step1: "3%",
-      step2: "5%",
-      funded: "5%",
+      step2: "10%",
+      funded: "3%",
     },
     maximumLossLimitType: {
       step1: "Static",
@@ -440,17 +445,17 @@ export const challengeDetails: Record<string, ChallengeDetails> = {
     profitTarget: {
       step1: "10%",
       step2: "5%",
-      funded: "Unlimited",
+      funded: "∞",
     },
     maximumLossLimit: {
       step1: "7%",
       step2: "12%",
-      funded: "12%",
+      funded: "7%",
     },
     dailyLossLimit: {
       step1: "3%",
       step2: "5%",
-      funded: "5%",
+      funded: "3%",
     },
     maximumLossLimitType: {
       step1: "Static",

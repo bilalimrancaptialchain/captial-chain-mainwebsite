@@ -5,6 +5,8 @@ import {
   challengeFeatures,
   challengePricing,
   challengeDetails,
+  tradingChallengeData,
+  Challenge,
   type ChallengeData,
   type PaymentMethod,
   type ChallengeConfig,
@@ -68,7 +70,7 @@ const TradingChallenge = () => {
       <div className="absolute inset-0 bg-black opacity-40" />
       <div className="z-10 w-full flex flex-col items-center justify-center">
         <SectionHeader />
-
+        
         <motion.div
           className="w-full max-w-7xl flex lg:items-start items-center justify-center lg:flex-row flex-col gap-7 mt-20"
           variants={tradingChallengeContentVariants}
@@ -355,54 +357,67 @@ const ChallengeTableBody = ({
   stepChallenge,
   currentChallengeDetails,
 }: ChallengeTableBodyProps) => {
+  // Use tradingChallengeData for dynamic values
+  // Find the correct challenge object for the selected type and step
+  const getChallenge = (typeChallenge: string, stepChallenge: string) => {
+    return tradingChallengeData.challenges.find(
+      (c: Challenge) =>
+        c.name === typeChallenge &&
+        ((stepChallenge === "1" && c.type.includes("One evaluation phase")) ||
+         (stepChallenge === "2" && c.type.includes("Two evaluation phases")))
+    );
+  };
+
+  const selectedChallenge = getChallenge(typeChallenge, stepChallenge);
+
   const dynamicChallengeData: ChallengeData[] = [
     {
       id: 1,
       name: "Profit Target",
       image: "/images/home/target.png",
-      step1: currentChallengeDetails.profitTarget.step1,
-      step2: currentChallengeDetails.profitTarget.step2,
-      funded: currentChallengeDetails.profitTarget.funded,
+      step1: selectedChallenge?.phase_1_configuration.target_profit || "-",
+      step2: selectedChallenge?.phase_2_configuration?.target_profit || "-",
+      funded: selectedChallenge?.live_account_configuration.target_profit || "-",
     },
     {
       id: 2,
       name: "Maximum Loss Limit",
       image: "/images/home/speed-limit.png",
-      step1: currentChallengeDetails.maximumLossLimit.step1,
-      step2: currentChallengeDetails.maximumLossLimit.step2,
-      funded: currentChallengeDetails.maximumLossLimit.funded,
+      step1: selectedChallenge?.phase_1_configuration.maximum_drawdown || "-",
+      step2: selectedChallenge?.phase_2_configuration?.maximum_drawdown || "-",
+      funded: selectedChallenge?.live_account_configuration.maximum_drawdown || "-",
     },
     {
       id: 3,
       name: "Daily Loss Limit",
       image: "/images/home/sun-energy.png",
-      step1: currentChallengeDetails.dailyLossLimit.step1,
-      step2: currentChallengeDetails.dailyLossLimit.step2,
-      funded: currentChallengeDetails.dailyLossLimit.funded,
+      step1: selectedChallenge?.phase_1_configuration.daily_drawdown || "-",
+      step2: selectedChallenge?.phase_2_configuration?.daily_drawdown || "-",
+      funded: selectedChallenge?.live_account_configuration.daily_drawdown || "-",
     },
     {
       id: 4,
       name: "Maximum Loss Limit Type",
       image: "/images/home/coding.png",
-      step1: currentChallengeDetails.maximumLossLimitType.step1,
-      step2: currentChallengeDetails.maximumLossLimitType.step2,
-      funded: currentChallengeDetails.maximumLossLimitType.funded,
+      step1: selectedChallenge?.maximum_drawdown_type || "-",
+      step2: selectedChallenge?.maximum_drawdown_type || "-",
+      funded: selectedChallenge?.maximum_drawdown_type || "-",
     },
     {
       id: 5,
       name: "Profit Split",
       image: "/images/home/division.png",
-      step1: currentChallengeDetails.profitSplit.step1,
-      step2: currentChallengeDetails.profitSplit.step2,
-      funded: currentChallengeDetails.profitSplit.funded,
+      step1: selectedChallenge?.live_account_configuration.payout_rules.profit_split || "-",
+      step2: selectedChallenge?.live_account_configuration.payout_rules.profit_split || "-",
+      funded: selectedChallenge?.live_account_configuration.payout_rules.profit_split || "-",
     },
     {
       id: 6,
       name: "Refundable Fee",
       image: "/images/home/recycle.png",
-      step1: currentChallengeDetails.refundableFee.step1,
-      step2: currentChallengeDetails.refundableFee.step2,
-      funded: currentChallengeDetails.refundableFee.funded,
+      step1: selectedChallenge?.live_account_configuration.payout_rules.refundable_fee || "-",
+      step2: selectedChallenge?.live_account_configuration.payout_rules.refundable_fee || "-",
+      funded: selectedChallenge?.live_account_configuration.payout_rules.refundable_fee || "-",
     },
   ];
 
@@ -469,7 +484,9 @@ const ChallengeTableRow = ({
             {renderValue(item.step2)}
           </p>
         )}
-        <p className="md:text-sm text-xs text-active font-semibold">
+        <p
+          className={`text-active font-semibold ${item.funded === '∞' ? 'text-xl md:text-2xl' : 'md:text-sm text-xs'}`}
+        >
           {renderValue(item.funded)}
         </p>
       </div>
