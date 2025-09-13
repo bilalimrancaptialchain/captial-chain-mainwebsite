@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { useLanguageContext } from "../../contexts/LanguageContext";
 
 export interface ChatOption {
@@ -52,9 +53,11 @@ const ChatMessage: React.FC<ChatMessageProps> = ({
             }`}
           >
             <div className="w-8 h-8 rounded-full overflow-hidden bg-gradient-to-r from-[#00e0e0]/20 to-[#239191]/20 flex items-center justify-center">
-              <img
+              <Image
                 src="/images/logo.png"
                 alt="Capital Chain"
+                width={24}
+                height={24}
                 className="w-6 h-6 object-contain"
                 onError={(e) => {
                   e.currentTarget.style.display = "none";
