@@ -27,7 +27,7 @@ const TradingCard: React.FC<TradingCardProps> = ({ card, index }) => {
 
   return (
     <motion.div
-      className={`lg:w-[400px] w-80 lg:h-[343px] h-72 md:w-full bg-blue-charcoal rounded-xl p-6 relative ${
+      className={`trading-card lg:w-[400px] w-80 lg:h-[343px] h-72 md:w-full bg-blue-charcoal rounded-xl p-6 relative ${
         card.isComingSoon ? "opacity-50" : ""
       }`}
       variants={cardVariants}
@@ -44,7 +44,7 @@ const TradingCard: React.FC<TradingCardProps> = ({ card, index }) => {
       onHoverEnd={() => setIsHovered(false)}
     >
       <motion.div
-        className="w-full h-full bg-solution-card rounded-xl flex items-center justify-center flex-col gap-2.5"
+        className="trading-card-inner w-full h-full bg-solution-card rounded-xl flex items-center justify-center flex-col gap-2.5"
         variants={scaleVariants}
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -52,7 +52,7 @@ const TradingCard: React.FC<TradingCardProps> = ({ card, index }) => {
         transition={{ ...transitions.fast, delay: baseDelay + 0.1 }}
       >
         <motion.div
-          className="w-full h-full rounded-xl flex items-center justify-center flex-col gap-2.5 -translate-y-5"
+          className="trading-card-content w-full h-full rounded-xl flex items-center justify-center flex-col gap-2.5 -translate-y-5"
           variants={slideUpVariants}
           initial={{ opacity: 0, y: 15 }}
            whileInView={{ opacity: 1, y: 0 }}
@@ -60,6 +60,7 @@ const TradingCard: React.FC<TradingCardProps> = ({ card, index }) => {
            transition={{ duration: 0.3, delay: baseDelay + 0.1 }}
         >
           <motion.div
+            className="trading-card-image-container"
             variants={imageHoverVariants}
             whileHover="hover"
             animate={
@@ -74,12 +75,12 @@ const TradingCard: React.FC<TradingCardProps> = ({ card, index }) => {
               alt={card.imageAlt}
               width={250}
               height={250}
-              className="lg:size-[250px] size-44"
+              className="trading-card-image lg:size-[250px] size-44"
               loading="lazy"
             />
           </motion.div>
           <motion.h2
-            className="lg:text-3xl text-2xl text-active font-semibold"
+            className="trading-card-title lg:text-3xl text-2xl text-active font-semibold"
             initial={{ opacity: 0, y: 8 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -93,7 +94,7 @@ const TradingCard: React.FC<TradingCardProps> = ({ card, index }) => {
             {card.title}
           </motion.h2>
           <motion.p
-            className="text-sm text-white/80 text-center font-normal"
+            className="trading-card-description text-sm text-white/80 text-center font-normal"
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -107,13 +108,13 @@ const TradingCard: React.FC<TradingCardProps> = ({ card, index }) => {
       {/* Coming Soon Overlay for Metatrader5 */}
       {card.isComingSoon && (
         <motion.div
-          className="absolute inset-0 flex items-center justify-center rounded-xl pointer-events-none"
+          className="trading-card-overlay absolute inset-0 flex items-center justify-center rounded-xl pointer-events-none"
           initial={{ opacity: 0 }}
           animate={{ opacity: isHovered ? 1 : 0 }}
           transition={{ duration: 0.2 }}
         >
           <motion.div
-            className="bg-black/60 backdrop-blur-sm rounded-lg px-6 py-3"
+            className="trading-card-overlay-content bg-black/60 backdrop-blur-sm rounded-lg px-6 py-3"
             initial={{ scale: 0.8, y: 20 }}
             animate={{
               scale: isHovered ? 1 : 0.8,
@@ -121,7 +122,7 @@ const TradingCard: React.FC<TradingCardProps> = ({ card, index }) => {
             }}
             transition={{ duration: 0.2, ease: "easeOut" }}
           >
-            <p className="text-white text-xl font-semibold text-center">
+            <p className="trading-card-overlay-text text-white text-xl font-semibold text-center">
               Coming soon ...
             </p>
           </motion.div>
@@ -162,7 +163,7 @@ const TradingSolution = () => {
 
   return (
     <motion.section
-      className="w-full bg-[linear-gradient(305.11deg,#101E38_3.34%,#070E1A_106.86%)]
+      className="trading-solution-section w-full bg-[linear-gradient(305.11deg,#101E38_3.34%,#070E1A_106.86%)]
             flex items-center justify-center flex-col py-36 gap-14 px-5"
       variants={sectionVariants}
       initial="hidden"
@@ -170,12 +171,12 @@ const TradingSolution = () => {
       viewport={{ once: true }}
     >
       <motion.h1
-        className="max-w-[720px] lg:text-5xl sm:text-3xl text-2xl text-white font-semibold text-center"
+        className="trading-solution-title max-w-[720px] lg:text-5xl sm:text-3xl text-2xl text-white font-semibold text-center"
         variants={titleVariants}
       >
         {t("tradingSolution.title")}{" "}
         <motion.span
-          className="text-active"
+          className="trading-solution-title-highlight text-active"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
@@ -185,7 +186,7 @@ const TradingSolution = () => {
         </motion.span>{" "}
         {t("tradingSolution.titleMiddle")}{" "}
         <motion.span
-          className="text-active"
+          className="trading-solution-title-highlight text-active"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
@@ -196,7 +197,7 @@ const TradingSolution = () => {
         .
       </motion.h1>
       <motion.div
-        className="w-full flex items-center justify-center flex-wrap gap-x-8 gap-y-20 md:grid md:grid-cols-3 md:max-w-[1300px] md:gap-8"
+        className="trading-solution-cards-container w-full flex items-center justify-center flex-wrap gap-x-8 gap-y-20 md:grid md:grid-cols-3 md:max-w-[1300px] md:gap-8"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}

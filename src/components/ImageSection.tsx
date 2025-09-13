@@ -25,7 +25,7 @@ const ImageSection: React.FC<ImageSectionProps> = ({
 }) => {
   return (
     <motion.div
-      className="relative"
+      className="image-section relative"
       variants={aboutImageSectionVariants}
       initial="hidden"
       whileInView="visible"
@@ -33,39 +33,39 @@ const ImageSection: React.FC<ImageSectionProps> = ({
     >
       {/* Background Section */}
       <div
-        className="w-full min-h-96 relative pb-12"
+        className="image-section-background w-full min-h-96 relative pb-12"
         style={{ backgroundColor: "#000F1E" }}
       >
         {/* Image positioned to overlap between backgrounds */}
         <motion.div
-          className="absolute -top-40 md:-top-60 left-1/2 transform -translate-x-1/2 z-20"
+          className="image-section-image-container absolute -top-40 md:-top-60 left-1/2 transform -translate-x-1/2 z-20"
           variants={aboutImageVariants}
         >
-          <div className="relative max-w-[1000px]">
+          <div className="image-section-image-wrapper relative max-w-[1000px]">
             <Image
               src={imageSrc}
               alt={imageAlt}
               width={1000}
               height={1000}
               loading="lazy"
-              className="rounded-lg shadow-lg w-full h-full min-w-[350px] md:min-h-[800px] min-h-[350px] md:min-w-[800px]"
+              className="image-section-image rounded-lg shadow-lg w-full h-full min-w-[350px] md:min-h-[800px] min-h-[350px] md:min-w-[800px]"
             />
           </div>
         </motion.div>
 
         {/* Content below image */}
         <motion.div
-          className="flex flex-col items-start justify-center h-full pt-40 md:pt-96 lg:pt-[500px] px-4 max-w-xl mx-auto"
+          className="image-section-content flex flex-col items-start justify-center h-full pt-40 md:pt-96 lg:pt-[500px] px-4 max-w-xl mx-auto"
           variants={aboutImageContentVariants}
         >
           <motion.h2
-            className="text-active font-display text-2xl md:text-3xl font-normal mb-4"
+            className="image-section-title text-active font-display text-2xl md:text-3xl font-normal mb-4"
             variants={aboutTitleVariants}
           >
             {greenText}
           </motion.h2>
           <motion.p
-            className="text-white/80 text-lg md:text-xl max-w-xl leading-relaxed font-light"
+            className="image-section-description text-white/80 text-lg md:text-xl max-w-xl leading-relaxed font-light"
             variants={aboutTextVariants}
           >
             {whiteText}

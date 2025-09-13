@@ -22,29 +22,29 @@ const OurMission = () => {
 
   return (
     <motion.section
-      className="w-full min-h-[712px] bg-midnight flex items-center justify-center relative py-16 md:py-20"
+      className="mission-section w-full min-h-[712px] bg-midnight flex items-center justify-center relative py-16 md:py-20"
       variants={missionSectionVariants}
       initial="hidden"
       whileInView="visible"
       viewport={missionViewport}
     >
-      <div className="w-full max-w-[1536px] mx-auto px-4 md:px-8 lg:px-20">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+      <div className="mission-container w-full max-w-[1536px] mx-auto px-4 md:px-8 lg:px-20">
+        <div className="mission-content-grid grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Content Section */}
           <motion.div
             className={cn(
-              "flex flex-col gap-6",
+              "mission-text-content flex flex-col gap-6",
               isRTL ? "lg:order-2 text-right" : "lg:order-1 text-left"
             )}
             variants={missionContentVariants}
           >
             <motion.p
-              className="text-white md:text-4xl sm:text-3xl text-2xl font-semibold leading-tight"
+              className="mission-title text-white md:text-4xl sm:text-3xl text-2xl font-semibold leading-tight"
               variants={missionTitleVariants}
             >
               {t("mission.title")}{" "}
               <motion.span
-                className="text-active"
+                className="mission-title-highlight text-active"
                 variants={missionHighlightVariants}
                 initial="hidden"
                 whileInView="visible"
@@ -55,7 +55,7 @@ const OurMission = () => {
               </motion.span>{" "}
               {t("mission.titleMiddle")}{" "}
               <motion.span
-                className="text-active"
+                className="mission-title-highlight text-active"
                 variants={missionHighlightVariants}
                 initial="hidden"
                 whileInView="visible"
@@ -68,7 +68,7 @@ const OurMission = () => {
             </motion.p>
 
             <motion.p
-              className="text-white/80 md:text-lg text-base leading-relaxed"
+              className="mission-description text-white/80 md:text-lg text-base leading-relaxed"
               variants={missionDescriptionVariants}
               initial="hidden"
               whileInView="visible"
@@ -84,11 +84,11 @@ const OurMission = () => {
               viewport={{ once: true }}
               whileHover="hover"
               whileTap={{ scale: 0.95 }}
-              className="mt-4"
+              className="mission-button-wrapper mt-4"
             >
               <Link
                 href="/"
-                className="inline-block md:text-base text-sm text-black font-medium bg-active px-7 py-2.5 rounded-lg hover:inset-shadow-button-home duration-200 relative overflow-hidden hover:drop-shadow-[0_0_10px_rgba(255,215,0,0.5)] transition-all"
+                className="mission-button inline-block md:text-base text-sm text-black font-medium bg-active px-7 py-2.5 rounded-lg hover:inset-shadow-button-home duration-200 relative overflow-hidden hover:drop-shadow-[0_0_10px_rgba(255,215,0,0.5)] transition-all"
               >
                 {t("mission.learnMoreButton")}
               </Link>
@@ -98,7 +98,7 @@ const OurMission = () => {
           {/* Video Section */}
           <motion.div
             className={cn(
-              "relative w-[80%] mx-auto sm:w-full h-[300px] md:h-[400px] lg:h-[500px] rounded-2xl overflow-hidden",
+              "mission-video-container relative w-[80%] mx-auto sm:w-full h-[300px] md:h-[400px] lg:h-[500px] rounded-2xl overflow-hidden",
               isRTL ? "lg:order-1" : "lg:order-2"
             )}
             variants={missionContentVariants}
@@ -111,13 +111,13 @@ const OurMission = () => {
               muted
               loop
               playsInline
-              className="w-full h-full object-cover"
+              className="mission-video w-full h-full object-cover"
               onError={(e) => console.error("Video failed to load:", e)}
             >
               <source src="/videos/Animate02.mp4" type="video/mp4" />
             </video>
             {/* Optional overlay for better video visibility */}
-            <div className="absolute inset-0 bg-black/10 rounded-2xl"></div>
+            <div className="mission-video-overlay absolute inset-0 bg-black/10 rounded-2xl"></div>
           </motion.div>
         </div>
       </div>

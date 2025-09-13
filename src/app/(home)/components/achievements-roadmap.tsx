@@ -142,16 +142,16 @@ const AchievementsRoadmap: React.FC = () => {
   };
 
   return (
-    <div className="w-full flex items-center justify-center bg-[#040614]">
+    <div className="achievements-roadmap-section w-full flex items-center justify-center bg-[#040614]">
       <div
         ref={containerRef}
-        className="relative py-20 px-4 overflow-hidden w-full max-w-7xl"
+        className="achievements-roadmap-container relative py-20 px-4 overflow-hidden w-full max-w-7xl"
         style={{
           background: "#040614",
         }}
       >
         <div
-          className="absolute inset-0 opacity-10"
+          className="achievements-roadmap-background absolute inset-0 opacity-10"
           style={{
             backgroundImage: "url('/images/home/roadmap.webp')",
             backgroundSize: "cover",
@@ -160,47 +160,47 @@ const AchievementsRoadmap: React.FC = () => {
           }}
         />
 
-        <div className="mx-auto relative z-10 w-full">
-          <div className="text-center mb-16">
-            <h2 className="text-gray-400 text-lg mb-4 font-medium">
+        <div className="achievements-roadmap-content mx-auto relative z-10 w-full">
+          <div className="achievements-roadmap-header text-center mb-16">
+            <h2 className="achievements-roadmap-subtitle text-gray-400 text-lg mb-4 font-medium">
               {t("roadmap.subtitle")}
             </h2>
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold">
-              <span className="text-white">{t("roadmap.title")} </span>
-              <span className="text-[#00E0E0]">
+            <h1 className="achievements-roadmap-title text-3xl md:text-4xl lg:text-5xl font-bold">
+              <span className="achievements-roadmap-title-text text-white">{t("roadmap.title")} </span>
+              <span className="achievements-roadmap-title-highlight text-[#00E0E0]">
                 {t("roadmap.titleHighlight")}
               </span>
             </h1>
           </div>
 
           {/* Timeline */}
-          <div className="relative">
+          <div className="achievements-roadmap-timeline relative">
             {/* Vertical Line - Desktop */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full hidden md:block">
+            <div className="achievements-roadmap-timeline-line-desktop absolute left-1/2 transform -translate-x-1/2 w-1 h-full hidden md:block">
               <div
-                className="w-full h-full rounded-full"
+                className="achievements-roadmap-timeline-line-bg w-full h-full rounded-full"
                 style={{ backgroundColor: "#152E57" }}
               />
               <div
-                className="absolute top-0 left-0 w-full rounded-full transition-all duration-300 ease-out"
+                className="achievements-roadmap-timeline-line-progress absolute top-0 left-0 w-full rounded-full transition-all duration-300 ease-out"
                 style={timelineLineStyles}
               />
             </div>
 
             {/* Vertical Line - Mobile */}
-            <div className="absolute start-6 w-1 h-full md:hidden">
+            <div className="achievements-roadmap-timeline-line-mobile absolute start-6 w-1 h-full md:hidden">
               <div
-                className="w-full h-full rounded-full"
+                className="achievements-roadmap-timeline-line-bg w-full h-full rounded-full"
                 style={{ backgroundColor: "#152E57" }}
               />
               <div
-                className="absolute top-0 left-0 w-full rounded-full transition-all duration-300 ease-out"
+                className="achievements-roadmap-timeline-line-progress absolute top-0 left-0 w-full rounded-full transition-all duration-300 ease-out"
                 style={timelineLineStyles}
               />
             </div>
 
             {/* Timeline Items */}
-            <div className="space-y-12 md:space-y-16">
+            <div className="achievements-roadmap-timeline-items space-y-12 md:space-y-16">
               {translatedRoadmapData.map((item, index) => (
                 <TimelineItem
                   key={item.id}

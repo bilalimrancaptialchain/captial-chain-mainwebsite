@@ -13,30 +13,38 @@ export default function page() {
   return (
     <>
       <Header />
-      <main className="flex-1">
+      <main className="main-content flex-1">
         <div
           style={{
             background:
               "linear-gradient(181deg, rgba(2, 5, 12, 0.86) 0.86%, #071327 95.11%)",
           }}
-          className="min-h-screen pt-44 relative flex items-center justify-start flex-col"
+          className="main-background min-h-screen pt-44 relative flex items-center justify-start flex-col"
         >
-          <HeroSection />
-          <OurMission />
-          <div id="trading-platforms" className="w-full">
+          <div className="hero-section-wrapper">
+            <HeroSection />
+          </div>
+          <div className="mission-section-wrapper">
+            <OurMission />
+          </div>
+          <div id="trading-platforms" className="trading-platforms-section w-full">
             <TradingSolution />
           </div>
-          <div id="airdrop-program" className="w-full">
+          <div id="airdrop-program" className="airdrop-program-section w-full">
             <SummerCampaign />
           </div>
-          <div id="pricing" className="w-full">
+          <div id="pricing" className="pricing-section w-full">
             <TradingChallenge />
           </div>
-          <AchievementsRoadmap />
-          <TestimonialSlider />
+          <div className="roadmap-section-wrapper">
+            <AchievementsRoadmap />
+          </div>
+          <div className="testimonials-section-wrapper">
+            <TestimonialSlider />
+          </div>
         </div>
       </main>
-      <div id="risk-disclosure">
+      <div id="risk-disclosure" className="footer-section">
         <Footer />
       </div>
     </>

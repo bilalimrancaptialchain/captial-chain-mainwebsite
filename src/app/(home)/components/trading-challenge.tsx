@@ -61,18 +61,18 @@ const TradingChallenge = () => {
 
   return (
     <motion.section
-      className="w-full flex items-center justify-center flex-col px-5 lg:py-32 py-20 bg-[url('/images/home/bg-trading-challenge.webp')] opacity-70 bg-no-repeat bg-top bg-cover relative"
+      className="trading-challenge-section w-full flex items-center justify-center flex-col px-5 lg:py-32 py-20 bg-[url('/images/home/bg-trading-challenge.webp')] opacity-70 bg-no-repeat bg-top bg-cover relative"
       variants={tradingChallengeSectionVariants}
       initial="hidden"
       whileInView="visible"
       viewport={tradingChallengeViewport}
     >
-      <div className="absolute inset-0 bg-black opacity-40" />
-      <div className="z-10 w-full flex flex-col items-center justify-center">
+      <div className="trading-challenge-overlay absolute inset-0 bg-black opacity-40" />
+      <div className="trading-challenge-content z-10 w-full flex flex-col items-center justify-center">
         <SectionHeader />
         
         <motion.div
-          className="w-full max-w-7xl flex lg:items-start items-center justify-center lg:flex-row flex-col gap-7 mt-20"
+          className="trading-challenge-panels-container w-full max-w-7xl flex lg:items-start items-center justify-center lg:flex-row flex-col gap-7 mt-20"
           variants={tradingChallengeContentVariants}
           initial="hidden"
           whileInView="visible"
@@ -151,14 +151,14 @@ const SectionHeader = () => {
 
   return (
     <motion.h1
-      className="lg:text-5xl text-3xl text-white font-semibold text-center"
+      className="trading-challenge-header lg:text-5xl text-3xl text-white font-semibold text-center"
       variants={tradingChallengeHeaderVariants}
       initial="hidden"
       whileInView="visible"
       viewport={tradingChallengeViewport}
     >
       {t("tradingChallenge.title")}{" "}
-      <span className="text-active">
+      <span className="trading-challenge-header-highlight text-active">
         {t("tradingChallenge.titleHighlight")}
       </span>
     </motion.h1>
@@ -228,8 +228,8 @@ const ChallengeDetailsPanel = ({
   const { t } = useLanguageContext();
 
   return (
-    <div className="w-full lg:max-w-[640px] flex items-start justify-start flex-col gap-7 lg:order-1 order-2">
-      <div className="w-full flex items-center justify-center lg:flex-row flex-col gap-6">
+    <div className="challenge-details-panel w-full lg:max-w-[640px] flex items-start justify-start flex-col gap-7 lg:order-1 order-2">
+      <div className="challenge-toggle-buttons w-full flex items-center justify-center lg:flex-row flex-col gap-6">
         <ToggleButton
           options={[
             { value: "Standard", label: t("tradingChallenge.standard") },
@@ -282,7 +282,7 @@ const ChallengeTable = ({
       background:
         "radial-gradient(116.47% 110.87% at -3.02% -22.1%, rgba(0, 224, 224, 0.82) 0%, #0E1B34 54.91%, #000E1C 62.15%)",
     }}
-    className="w-full flex items-center justify-start flex-col rounded-2xl md:px-9 px-4 pt-12 pb-8"
+    className="challenge-table w-full flex items-center justify-start flex-col rounded-2xl md:px-9 px-4 pt-12 pb-8"
     variants={tradingChallengeTableVariants}
     initial="hidden"
     whileInView="visible"
@@ -538,7 +538,7 @@ const PricingPanel = ({
   pricing,
 }: PricingPanelProps) => (
   <motion.div
-    className="w-full flex lg:items-start items-center justify-start flex-col gap-7 lg:order-2 order-1"
+    className="pricing-panel w-full flex lg:items-start items-center justify-start flex-col gap-7 lg:order-2 order-1"
     variants={tradingChallengePricingVariants}
     initial="hidden"
     whileInView="visible"

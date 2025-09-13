@@ -99,9 +99,9 @@ export default function Header() {
   };
 
   return (
-    <header className="header-gradient fixed top-0 left-0 right-0 z-50 max-w-header mx-auto">
+    <header className="header header-gradient fixed top-0 left-0 right-0 z-50 max-w-header mx-auto">
       <div className="header-container mx-auto px-4">
-        <div className="flex justify-between items-center h-full min-h-20 md:min-h-20">
+        <div className="header-content flex justify-between items-center h-full min-h-20 md:min-h-20">
           <DesktopNavigation
             navigationItems={getTranslatedNavigationItems()}
             activeLink={activeLink}
@@ -110,21 +110,21 @@ export default function Header() {
             handleMouseLeave={handleMouseLeave}
           />
 
-          <div className="flex items-center">
-            <Link href="/" className="flex items-center">
+          <div className="header-logo-container flex items-center">
+            <Link href="/" className="header-logo-link flex items-center">
               <Image
                 src="/images/logo.png"
                 alt="Capital Chain"
                 width={120}
                 height={40}
                 loading="lazy"
-                className="h-7 lg:h-10 w-auto"
+                className="header-logo h-7 lg:h-10 w-auto"
               />
             </Link>
           </div>
 
           <div
-            className="hidden md:flex items-center gap-4"
+            className="header-actions hidden md:flex items-center gap-4"
             suppressHydrationWarning
           >
             <LanguageSelector />
@@ -134,22 +134,22 @@ export default function Header() {
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
               <button
-                className="md:hidden header-gradient p-2 backdrop-blur-sm"
+                className="header-mobile-menu-button md:hidden header-gradient p-2 backdrop-blur-sm"
                 aria-label="Open navigation menu"
                 suppressHydrationWarning
               >
-                <Menu className="h-6 w-6 text-white" />
+                <Menu className="header-mobile-menu-icon h-6 w-6 text-white" />
               </button>
             </SheetTrigger>
             <SheetContent
               side="left"
-              className="w-80 bg-black/90 backdrop-blur-xl border-white/10 px-4"
+              className="header-mobile-menu w-80 bg-black/90 backdrop-blur-xl border-white/10 px-4"
             >
               <SheetHeader>
-                <SheetTitle className="text-white text-left">
+                <SheetTitle className="header-mobile-menu-title text-white text-left">
                   <Link
                     href="/"
-                    className="flex items-center"
+                    className="header-mobile-menu-logo-link flex items-center"
                     onClick={() => setIsOpen(false)}
                   >
                     <Image
@@ -158,7 +158,7 @@ export default function Header() {
                       width={120}
                       height={40}
                       loading="lazy"
-                      className="h-8 w-auto"
+                      className="header-mobile-menu-logo h-8 w-auto"
                     />
                   </Link>
                 </SheetTitle>
@@ -168,7 +168,7 @@ export default function Header() {
                 activeLink={activeLink}
                 setIsOpen={setIsOpen}
               />
-              <div className="mt-4 space-y-4">
+              <div className="header-mobile-menu-actions mt-4 space-y-4">
                 <LanguageSelector />
                 <HeaderButtons isMobile />
               </div>
