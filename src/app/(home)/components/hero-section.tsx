@@ -40,22 +40,38 @@ const HeroSection = () => {
             animate="visible"
           />
           
-          <motion.h1
-            className="hero-title max-w-5xl text-center text-3xl text-white font-semibold flex flex-col leading-[85%] relative z-20 px-5"
-            variants={heroTitleVariants}
-            initial="hidden"
-            animate="visible"
-          >
-            <motion.span className="hero-title-part" variants={heroTitleSpanVariants}>
-              {t("hero.title")}
-            </motion.span>
-            <motion.span className="text-active hero-title-highlight" variants={heroTitleSpanVariants}>
-              {t("hero.titleHighlight")}
-            </motion.span>
-            <motion.span className="hero-title-part" variants={heroTitleSpanVariants}>
-              {t("hero.titleEnd")}
-            </motion.span>
-          </motion.h1>
+          <div className="flex flex-col items-center gap-6 relative z-20 px-5">
+            <motion.h1
+              className="hero-title max-w-5xl text-center text-3xl text-white font-semibold flex flex-col leading-[85%]"
+              variants={heroTitleVariants}
+              initial="hidden"
+              animate="visible"
+            >
+              <motion.span className="hero-title-part" variants={heroTitleSpanVariants}>
+                {t("hero.title")}
+              </motion.span>
+              <motion.span className="text-active hero-title-highlight" variants={heroTitleSpanVariants}>
+                {t("hero.titleHighlight")}
+              </motion.span>
+              <motion.span className="hero-title-part" variants={heroTitleSpanVariants}>
+                {t("hero.titleEnd")}
+              </motion.span>
+            </motion.h1>
+            
+            {/* Start Challenge Button - Mobile Only */}
+            <motion.button
+              onClick={() => {
+                const element = document.getElementById('pricing');
+                element?.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className="bg-gradient-to-r from-active to-green-500 text-white font-display font-medium px-8 py-3 rounded-lg hover:from-active/90 hover:to-green-500/90 transition-all duration-200 shadow-lg hover:shadow-xl"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5, duration: 0.4 }}
+            >
+              Start Challenge
+            </motion.button>
+          </div>
         </motion.div>
 
         <motion.div
