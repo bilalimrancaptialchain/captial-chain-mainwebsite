@@ -19,7 +19,7 @@ const HeroSection = () => {
   return (
     <section className="hero-section w-full flex items-center justify-end flex-col">
       <motion.div
-        className="hero-background w-full h-screen lg:max-h-[600px] max-h-[250px] md:-translate-y-44 -translate-y-36 flex md:items-end items-center justify-center z-20 inset-0 relative overflow-hidden"
+        className="hero-background w-full h-screen lg:max-h-[700px] max-h-[300px] md:-translate-y-44 -translate-y-36 flex md:items-end items-center justify-center z-20 inset-0 relative overflow-hidden"
         variants={heroSectionVariants}
         initial="hidden"
         animate="visible"
@@ -39,7 +39,7 @@ const HeroSection = () => {
         />
 
         <motion.h1
-          className="hero-title max-w-5xl text-center lg:text-[84px] sm:text-6xl text-3xl text-white font-semibold flex flex-col leading-[85%] relative z-20 px-5"
+          className="hero-title max-w-5xl text-center lg:text-[84px] sm:text-6xl text-3xl text-white font-semibold flex flex-col leading-[85%] relative z-20 px-5 mb-8 lg:mb-12"
           variants={heroTitleVariants}
           initial="hidden"
           animate="visible"

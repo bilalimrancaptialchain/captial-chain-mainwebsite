@@ -27,7 +27,7 @@ const TradingCard: React.FC<TradingCardProps> = ({ card, index }) => {
 
   return (
     <motion.div
-      className={`trading-card lg:w-[400px] w-80 lg:h-[343px] h-72 md:w-full bg-blue-charcoal rounded-xl p-6 relative ${
+      className={`trading-card lg:w-[400px] w-80 lg:h-[343px] h-72 md:w-full bg-blue-charcoal rounded-xl p-6 relative mx-auto ${
         card.isComingSoon ? "opacity-50" : ""
       }`}
       variants={cardVariants}
@@ -198,7 +198,7 @@ const TradingSolution = () => {
           .
         </motion.h1>
         <motion.div
-          className="trading-solution-cards-container w-full flex items-center justify-center flex-wrap gap-x-8 gap-y-20 md:grid md:grid-cols-3 md:max-w-[1300px] md:gap-8"
+          className="trading-solution-cards-container w-full flex items-center justify-center flex-wrap gap-x-8 gap-y-20 md:grid md:grid-cols-3 md:max-w-[1300px] md:gap-8 md:mx-auto"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}

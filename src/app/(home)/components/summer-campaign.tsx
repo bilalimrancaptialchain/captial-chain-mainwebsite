@@ -62,8 +62,8 @@ const SummerCampaign = () => {
         <source src="/videos/Render01.mp4" type="video/mp4" />
       </video>
       <div className="summer-campaign-overlay absolute w-full h-full z-10" />
-      <div className="w-full px-5">
-        <div className="summer-campaign-header max-w-[827px] flex items-center justify-center flex-col gap-4 z-20 mx-auto">
+      <div className="w-full px-5 relative z-30">
+        <div className="summer-campaign-header max-w-[827px] flex items-center justify-center flex-col gap-4 z-30 mx-auto">
           <p className="summer-campaign-title lg:text-6xl sm:text-4xl text-3xl text-white font-semibold text-center">
             {t("summerCampaign.title")}{" "}
             <span className="summer-campaign-title-highlight text-active">
@@ -80,7 +80,7 @@ const SummerCampaign = () => {
           </p>
         </div>
 
-        <div className="summer-campaign-description-container w-full max-w-6xl rounded-xl flex items-center justify-center flex-col gap-11 px-10 mt-16 pt-14 pb-9 z-20 mx-auto">
+        <div className="summer-campaign-description-container w-full max-w-6xl rounded-xl flex items-center justify-center flex-col gap-11 px-10 mt-16 pt-14 pb-9 z-30 mx-auto">
           <p className="summer-campaign-description max-w-[767px] text-2xl text-white text-center">
             {t("summerCampaign.description")}
           </p>
@@ -90,7 +90,7 @@ const SummerCampaign = () => {
         </div>
 
         <div
-          className={`summer-campaign-steps-container w-full max-w-[1020px] flex items-center justify-center relative z-20 mx-auto`}
+          className={`summer-campaign-steps-container w-full max-w-[1020px] flex items-center justify-center relative z-30 mx-auto`}
         >
           <div
             className="summer-campaign-progress-bar absolute md:h-5 h-3 bg-active md:top-6 top-3 z-10 transition-all duration-1000 ease-in-out"
