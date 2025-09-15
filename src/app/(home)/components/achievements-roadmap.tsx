@@ -142,7 +142,7 @@ const AchievementsRoadmap: React.FC = () => {
   };
 
   return (
-    <div className="achievements-roadmap-section w-full flex items-center justify-center bg-[#040614]">
+    <div className="achievements-roadmap-section w-full flex items-center justify-center bg-[#040614] bilal-roadmap">
       <div
         ref={containerRef}
         className="achievements-roadmap-container relative py-20 px-4 overflow-hidden w-full max-w-7xl"
