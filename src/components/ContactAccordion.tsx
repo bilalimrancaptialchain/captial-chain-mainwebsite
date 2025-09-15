@@ -168,7 +168,7 @@ const ContactAccordion: React.FC = () => {
 
                             <motion.input
                               type="email"
-                              name="emails"
+                              name="email"
                               value={formData.email}
                               onChange={handleInputChange}
                               className="w-full ps-14 pe-4 py-3 bg-[#022143] font-display border-[0.5px] border-faq rounded-lg text-white placeholder-gray-400 focus:outline-none transition-colors"
