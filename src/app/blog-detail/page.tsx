@@ -54,7 +54,7 @@ function BlogDetailContent() {
 
   if (loading) {
     return (
-      <div className="min-h-screen relative flex items-center justify-center">
+      <div className="bil2 min-h-screen relative flex items-center justify-center">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
