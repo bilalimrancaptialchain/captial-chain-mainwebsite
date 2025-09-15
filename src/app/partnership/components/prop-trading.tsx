@@ -99,7 +99,7 @@ const PropTrading = () => {
 
       <div className="flex flex-col md:flex-row gap-4 w-full md:max-w-lg md:mt-10 mt-5">
         <Link
-          href={"https://checkout.capitalchain.co/affiliate-registration"}
+          href={"https://checkout.capitalchain.co/affiliate-signup/"}
           className="
               flex-1 bg-gradient-to-r from-[#00E0E0] to-[#10B981] 
               md:text-xl text-base text-black py-3 duration-200 hover:shadow-[0px_0px_35px_0px_#00E0E075] 
@@ -112,7 +112,7 @@ const PropTrading = () => {
         </Link>
 
         <Link
-          href={"https://checkout.capitalchain.co/affiliate-login/"}
+          href={"https://checkout.capitalchain.co/affiliate-signin/"}
           className="
               flex-1 bg-transparent border-2 border-active 
               md:text-xl text-base text-[#00E0E0] py-3 duration-200 hover:bg-active hover:text-black 

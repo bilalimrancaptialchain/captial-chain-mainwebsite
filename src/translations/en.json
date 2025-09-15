@@ -414,12 +414,13 @@
     "positions": {
       "ceo": "CEO",
       "cmo": "CMO",
-      "headOfEngineering": "Head of engineering",
+      "headOfEngineering": "Head of Engineering",
       "riskManager": "Risk Manager",
       "businessDevelopmentManager": "Business Development Manager",
       "headOfDesign": "Head of design",
       "headOfFinance": "Head of Finance",
-      "humanResourceManager": "Human resource manager"
+      "humanResourceManager": "Human resource manager",
+       "socialMediaManager": "Social Media Manager"
     }
   },
   "blog": {

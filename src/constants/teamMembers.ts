@@ -24,9 +24,9 @@ export const teamMembers: TeamMember[] = [
   {
     id: 3,
     name: "Irfan",
-    positionKey: "team.positions.headOfEngineering",
+    positionKey: "team.positions.socialMediaManager",
     imageSrc: "/images/irfan.webp",
-    imageAlt: "Irfan - Head of engineering",
+    imageAlt: "Irfan - Social Media Manager",
   },
   {
     id: 4,
@@ -47,21 +47,21 @@ export const teamMembers: TeamMember[] = [
     name: "Sina",
     positionKey: "team.positions.headOfDesign",
     imageSrc: "/images/sina.webp",
-    imageAlt: "Sina - Head of design",
+    imageAlt: "Sina - Head Of Design",
   },
   {
     id: 7,
     name: "Rauf",
     positionKey: "team.positions.headOfFinance",
     imageSrc: "/images/rauf.webp",
-    imageAlt: "Rauf - Head of Finance",
+    imageAlt: "Rauf - Head Of Finance",
   },
   {
     id: 8,
     name: "Mehraj",
     positionKey: "team.positions.humanResourceManager",
     imageSrc: "/images/mehraj.webp",
-    imageAlt: "mehraj - Human resource manager",
+    imageAlt: "mehraj - Human Resource Manager",
   },
 ];
 

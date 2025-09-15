@@ -334,7 +334,7 @@ const CTAButton: React.FC<{ t: (key: string) => string }> = ({ t }) => {
       viewport={{ once: true, amount: 0.3 }}
     >
       <Link
-        href={"https://checkout.capitalchain.co/affiliate-registration"}
+        href={"https://checkout.capitalchain.co/affiliate-signup/"}
         className="
           w-full md:max-w-lg bg-gradient-to-r from-[#00E0E0] to-[#10B981] 
           md:text-xl text-base text-black py-3 duration-200 hover:shadow-[0px_0px_35px_0px_#00E0E075] 

@@ -4,6 +4,7 @@ export interface Testimonial {
   position: string;
   avatar: string;
   content: string;
+  date: string;
 }
 
 // Fallback static data for components that cannot use hooks
@@ -15,6 +16,7 @@ export const testimonials: Testimonial[] = [
     avatar: "/images/testimonial-1.jpg",
     content:
       "Gosh, the 12% drawdown gave me breathing space. I could trade properly without pressure.",
+    date: "11/08/2025",
   },
   {
     id: 2,
@@ -23,6 +25,7 @@ export const testimonials: Testimonial[] = [
     avatar: "/images/testimonial-2.jpg",
     content:
       "Gosh, the 12% drawdown gave me breathing space. I could trade properly without pressure.",
+    date: "22/07/2025",
   },
   {
     id: 3,
@@ -31,6 +34,7 @@ export const testimonials: Testimonial[] = [
     avatar: "/images/testimonial-3.jpg",
     content:
       "Gosh, the 12% drawdown gave me breathing space. I could trade properly without pressure.",
+    date: "03/06/2025",
   },
   {
     id: 4,
@@ -39,6 +43,7 @@ export const testimonials: Testimonial[] = [
     avatar: "/images/testimonial-4.jpg",
     content:
       "Gosh, the 12% drawdown gave me breathing space. I could trade properly without pressure.",
+    date: "19/05/2025",
   },
   {
     id: 5,
@@ -47,5 +52,6 @@ export const testimonials: Testimonial[] = [
     avatar: "/images/testimonial-5.jpg",
     content:
       "Gosh, the 12% drawdown gave me breathing space. I could trade properly without pressure.",
+    date: "27/04/2025",
   },
 ];
