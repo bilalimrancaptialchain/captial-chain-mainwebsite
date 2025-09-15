@@ -17,7 +17,7 @@ export default function DesktopNavigation({
   handleMouseLeave,
 }: DesktopNavigationProps) {
   return (
-    <nav className="hidden md:flex bilal" suppressHydrationWarning>
+    <nav className="hidden md:flex" suppressHydrationWarning>
       {navigationItems.map((item) => (
         <div
           key={item.name}

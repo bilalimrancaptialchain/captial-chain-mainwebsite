@@ -75,7 +75,7 @@ export default function RootLayout({
           `}
         </Script>
         
-
+        {enableTwitterTracking && (
           <Script 
             id="twitter-pixel" 
             strategy="afterInteractive"
@@ -96,7 +96,7 @@ export default function RootLayout({
       a.parentNode.insertBefore(u, a))}
     (window,document,'script'); twq('config','qc22r');`}
           </Script>
-        
+        )}
       </head>
       <body
         className={`${inter.variable} ${exo2.variable} ${vazirmatn.variable}`}

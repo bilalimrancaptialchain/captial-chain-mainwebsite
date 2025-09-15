@@ -19,57 +19,51 @@ const TestimonialSlider = () => {
   const translatedTestimonials: Testimonial[] = [
     {
       id: 1,
+      name: "Ahmed Al-Rashid",
+      position: "Professional Trader",
+      avatar: "/images/testimonial-1.jpg",
+      content:
+        "Gosh, the 12% drawdown gave me breathing space. I could trade properly without pressure.",
+    },
+    {
+      id: 2,
       name: "Priya Sharma",
       position: "Forex Specialist",
       avatar: "/images/testimonial-2.jpg",
       content:
         "At Capital Chain, you get what you earn. No funny business. That's rare these days.",
-      date: "12/08/2025",
     },
     {
-      id: 2,
+      id: 3,
       name: "Raj Patel",
       position: "Day Trader",
       avatar: "/images/testimonial-3.jpg",
       content:
         "Best part? even get paid from the challenge profits. I mean, who does that?",
-      date: "05/07/2025",
-    },
-    {
-      id: 3,
-      name: "Chinonso Okafor",
-      position: "Swing Trader",
-      avatar: "/images/testimonial-5.jpg",
-      content:
-        "Their support team actually replies. Like real humans. Not those copy-paste robots.",
-      date: "21/06/2025",
     },
     {
       id: 4,
-      name: "Aisha Bello",
+      name: "Omar Hassan",
       position: "Crypto Trader",
       avatar: "/images/testimonial-4.jpg",
       content:
         "I thought they were just hyping the blockchain thing, but after reading the roadmap… this is gonna be big.",
-      date: "30/05/2025",
     },
     {
       id: 5,
-      name: "Oluwaseun Adeyemi",
-      position: "Professional Trader",
-      avatar: "/images/testimonial-1.jpg",
+      name: "Michael Johnson",
+      position: "Swing Trader",
+      avatar: "/images/testimonial-5.jpg",
       content:
-        "Gosh, the 12% drawdown gave me breathing space. I could trade properly without pressure.",
-      date: "14/04/2025",
+        "Their support team actually replies. Like real humans. Not those copy-paste robots.",
     },
     {
       id: 6,
-      name: "Ananya Iyer",
+      name: "Sarah Williams",
       position: "Portfolio Manager",
       avatar: "/images/testimonial-6.jpg",
       content:
         "This firm actually gives you a reason to believe in prop trading again. For real.",
-      date: "02/03/2025",
     },
   ];
 
@@ -148,7 +142,6 @@ const TestimonialSlider = () => {
                     <p className="text-white font-display text-sm md:text-lg font-light truncate">
                       {testimonial.position}
                     </p>
-                    <p className="text-xs text-[#9aedff] font-mono mt-1">{testimonial.date}</p>
                   </div>
                 </div>
                 <p className="text-[#ADADAD] leading-relaxed text-sm md:text-base line-clamp-4 md:line-clamp-3">

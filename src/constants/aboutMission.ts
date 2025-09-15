@@ -9,28 +9,28 @@ export interface MissionBoxData {
 export const missionBoxes: MissionBoxData[] = [
   {
     id: 1,
-    imageSrc: "/images/about_box_1.webp",
+    imageSrc: "/images/about_box_1.png",
     imageAlt: "Mission Box 1",
     textKey: "about.missionBoxes.trustTransparency",
     greenParts: ["trust and transparency"],
   },
   {
     id: 2,
-    imageSrc: "/images/about_box_2.webp",
+    imageSrc: "/images/about_box_2.png",
     imageAlt: "Mission Box 2",
     textKey: "about.missionBoxes.decentralizedControl",
     greenParts: ["Decentralized"],
   },
   {
     id: 3,
-    imageSrc: "/images/about_box_3.webp",
+    imageSrc: "/images/about_box_3.png",
     imageAlt: "Mission Box 3",
     textKey: "about.missionBoxes.protectTraders",
     greenParts: ["Protect traders"],
   },
   {
     id: 4,
-    imageSrc: "/images/about_box_4.webp",
+    imageSrc: "/images/about_box_4.png",
     imageAlt: "Mission Box 4",
     textKey: "about.missionBoxes.healthyEnvironment",
     greenParts: ["healthy environment"],

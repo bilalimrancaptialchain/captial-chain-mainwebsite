@@ -19,12 +19,12 @@ export default function page() {
             background:
               "linear-gradient(181deg, rgba(2, 5, 12, 0.86) 0.86%, #071327 95.11%)",
           }}
-          className="main-background min-h-screen pt-44 relative flex items-center justify-start flex-col"
+          className="main-background min-h-screen pt-44 relative flex items-center justify-start flex-col w-full"
         >
-          <div className="hero-section-wrapper">
+          <div className="hero-section-wrapper w-full">
             <HeroSection />
           </div>
-          <div className="mission-section-wrapper">
+          <div className="mission-section-wrapper w-full">
             <OurMission />
           </div>
           <div id="trading-platforms" className="trading-platforms-section w-full">
@@ -36,10 +36,10 @@ export default function page() {
           <div id="pricing" className="pricing-section w-full">
             <TradingChallenge />
           </div>
-          <div className="roadmap-section-wrapper">
+          <div className="roadmap-section-wrapper w-full">
             <AchievementsRoadmap />
           </div>
-          <div className="testimonials-section-wrapper">
+          <div className="testimonials-section-wrapper w-full">
             <TestimonialSlider />
           </div>
         </div>

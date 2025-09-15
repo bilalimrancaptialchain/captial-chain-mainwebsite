@@ -164,49 +164,51 @@ const TradingSolution = () => {
   return (
     <motion.section
       className="trading-solution-section w-full bg-[linear-gradient(305.11deg,#101E38_3.34%,#070E1A_106.86%)]
-            flex items-center justify-center flex-col py-36 gap-14 px-5"
+            flex items-center justify-center flex-col py-36 gap-14"
       variants={sectionVariants}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
     >
-      <motion.h1
-        className="trading-solution-title max-w-[720px] lg:text-5xl sm:text-3xl text-2xl text-white font-semibold text-center"
-        variants={titleVariants}
-      >
-        {t("tradingSolution.title")}{" "}
-        <motion.span
-          className="trading-solution-title-highlight text-active"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.4, delay: 0.15 }}
+      <div className="w-full px-5">
+        <motion.h1
+          className="trading-solution-title max-w-[720px] lg:text-5xl sm:text-3xl text-2xl text-white font-semibold text-center mx-auto"
+          variants={titleVariants}
         >
-          {t("tradingSolution.titleHighlight1")}
-        </motion.span>{" "}
-        {t("tradingSolution.titleMiddle")}{" "}
-        <motion.span
-          className="trading-solution-title-highlight text-active"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          {t("tradingSolution.title")}{" "}
+          <motion.span
+            className="trading-solution-title-highlight text-active"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.4, delay: 0.15 }}
+          >
+            {t("tradingSolution.titleHighlight1")}
+          </motion.span>{" "}
+          {t("tradingSolution.titleMiddle")}{" "}
+          <motion.span
+            className="trading-solution-title-highlight text-active"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.4, delay: 0.25 }}
+          >
+            {t("tradingSolution.titleHighlight2")}
+          </motion.span>
+          .
+        </motion.h1>
+        <motion.div
+          className="trading-solution-cards-container w-full flex items-center justify-center flex-wrap gap-x-8 gap-y-20 md:grid md:grid-cols-3 md:max-w-[1300px] md:gap-8"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.4, delay: 0.25 }}
+          transition={{ ...transitions.slow, delay: 0.4 }}
         >
-          {t("tradingSolution.titleHighlight2")}
-        </motion.span>
-        .
-      </motion.h1>
-      <motion.div
-        className="trading-solution-cards-container w-full flex items-center justify-center flex-wrap gap-x-8 gap-y-20 md:grid md:grid-cols-3 md:max-w-[1300px] md:gap-8"
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ ...transitions.slow, delay: 0.4 }}
-      >
-        {translatedTradingSolutionCards.map((card, index) => (
-          <TradingCard key={card.id} card={card} index={index} />
-        ))}
-      </motion.div>
+          {translatedTradingSolutionCards.map((card, index) => (
+            <TradingCard key={card.id} card={card} index={index} />
+          ))}
+        </motion.div>
+      </div>
     </motion.section>
   );
 };
