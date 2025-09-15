@@ -56,10 +56,10 @@
     "stayTuned": "Stay tuned for updates",
     "cards": {
       "decentralized": {
-        "text": "The First",
+        "text": "The World's First",
         "highlight1": "Decentralized",
-        "text2": "platform and ruled by its",
-        "highlight2": "community"
+        "text2": "Prop Firm",
+        "highlight2": "ruled by it's community"
       },
       "nativeToken": {
         "text": "With",
@@ -72,8 +72,8 @@
         "text": "from the challenge phase"
       },
       "noTimeLimit": {
-        "highlight1": "No time limit",
-        "text": "challenge"
+        "highlight1": "No time limit challenge,",
+        "text": "focus on consistent profitability."
       },
       "tradelocker": "Fast, Easy to use, and AI-powered, with built-in AI bots that turn your strategies into automated trades",
       "volumetrica": "Fast, Smart, and Feature-Rich – Access to 500+ cryptocurrencies with free premium tools",
@@ -289,6 +289,7 @@
     "disclaimerText5": "By using our services, you acknowledge that you have read, understood, and agree to be bound by these terms and conditions.",
     "newsletterTitle": "Stay Updated",
     "newsletterDescription": "Subscribe to our newsletter for the latest updates and insights.",
+    "consentText": "I agree to receive newsletter updates",
     "emailPlaceholder": "Enter your email address"
   },
   "contact": {
@@ -309,7 +310,9 @@
       "topicPlaceholder": "Subject",
       "message": "Message",
       "messagePlaceholder": "Tell us about your project or inquiry...",
-      "submit": "Submit"
+      "submit": "Submit",
+      "success": "Message sent successfully! We'll get back to you soon.",
+      "error": "Failed to send message. Please try again later."
     }
   },
   "faq": {

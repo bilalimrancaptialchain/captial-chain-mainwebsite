@@ -177,7 +177,7 @@ export default function Footer() {
               </p>
             </div>
             <form onSubmit={handleEmailSubmit} className="footer-newsletter-form space-y-4">
-              <div className="footer-newsletter-form-content flex gap-4 items-center">
+              <div className="footer-newsletter-form-content flex flex-col md:flex-row gap-4 items-center">
                 <div className="footer-newsletter-input-container flex-1 w-full">
                   <input
                     type="email"

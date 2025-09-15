@@ -164,7 +164,7 @@ const TradingSolution = () => {
   return (
     <motion.section
       className="trading-solution-section w-full bg-[linear-gradient(305.11deg,#101E38_3.34%,#070E1A_106.86%)]
-            flex items-center justify-center flex-col py-36 gap-14"
+            flex items-center justify-center flex-col py-16 md:py-36 gap-14"
       variants={sectionVariants}
       initial="hidden"
       whileInView="visible"

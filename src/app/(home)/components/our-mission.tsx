@@ -22,7 +22,7 @@ const OurMission = () => {
 
   return (
     <motion.section
-      className="mission-section w-full min-h-[712px] bg-midnight flex items-center justify-center relative py-16 md:py-20"
+      className="mission-section w-full min-h-[712px] bg-midnight flex items-center justify-center relative pt-0 pb-16 md:py-20"
       variants={missionSectionVariants}
       initial="hidden"
       whileInView="visible"
@@ -68,7 +68,7 @@ const OurMission = () => {
             </motion.p>
 
             <motion.p
-              className="mission-description text-white/80 md:text-lg text-base leading-relaxed"
+              className="mission-description text-white/80 md:text-lg text-base leading-relaxed hidden md:block"
               variants={missionDescriptionVariants}
               initial="hidden"
               whileInView="visible"

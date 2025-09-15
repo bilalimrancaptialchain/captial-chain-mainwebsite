@@ -51,7 +51,7 @@ const SummerCampaign = () => {
   }, [steps.length]);
 
   return (
-    <section className="summer-campaign-section w-full flex items-center justify-center flex-col py-36 gap-14 relative bg-[#000A13]">
+    <section className="summer-campaign-section w-full flex items-center justify-center flex-col py-16 md:py-36 gap-14 relative bg-[#000A13]">
       <video
         autoPlay
         loop

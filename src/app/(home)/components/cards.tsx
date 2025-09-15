@@ -53,7 +53,7 @@ const Cards = () => {
   return (
     <div className="w-full flex items-center justify-center">
       <motion.div
-        className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-x-7 lg:gap-y-14 gap-y-8"
+        className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-2 gap-x-7 lg:gap-y-14 gap-y-8"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
@@ -113,18 +113,22 @@ const Cards = () => {
             </motion.div>
 
             <motion.p
-              className="lg:text-base text-sm text-white relative z-10 line-clamp-3"
+              className="lg:text-base text-sm text-white relative z-10 line-clamp-3 leading-tight"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.1 + index * 0.05, duration: 0.3 }}
             >
-              {card.text}
-              {card.highlight1 && (
-                <span className="text-active px-1.5">{card.highlight1}</span>
+              {card.text && (
+                <span>{card.text} </span>
               )}
-              {card.middleText}
+              {card.highlight1 && (
+                <span className={`text-active ${card.text ? 'md:px-1.5' : ''}`}>{card.highlight1} </span>
+              )}
+              {card.middleText && (
+                <span>{card.middleText} </span>
+              )}
               {card.highlight2 && (
-                <span className="text-active px-1.5">{card.highlight2}</span>
+                <span className="text-active md:px-1.5">{card.highlight2}</span>
               )}
             </motion.p>
             <motion.div

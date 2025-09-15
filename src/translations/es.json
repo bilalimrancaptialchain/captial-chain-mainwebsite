@@ -289,6 +289,7 @@
     "disclaimerText5": "Al usar nuestros servicios, usted reconoce que ha leído, entendido y acepta estar sujeto a estos términos y condiciones.",
     "newsletterTitle": "Mantente Actualizado",
     "newsletterDescription": "Suscríbete a nuestro boletín para las últimas actualizaciones e insights.",
+    "consentText": "Acepto recibir actualizaciones del boletín",
     "emailPlaceholder": "Ingresa tu dirección de email"
   },
   "contact": {
@@ -309,7 +310,9 @@
       "topicPlaceholder": "Asunto",
       "message": "Mensaje",
       "messagePlaceholder": "Cuéntanos sobre tu proyecto o consulta...",
-      "submit": "Enviar"
+      "submit": "Enviar",
+      "success": "¡Mensaje enviado exitosamente! Te responderemos pronto.",
+      "error": "Error al enviar el mensaje. Por favor, inténtalo de nuevo más tarde."
     }
   },
   "faq": {
