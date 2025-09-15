@@ -1,52 +1,102 @@
-name: Build & Deploy (Bluehost SFTP)
+name: Build & Deploy (Staging → Prod via Approval)
 
 on:
   push:
     branches: [ "main" ]
-  workflow_dispatch: {}
+  workflow_dispatch: {}  # allows manual runs/promotions if needed
 
 concurrency:
-  group: "prod-deploy"
+  group: "deploy-${{ github.ref }}"   # avoid overlapping runs on same ref
   cancel-in-progress: true
 
 jobs:
-  deploy:
+  build:
+    name: Build
     runs-on: ubuntu-latest
-    environment:
-      name: staging
-      url: https://staging.capitalchain.co  # optional: shows link in Actions UI
-
     permissions:
       contents: read
-
     steps:
       - uses: actions/checkout@v4
 
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+          cache: npm
 
       - run: npm ci
-      - run: npm run build   # you have output:'export' so this writes to /out
+      - run: npm run build   # Next.js static export -> ./out
 
-      - name: Add .htaccess to out
+      - name: Add .htaccess to out (optional)
         run: |
           if [ -f "public/.htaccess" ]; then
             cp -f public/.htaccess out/.htaccess
           fi
 
-      - name: Deploy to Bluehost via SFTP
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-out
+          path: out
+          if-no-files-found: error
+          retention-days: 7
+
+  deploy_staging:
+    name: Deploy to Staging
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: staging
+      url: https://staging.capitalchain.co
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: site-out
+          path: out
+
+      - name: Deploy to Bluehost (Staging) via SFTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
+          server: ${{ secrets.STAGING_FTP_SERVER }}
+          username: ${{ secrets.STAGING_FTP_USERNAME }}
+          password: ${{ secrets.STAGING_FTP_PASSWORD }}
           local-dir: ./out/
-          server-dir: /public_html/
+          server-dir: /staging.capitalchain.co/   # <-- adjust to your staging path
           exclude: |
             **/.git*
-            **/.git*/**
+            **/node_modules/**
+            **/.env*
+            **/.DS_Store
+            **/Thumbs.db
+
+  deploy_production:
+    name: Deploy to Production (requires approval)
+    needs: deploy_staging
+    runs-on: ubuntu-latest
+    # This environment should have "Required reviewers" enabled in Settings → Environments → production
+    environment:
+      name: production
+      url: https://capitalchain.co
+    concurrency:
+      group: "deploy-production"
+      cancel-in-progress: false
+    steps:
+      - name: Download artifact (same build promoted)
+        uses: actions/download-artifact@v4
+        with:
+          name: site-out
+          path: out
+
+      - name: Deploy to Bluehost (Production) via SFTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ${{ secrets.PROD_FTP_SERVER }}
+          username: ${{ secrets.PROD_FTP_USERNAME }}
+          password: ${{ secrets.PROD_FTP_PASSWORD }}
+          local-dir: ./out/
+          server-dir: /public_html/           # <-- your live docroot
+          exclude: |
+            **/.git*
             **/node_modules/**
             **/.env*
             **/.DS_Store
