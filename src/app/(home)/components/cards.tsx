@@ -122,13 +122,13 @@ const Cards = () => {
                 <span>{card.text} </span>
               )}
               {card.highlight1 && (
-                <span className={`text-active ${card.text ? 'md:px-1.5' : ''}`}>{card.highlight1} </span>
+                <span className="text-active">{card.highlight1} </span>
               )}
               {card.middleText && (
                 <span>{card.middleText} </span>
               )}
               {card.highlight2 && (
-                <span className="text-active md:px-1.5">{card.highlight2}</span>
+                <span className="text-active">{card.highlight2}</span>
               )}
             </motion.p>
             <motion.div
