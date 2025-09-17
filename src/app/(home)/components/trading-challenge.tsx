@@ -91,7 +91,9 @@ const TradingChallenge = () => {
 
           <PricingPanel
             typeChallenge={typeChallenge}
+            stepChallenge={stepChallenge}
             stepDisplayName={stepDisplayName}
+            accountSize={accountSize}
             pricing={pricing}
           />
         </motion.div>
@@ -528,13 +530,17 @@ const FeatureItem = ({ feature }: FeatureItemProps) => (
 
 interface PricingPanelProps {
   typeChallenge: ChallengeType;
+  stepChallenge: StepType;
   stepDisplayName: string;
+  accountSize: AccountSizeType;
   pricing?: ChallengeConfig;
 }
 
 const PricingPanel = ({
   typeChallenge,
+  stepChallenge,
   stepDisplayName,
+  accountSize,
   pricing,
 }: PricingPanelProps) => (
   <motion.div
@@ -546,7 +552,9 @@ const PricingPanel = ({
   >
     <PricingCard
       typeChallenge={typeChallenge}
+      stepChallenge={stepChallenge}
       stepDisplayName={stepDisplayName}
+      accountSize={accountSize}
       pricing={pricing}
     />
 
@@ -558,13 +566,17 @@ const PricingPanel = ({
 
 interface PricingCardProps {
   typeChallenge: ChallengeType;
+  stepChallenge: StepType;
   stepDisplayName: string;
+  accountSize: AccountSizeType;
   pricing?: ChallengeConfig;
 }
 
 const PricingCard = ({
   typeChallenge,
+  stepChallenge,
   stepDisplayName,
+  accountSize,
   pricing,
 }: PricingCardProps) => {
   const { t } = useLanguageContext();
@@ -611,7 +623,7 @@ const PricingCard = ({
         className="w-full"
       >
         <Link
-          href="https://Checkout.capitalchain.co"
+          href={`https://Checkout.capitalchain.co?challenge_type=${encodeURIComponent(typeChallenge)}&challenge_step=${encodeURIComponent(stepChallenge)}&account_size=${encodeURIComponent(accountSize)}&price=${encodeURIComponent(pricing?.price || 0)}&product_name=${encodeURIComponent(`${typeChallenge} ${stepDisplayName} ${accountSize}`)}`}
           className="w-full bg-gradient-to-r from-[#00E0E0] to-[#10B981] md:text-2xl text-lg text-black font-medium py-5 rounded-[7px] flex items-center justify-center hover:drop-shadow-[0_0_10px_rgba(255,215,0,0.5)] transition-all hover:inset-shadow-button-home duration-200"
         >
           {t("tradingChallenge.startChallenge")}
