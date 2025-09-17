@@ -311,6 +311,7 @@
       "message": "Mensaje",
       "messagePlaceholder": "Cuéntanos sobre tu proyecto o consulta...",
       "submit": "Enviar",
+      "submitting": "Enviando...",
       "success": "¡Mensaje enviado exitosamente! Te responderemos pronto.",
       "error": "Error al enviar el mensaje. Por favor, inténtalo de nuevo más tarde."
     }

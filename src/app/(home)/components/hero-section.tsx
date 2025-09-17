@@ -57,20 +57,6 @@ const HeroSection = () => {
                 {t("hero.titleEnd")}
               </motion.span>
             </motion.h1>
-            
-            {/* Start Challenge Button - Mobile Only */}
-            <motion.button
-              onClick={() => {
-                const element = document.getElementById('pricing');
-                element?.scrollIntoView({ behavior: 'smooth' });
-              }}
-              className="bg-gradient-to-r from-active to-green-500 text-white font-display font-medium px-8 py-3 rounded-lg hover:from-active/90 hover:to-green-500/90 transition-all duration-200 shadow-lg hover:shadow-xl"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5, duration: 0.4 }}
-            >
-              Start Challenge
-            </motion.button>
           </div>
         </motion.div>
 
@@ -81,6 +67,20 @@ const HeroSection = () => {
           animate="visible"
         >
           <Cards />
+          
+          {/* Start Challenge Button - Mobile Only, After Cards */}
+          <motion.button
+            onClick={() => {
+              const element = document.getElementById('pricing');
+              element?.scrollIntoView({ behavior: 'smooth' });
+            }}
+            className="w-full bg-gradient-to-r from-active to-green-500 text-white font-display font-medium px-8 py-3 rounded-lg hover:from-active/90 hover:to-green-500/90 transition-all duration-200 shadow-lg hover:shadow-xl mt-8"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.8, duration: 0.4 }}
+          >
+            Start Challenge
+          </motion.button>
         </motion.div>
       </div>
 

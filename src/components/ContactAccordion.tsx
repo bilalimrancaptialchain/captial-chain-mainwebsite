@@ -50,7 +50,8 @@ const ContactAccordion: React.FC = () => {
         headers: {
           cookie: 'nfd-enable-cf-opt=63a6825d27cab0f204d3b602',
           'Content-Type': 'application/json',
-          'X-Forminator-Secret': 'c9f96fb7-ba0c-4adb-83d6-253fce515fba'
+          'X-Forminator-Secret': 'c9f96fb7-ba0c-4adb-83d6-253fce515fba',
+          'Accept': 'application/json'
         },
         data: {
           'name-1': formData.name,
@@ -268,11 +269,11 @@ const ContactAccordion: React.FC = () => {
                           </motion.div>
                         </div>
 
-                        {/* Submit Button */}
+                        {/* Submit Button - Hidden on mobile, shown on desktop */}
                         <motion.button
                           type="submit"
                           disabled={isSubmitting}
-                          className={`font-display px-8 py-3 rounded-lg font-medium transition-all duration-200 shadow-lg flex-1 w-full ${
+                          className={`hidden lg:block font-display px-8 py-3 rounded-lg font-medium transition-all duration-200 shadow-lg flex-1 w-full text-white ${
                             isSubmitting 
                               ? 'bg-gray-500 cursor-not-allowed' 
                               : submitStatus === 'success' 
@@ -312,6 +313,33 @@ const ContactAccordion: React.FC = () => {
                           whileFocus="focus"
                           required
                         />
+                        
+                        {/* Mobile Submit Button - Shown on mobile, hidden on desktop */}
+                        <motion.button
+                          type="submit"
+                          disabled={isSubmitting}
+                          className={`block lg:hidden font-display px-8 py-3 rounded-lg font-medium transition-all duration-200 shadow-lg w-full text-white mt-4 ${
+                            isSubmitting 
+                              ? 'bg-gray-500 cursor-not-allowed' 
+                              : submitStatus === 'success' 
+                                ? 'bg-green-600 hover:bg-green-700' 
+                                : submitStatus === 'error' 
+                                  ? 'bg-red-600 hover:bg-red-700' 
+                                  : 'bg-gradient-to-b from-[#00E0E0] to-[#10B981] cursor-pointer'
+                          }`}
+                          variants={contactFormSubmitVariants}
+                          whileHover={!isSubmitting ? "hover" : undefined}
+                          whileTap={!isSubmitting ? "tap" : undefined}
+                        >
+                          {isSubmitting 
+                            ? t("contact.form.submitting") || "Submitting..." 
+                            : submitStatus === 'success' 
+                              ? t("contact.form.success") || "✓ Sent Successfully!" 
+                              : submitStatus === 'error' 
+                                ? t("contact.form.error") || "✗ Failed to Send" 
+                                : t("contact.form.submit")
+                          }
+                        </motion.button>
                       </motion.div>
                     </div>
                   </form>

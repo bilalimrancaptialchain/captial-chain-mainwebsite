@@ -311,6 +311,7 @@
       "message": "Message",
       "messagePlaceholder": "Tell us about your project or inquiry...",
       "submit": "Submit",
+      "submitting": "Submitting...",
       "success": "Message sent successfully! We'll get back to you soon.",
       "error": "Failed to send message. Please try again later."
     }

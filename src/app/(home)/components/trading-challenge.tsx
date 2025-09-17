@@ -228,7 +228,7 @@ const ChallengeDetailsPanel = ({
   const { t } = useLanguageContext();
 
   return (
-    <div className="w-full lg:max-w-[640px] flex items-start justify-start flex-col gap-7 lg:order-1 order-2">
+    <div className="w-full lg:max-w-[640px] flex items-start justify-start flex-col gap-7 lg:order-1 order-1">
       <div className="w-full flex items-center justify-center lg:flex-row flex-col gap-6">
         <ToggleButton
           options={[
@@ -538,7 +538,7 @@ const PricingPanel = ({
   pricing,
 }: PricingPanelProps) => (
   <motion.div
-    className="w-full flex lg:items-start items-center justify-start flex-col gap-7 lg:order-2 order-1"
+    className="w-full flex lg:items-start items-center justify-start flex-col gap-7 lg:order-2 order-2"
     variants={tradingChallengePricingVariants}
     initial="hidden"
     whileInView="visible"
@@ -571,7 +571,7 @@ const PricingCard = ({
 
   return (
     <motion.div
-      className="bg-[radial-gradient(116.47%_110.87%_at_-3.02%_-22.1%,rgba(0,224,224,0.82)_0%,#0E1B34_44.91%,#000E1C_62.15%)] w-full md:h-[405px] h-96 rounded-2xl mg:p-7 p-12 lg:pt-12 flex items-start justify-between flex-col"
+      className="bg-[radial-gradient(116.47%_110.87%_at_-3.02%_-22.1%,rgba(0,224,224,0.82)_0%,#0E1B34_44.91%,#000E1C_62.15%)] w-full md:h-[405px] h-64 rounded-2xl mg:p-7 p-6 lg:pt-12 flex items-start justify-between flex-col"
       variants={tradingChallengePricingCardVariants}
       initial="hidden"
       whileInView="visible"
@@ -583,21 +583,21 @@ const PricingCard = ({
           {t("tradingChallenge.pricing")}
         </p>
         {pricing ? (
-          <p className="md:text-6xl text-4xl text-white font-bold mb-8">
+          <p className="md:text-6xl text-3xl text-white font-bold mb-4 md:mb-8">
             ${pricing.price}{" "}
             {/* <span className="text-3xl text-white/32 font-light line-through">
               ${pricing.originalPrice}
             </span> */}
           </p>
         ) : (
-          <p className="md:text-2xl text-lg text-red-400 font-bold mb-8">
+          <p className="md:text-2xl text-lg text-red-400 font-bold mb-4 md:mb-8">
             {t("tradingChallenge.notAvailable")}
           </p>
         )}
-        <p className="md:text-3xl text-2xl text-white font-semibold">
+        <p className="md:text-3xl text-xl text-white font-semibold">
           {typeChallenge}
         </p>
-        <p className="md:text-2xl text-lg text-active font-light">
+        <p className="md:text-2xl text-base text-active font-light">
           {stepDisplayName}
         </p>
       </div>
