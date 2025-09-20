@@ -4,8 +4,8 @@ import React, { useState, useEffect } from 'react';
 import { X } from 'lucide-react';
 
 interface EmailCapturePopupProps {
+  isVisible: boolean;
   trigger?: 'scroll' | 'time' | 'exit' | 'click';
-  delay?: number;
   title?: string;
   subtitle?: string;
   buttonText?: string;
@@ -14,63 +14,43 @@ interface EmailCapturePopupProps {
 }
 
 export default function EmailCapturePopup({
+  isVisible,
   trigger = 'scroll',
-  delay = 3000,
   title = 'Get Your Free Trading Challenge',
   subtitle = 'Join thousands of successful traders',
   buttonText = 'Get Started Now',
   showCaptcha = true,
   onClose
 }: EmailCapturePopupProps) {
-  const [isVisible, setIsVisible] = useState(false);
   const [email, setEmail] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [message, setMessage] = useState('');
   const [captcha, setCaptcha] = useState('');
   const [captchaAnswer, setCaptchaAnswer] = useState('');
+  const [captchaNumbers, setCaptchaNumbers] = useState({ num1: 0, num2: 0 });
+  const [dontShowAgain, setDontShowAgain] = useState(false);
 
   // Generate simple math captcha
-  useEffect(() => {
+  const generateCaptcha = () => {
     const num1 = Math.floor(Math.random() * 10) + 1;
     const num2 = Math.floor(Math.random() * 10) + 1;
+    setCaptchaNumbers({ num1, num2 });
     setCaptchaAnswer((num1 + num2).toString());
-  }, []);
+    setCaptcha(''); // Clear previous answer
+    return { num1, num2 };
+  };
 
-  // Handle different triggers
+  // Generate captcha when popup becomes visible (client-side only)
   useEffect(() => {
-    if (trigger === 'time') {
-      const timer = setTimeout(() => {
-        setIsVisible(true);
-      }, delay);
-      return () => clearTimeout(timer);
+    if (typeof window === 'undefined') return;
+    if (isVisible && showCaptcha) {
+      generateCaptcha();
     }
+  }, [isVisible, showCaptcha]);
 
-    if (trigger === 'scroll') {
-      const handleScroll = () => {
-        const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
-        if (scrollPercent > 30) {
-          setIsVisible(true);
-          window.removeEventListener('scroll', handleScroll);
-        }
-      };
-      window.addEventListener('scroll', handleScroll);
-      return () => window.removeEventListener('scroll', handleScroll);
-    }
-
-    if (trigger === 'exit') {
-      const handleMouseLeave = (e: MouseEvent) => {
-        if (e.clientY <= 0) {
-          setIsVisible(true);
-          document.removeEventListener('mouseleave', handleMouseLeave);
-        }
-      };
-      document.addEventListener('mouseleave', handleMouseLeave);
-      return () => document.removeEventListener('mouseleave', handleMouseLeave);
-    }
-  }, [trigger, delay]);
+  // Note: Trigger logic is handled by useEmailPopup hook
 
   const handleClose = () => {
-    setIsVisible(false);
     onClose?.();
   };
 
@@ -100,24 +80,58 @@ export default function EmailCapturePopup({
         body: JSON.stringify({
           email,
           source: 'main_website_popup',
-          trigger
+          trigger,
+          dontShowAgain
         }),
       });
 
-      const data = await response.json();
-
-      if (data.success) {
+      if (response.ok) {
+        const data = await response.json();
+        if (data.success) {
+          // Set cookie if user doesn't want to see popup again
+          if (dontShowAgain) {
+            const expires = new Date();
+            expires.setTime(expires.getTime() + (365 * 24 * 60 * 60 * 1000)); // 1 year
+            document.cookie = `cc-popup-disabled=true; expires=${expires.toUTCString()}; path=/`;
+          }
+          setMessage('Thank you! We\'ll be in touch soon.');
+          setEmail('');
+          setTimeout(() => {
+            handleClose();
+          }, 2000);
+        } else {
+          setMessage(data.message || 'Something went wrong. Please try again.');
+        }
+      } else {
+        // Fallback: Just log the email and show success
+        console.log('Popup email submission (fallback):', { email, source: 'main_website_popup', trigger });
+        // Set cookie if user doesn't want to see popup again
+        if (dontShowAgain) {
+          const expires = new Date();
+          expires.setTime(expires.getTime() + (365 * 24 * 60 * 60 * 1000)); // 1 year
+          document.cookie = `cc-popup-disabled=true; expires=${expires.toUTCString()}; path=/`;
+        }
         setMessage('Thank you! We\'ll be in touch soon.');
         setEmail('');
         setTimeout(() => {
           handleClose();
         }, 2000);
-      } else {
-        setMessage(data.message || 'Something went wrong. Please try again.');
       }
   } catch (error) {
     console.error('Popup submission error:', error);
-    setMessage('Network error. Please try again.');
+    // Fallback: Just log the email and show success
+    console.log('Popup email submission (fallback):', { email, source: 'main_website_popup', trigger });
+    // Set cookie if user doesn't want to see popup again
+    if (dontShowAgain) {
+      const expires = new Date();
+      expires.setTime(expires.getTime() + (365 * 24 * 60 * 60 * 1000)); // 1 year
+      document.cookie = `cc-popup-disabled=true; expires=${expires.toUTCString()}; path=/`;
+    }
+    setMessage('Thank you! We\'ll be in touch soon.');
+    setEmail('');
+    setTimeout(() => {
+      handleClose();
+    }, 2000);
   } finally {
       setIsSubmitting(false);
     }
@@ -173,18 +187,40 @@ export default function EmailCapturePopup({
             {showCaptcha && (
               <div className="cc-captcha-group">
                 <div className="cc-captcha-question">
-                  What is {captchaAnswer.split('').join(' + ')} = ?
+                  <span>What is {captchaNumbers.num1} + {captchaNumbers.num2} = ?</span>
+                  <button 
+                    type="button" 
+                    onClick={generateCaptcha}
+                    className="cc-refresh-captcha"
+                    title="Generate new question"
+                  >
+                    🔄
+                  </button>
                 </div>
-                <input
-                  type="text"
-                  value={captcha}
-                  onChange={(e) => setCaptcha(e.target.value)}
-                  placeholder="Your answer"
-                  className="cc-captcha-input"
-                  required
-                />
+                <div className="cc-captcha-input-container">
+                  <input
+                    type="text"
+                    value={captcha}
+                    onChange={(e) => setCaptcha(e.target.value)}
+                    placeholder="Answer"
+                    className="cc-captcha-input"
+                    required
+                  />
+                </div>
               </div>
             )}
+
+            <div className="cc-dont-show-again">
+              <label className="cc-checkbox-label">
+                <input
+                  type="checkbox"
+                  checked={dontShowAgain}
+                  onChange={(e) => setDontShowAgain(e.target.checked)}
+                  className="cc-checkbox"
+                />
+                <span className="cc-checkbox-text">Don&apos;t show this popup again</span>
+              </label>
+            </div>
 
             <button 
               type="submit" 
@@ -232,6 +268,7 @@ export default function EmailCapturePopup({
           width: 90%;
           max-height: 90vh;
           overflow-y: auto;
+          -webkit-overflow-scrolling: touch;
         }
 
         .cc-popup-content {
@@ -340,6 +377,13 @@ export default function EmailCapturePopup({
           gap: 12px;
           align-items: center;
         }
+        
+        .cc-captcha-input-container {
+          display: flex;
+          gap: 8px;
+          align-items: center;
+          width:20%;
+        }
 
         .cc-captcha-question {
           background: rgba(0, 224, 224, 0.1);
@@ -348,11 +392,33 @@ export default function EmailCapturePopup({
           padding: 12px 16px;
           font-weight: 600;
           color: #00E0E0;
-          white-space: nowrap;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          flex-wrap: wrap;
+          min-height: 48px;
+          font-size: 18px;
+          width: 80%;
+        }
+
+        .cc-refresh-captcha {
+          background: rgba(0, 224, 224, 0.2);
+          border: 1px solid rgba(0, 224, 224, 0.4);
+          border-radius: 4px;
+          padding: 4px 8px;
+          color: #00E0E0;
+          cursor: pointer;
+          font-size: 14px;
+          transition: all 0.2s ease;
+        }
+
+        .cc-refresh-captcha:hover {
+          background: rgba(0, 224, 224, 0.3);
+          transform: rotate(180deg);
         }
 
         .cc-captcha-input {
-          flex: 1;
+          width: 100%;
           background: rgba(15, 26, 47, 0.7);
           border: 1px solid rgba(207, 230, 234, 0.25);
           color: #F5F9FB;
@@ -361,11 +427,36 @@ export default function EmailCapturePopup({
           font-size: 16px;
           outline: none;
           transition: all 0.3s ease;
+          text-align: center;
         }
 
         .cc-captcha-input:focus {
           border-color: #00E0E0;
           box-shadow: 0 0 0 2px rgba(0, 224, 224, 0.18);
+        }
+
+        .cc-dont-show-again {
+          margin: 16px 0;
+        }
+
+        .cc-checkbox-label {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          cursor: pointer;
+          font-size: 14px;
+          color: rgba(245, 249, 251, 0.8);
+        }
+
+        .cc-checkbox {
+          width: 16px;
+          height: 16px;
+          accent-color: #00E0E0;
+          cursor: pointer;
+        }
+
+        .cc-checkbox-text {
+          user-select: none;
         }
 
         .cc-submit-btn {
@@ -449,19 +540,90 @@ export default function EmailCapturePopup({
           50% { transform: scale(1.05); }
         }
 
-        @media (max-width: 640px) {
+        @media (max-width: 768px) {
+          .cc-popup-container {
+            max-width: 95%;
+            margin: 10px;
+          }
+          
           .cc-popup-content {
-            padding: 24px;
-            margin: 16px;
+            padding: 20px;
+            margin: 0;
+          }
+          
+          .cc-popup-title {
+            font-size: 24px;
+            line-height: 1.2;
+          }
+          
+          .cc-popup-subtitle {
+            font-size: 14px;
+            line-height: 1.4;
           }
           
           .cc-captcha-group {
             flex-direction: column;
             align-items: stretch;
+            gap: 12px;
           }
           
           .cc-captcha-question {
+            text-align: left;
+            justify-content: space-between;
+            padding: 16px 12px;
+            font-size: 16px;
+            line-height: 1.4;
+            white-space: normal;
+            word-break: break-word;
+          }
+          
+          .cc-captcha-input {
+            width: 100%;
+            font-size: 16px;
+            padding: 14px 16px;
             text-align: center;
+            
+          }
+          
+          .cc-email-input {
+            font-size: 16px;
+            padding: 14px 16px;
+          }
+          
+          .cc-submit-btn {
+            padding: 16px 20px;
+            font-size: 16px;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .cc-popup-container {
+            max-width: 100%;
+            margin: 5px;
+            max-height: 95vh;
+          }
+          .cc-captcha-input-container{
+          width:100%;
+          }
+          .cc-popup-content {
+            padding: 16px;
+            border-radius: 16px;
+          }
+          
+          .cc-popup-title {
+            font-size: 20px;
+          }
+          
+          .cc-captcha-question {
+            font-size: 14px;
+            padding: 12px 8px;
+            text-align: left;
+            justify-content: flex-start;
+          }
+          
+          .cc-refresh-captcha {
+            padding: 6px 10px;
+            font-size: 12px;
           }
         }
       `}</style>

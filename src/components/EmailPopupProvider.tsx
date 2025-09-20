@@ -34,10 +34,35 @@ export default function EmailPopupProvider({
   return (
     <>
       {children}
+      {/* Test button - remove in production */}
+      {process.env.NODE_ENV === 'development' && (
+        <button
+          onClick={() => {
+            console.log('Manual popup trigger');
+            localStorage.removeItem('cc-popup-shown');
+            window.location.reload();
+          }}
+          style={{
+            position: 'fixed',
+            top: '10px',
+            right: '10px',
+            zIndex: 999999,
+            background: '#00E0E0',
+            color: '#06212A',
+            border: 'none',
+            padding: '8px 12px',
+            borderRadius: '4px',
+            cursor: 'pointer',
+            fontSize: '12px'
+          }}
+        >
+          Test Popup
+        </button>
+      )}
       {isVisible && (
         <EmailCapturePopup
+          isVisible={isVisible}
           trigger={trigger}
-          delay={delay}
           title={title}
           subtitle={subtitle}
           buttonText={buttonText}

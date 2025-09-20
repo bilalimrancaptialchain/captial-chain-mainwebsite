@@ -25,7 +25,19 @@ export function useEmailPopup(options: UseEmailPopupOptions = {}) {
   useEffect(() => {
     if (!enabled || hasShown) return;
 
-    // Check if user has already seen the popup today
+    // Check if user has already seen the popup today (client-side only)
+    if (typeof window === 'undefined') return;
+    
+    // Check if user has disabled the popup permanently
+    const isDisabled = document.cookie.split(';').some(cookie => 
+      cookie.trim().startsWith('cc-popup-disabled=true')
+    );
+    
+    if (isDisabled) {
+      setHasShown(true);
+      return;
+    }
+    
     const lastShown = localStorage.getItem('cc-popup-shown');
     const today = new Date().toDateString();
     

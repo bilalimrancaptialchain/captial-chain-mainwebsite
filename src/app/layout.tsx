@@ -49,6 +49,7 @@ import { LanguageProvider } from "../contexts/LanguageContext";
 import { LanguageWrapper } from "../components/LanguageWrapper";
 import FloatingChat from "../components/FloatingChat";
 import IntercomWrapper from "../components/IntercomWrapper";
+import EmailPopupProvider from "../components/EmailPopupProvider";
 
 export default function RootLayout({
   children,
@@ -59,7 +60,7 @@ export default function RootLayout({
   // const enableTwitterTracking = process.env.NODE_ENV === 'production' && process.env.NEXT_PUBLIC_ENABLE_TWITTER_TRACKING === 'true';
   
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         {/* Google Analytics 4 */}
         <Script
@@ -104,8 +105,15 @@ export default function RootLayout({
       >
         <IntercomWrapper>
           <LanguageProvider>
-            <LanguageWrapper>{children}</LanguageWrapper>
-            <FloatingChat />
+            <EmailPopupProvider 
+              trigger="time" 
+              delay={10000}
+              title="Get Your Free Trading Challenge"
+              subtitle="Join thousands of successful traders"
+            >
+              <LanguageWrapper>{children}</LanguageWrapper>
+              <FloatingChat />
+            </EmailPopupProvider>
           </LanguageProvider>
         </IntercomWrapper>
       </body>
