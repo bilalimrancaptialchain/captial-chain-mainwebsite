@@ -91,7 +91,8 @@ export default function EmailCapturePopup({
     setMessage('');
 
     try {
-      const response = await fetch('/api/popup-email', {
+      // Send directly to WordPress REST API
+      const response = await fetch('https://checkout.capitalchain.co/wp-json/wp/v2/popup-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -114,9 +115,10 @@ export default function EmailCapturePopup({
       } else {
         setMessage(data.message || 'Something went wrong. Please try again.');
       }
-    } catch (error) {
-      setMessage('Network error. Please try again.');
-    } finally {
+  } catch (error) {
+    console.error('Popup submission error:', error);
+    setMessage('Network error. Please try again.');
+  } finally {
       setIsSubmitting(false);
     }
   };

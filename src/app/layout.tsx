@@ -56,7 +56,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   // Only load Twitter tracking in production and when explicitly enabled
-  const enableTwitterTracking = process.env.NODE_ENV === 'production' && process.env.NEXT_PUBLIC_ENABLE_TWITTER_TRACKING === 'true';
+  // const enableTwitterTracking = process.env.NODE_ENV === 'production' && process.env.NEXT_PUBLIC_ENABLE_TWITTER_TRACKING === 'true';
   
   return (
     <html lang="en">

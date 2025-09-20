@@ -43,7 +43,7 @@ export default function SearchInput({ initialValue = "" }: SearchInputProps) {
       setShowSuggestions(false);
     }
     setSelectedIndex(-1);
-  }, [searchTerm]);
+  }, [searchTerm, t]);
 
   const handleSearch = () => {
     if (searchTerm.trim()) {

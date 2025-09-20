@@ -1,0 +1,145 @@
+{
+  "success": true,
+  "data": {
+    "Standard-1-5k": {
+      "type": "Standard",
+      "step": "1",
+      "account_size": "5k",
+      "price": 31,
+      "originalPrice": 31
+    },
+    "Standard-1-10k": {
+      "type": "Standard",
+      "step": "1",
+      "account_size": "10k",
+      "price": 57,
+      "originalPrice": 57
+    },
+    "Standard-1-25k": {
+      "type": "Standard",
+      "step": "1",
+      "account_size": "25k",
+      "price": 139,
+      "originalPrice": 139
+    },
+    "Standard-1-50k": {
+      "type": "Standard",
+      "step": "1",
+      "account_size": "50k",
+      "price": 199,
+      "originalPrice": 199
+    },
+    "Standard-1-100k": {
+      "type": "Standard",
+      "step": "1",
+      "account_size": "100k",
+      "price": 419,
+      "originalPrice": 419
+    },
+    "Standard-2-5k": {
+      "type": "Standard",
+      "step": "2",
+      "account_size": "5k",
+      "price": 35,
+      "originalPrice": 35
+    },
+    "Standard-2-10k": {
+      "type": "Standard",
+      "step": "2",
+      "account_size": "10k",
+      "price": 66,
+      "originalPrice": 66
+    },
+    "Standard-2-25k": {
+      "type": "Standard",
+      "step": "2",
+      "account_size": "25k",
+      "price": 149,
+      "originalPrice": 149
+    },
+    "Standard-2-50k": {
+      "type": "Standard",
+      "step": "2",
+      "account_size": "50k",
+      "price": 269,
+      "originalPrice": 269
+    },
+    "Standard-2-100k": {
+      "type": "Standard",
+      "step": "2",
+      "account_size": "100k",
+      "price": 449,
+      "originalPrice": 449
+    },
+    "Atomic-1-5k": {
+      "type": "Atomic",
+      "step": "1",
+      "account_size": "5k",
+      "price": 48,
+      "originalPrice": 48
+    },
+    "Atomic-1-10k": {
+      "type": "Atomic",
+      "step": "1",
+      "account_size": "10k",
+      "price": 77,
+      "originalPrice": 77
+    },
+    "Atomic-1-25k": {
+      "type": "Atomic",
+      "step": "1",
+      "account_size": "25k",
+      "price": 199,
+      "originalPrice": 199
+    },
+    "Atomic-1-50k": {
+      "type": "Atomic",
+      "step": "1",
+      "account_size": "50k",
+      "price": 319,
+      "originalPrice": 319
+    },
+    "Atomic-1-100k": {
+      "type": "Atomic",
+      "step": "1",
+      "account_size": "100k",
+      "price": 577,
+      "originalPrice": 577
+    },
+    "Atomic-2-5k": {
+      "type": "Atomic",
+      "step": "2",
+      "account_size": "5k",
+      "price": 54,
+      "originalPrice": 54
+    },
+    "Atomic-2-10k": {
+      "type": "Atomic",
+      "step": "2",
+      "account_size": "10k",
+      "price": 85,
+      "originalPrice": 85
+    },
+    "Atomic-2-25k": {
+      "type": "Atomic",
+      "step": "2",
+      "account_size": "25k",
+      "price": 220,
+      "originalPrice": 220
+    },
+    "Atomic-2-50k": {
+      "type": "Atomic",
+      "step": "2",
+      "account_size": "50k",
+      "price": 349,
+      "originalPrice": 349
+    },
+    "Atomic-2-100k": {
+      "type": "Atomic",
+      "step": "2",
+      "account_size": "100k",
+      "price": 599,
+      "originalPrice": 599
+    }
+  }
+}
