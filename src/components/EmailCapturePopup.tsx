@@ -16,9 +16,9 @@ interface EmailCapturePopupProps {
 export default function EmailCapturePopup({
   isVisible,
   trigger = 'scroll',
-  title = 'Get Your Free Trading Challenge',
-  subtitle = 'Join thousands of successful traders',
-  buttonText = 'Get Started Now',
+  title = 'Claim Your 100% FREE Trading Account',
+  subtitle = 'No hidden fees • No credit card required • Start trading today',
+  buttonText = 'Claim Free Account Now',
   showCaptcha = true,
   onClose
 }: EmailCapturePopupProps) {
@@ -58,12 +58,12 @@ export default function EmailCapturePopup({
     e.preventDefault();
     
     if (!email) {
-      setMessage('Please enter your email address');
+      setMessage('⚠️ Please enter your email address');
       return;
     }
 
     if (showCaptcha && captcha !== captchaAnswer) {
-      setMessage('Please solve the math problem correctly');
+      setMessage('❌ Wrong answer! Please solve the math problem correctly');
       return;
     }
 
@@ -153,23 +153,24 @@ export default function EmailCapturePopup({
 
           <div className="cc-popup-header">
             <div className="cc-logo">
-              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                <circle cx="24" cy="24" r="20" fill="url(#gradient)" stroke="url(#gradient2)" strokeWidth="2"/>
-                <path d="M16 24L20 28L32 16" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-                <defs>
-                  <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stopColor="#00E0E0"/>
-                    <stop offset="100%" stopColor="#16B3B3"/>
-                  </linearGradient>
-                  <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stopColor="#00E0E0"/>
-                    <stop offset="100%" stopColor="#16B3B3"/>
-                  </linearGradient>
-                </defs>
-              </svg>
+              <div className="cc-logo-container">
+                <div className="cc-logo-circle">
+                  <div className="cc-logo-inner">
+                    <span className="cc-logo-text">100%</span>
+                  </div>
+                </div>
+                <div className="cc-logo-particles">
+                  <div className="cc-particle cc-particle-1"></div>
+                  <div className="cc-particle cc-particle-2"></div>
+                  <div className="cc-particle cc-particle-3"></div>
+                </div>
+              </div>
             </div>
             <h2 className="cc-popup-title">{title}</h2>
             <p className="cc-popup-subtitle">{subtitle}</p>
+            <div className="cc-popup-badge">
+              <span className="cc-badge-text">🚀 LIMITED TIME OFFER</span>
+            </div>
           </div>
 
           <form className="cc-popup-form" onSubmit={handleSubmit}>
@@ -252,7 +253,7 @@ export default function EmailCapturePopup({
           left: 0;
           width: 100%;
           height: 100%;
-          background: rgba(15, 26, 47, 0.9);
+          background: rgba(15, 26, 47, 0.5);
           backdrop-filter: blur(15px);
           z-index: 999999;
           display: flex;
@@ -317,7 +318,99 @@ export default function EmailCapturePopup({
         .cc-logo {
           margin-bottom: 20px;
           display: inline-block;
+          position: relative;
+        }
+
+        .cc-logo-container {
+          position: relative;
+          display: inline-block;
           animation: cc-pulse 2s infinite;
+        }
+
+        .cc-logo-circle {
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          background: linear-gradient(135deg, #00E0E0, #16B3B3);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          box-shadow: 0 0 30px rgba(0, 224, 224, 0.4);
+          animation: cc-rotate 3s linear infinite;
+        }
+
+        .cc-logo-inner {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          background: rgba(6, 12, 24, 0.9);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          backdrop-filter: blur(10px);
+        }
+
+        .cc-logo-text {
+          font-family: "Exo 2", sans-serif;
+          font-size: 18px;
+          font-weight: 800;
+          color: #00E0E0;
+          text-shadow: 0 0 10px rgba(0, 224, 224, 0.5);
+        }
+
+        .cc-logo-particles {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          pointer-events: none;
+        }
+
+        .cc-particle {
+          position: absolute;
+          width: 4px;
+          height: 4px;
+          background: #00E0E0;
+          border-radius: 50%;
+          animation: cc-float 2s ease-in-out infinite;
+        }
+
+        .cc-particle-1 {
+          top: 10px;
+          right: 10px;
+          animation-delay: 0s;
+        }
+
+        .cc-particle-2 {
+          bottom: 15px;
+          left: 5px;
+          animation-delay: 0.7s;
+        }
+
+        .cc-particle-3 {
+          top: 50%;
+          right: -5px;
+          animation-delay: 1.4s;
+        }
+
+        .cc-popup-badge {
+          margin-top: 15px;
+          display: inline-block;
+        }
+
+        .cc-badge-text {
+          background: linear-gradient(135deg, #FF6B6B, #FF8E53);
+          color: white;
+          padding: 8px 16px;
+          border-radius: 20px;
+          font-size: 12px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+          box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+          animation: cc-bounce 1.5s ease-in-out infinite;
         }
 
         .cc-popup-title {
@@ -538,6 +631,27 @@ export default function EmailCapturePopup({
         @keyframes cc-pulse {
           0%, 100% { transform: scale(1); }
           50% { transform: scale(1.05); }
+        }
+
+        @keyframes cc-rotate {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+
+        @keyframes cc-float {
+          0%, 100% { 
+            transform: translateY(0px) scale(1);
+            opacity: 0.7;
+          }
+          50% { 
+            transform: translateY(-10px) scale(1.2);
+            opacity: 1;
+          }
+        }
+
+        @keyframes cc-bounce {
+          0%, 100% { transform: translateY(0px); }
+          50% { transform: translateY(-3px); }
         }
 
         @media (max-width: 768px) {
