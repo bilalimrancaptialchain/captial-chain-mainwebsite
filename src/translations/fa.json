@@ -424,7 +424,10 @@
       "headOfDesign": "Head of Design",
       "headOfFinance": "Head of Finance",
       "humanResourceManager": "Human Resource Manager",
-      "socialMediaManager": "Social Media Manager"
+      "socialMediaManager": "Social Media Manager",
+      "headOfCustomerSupport": "Head Of Customer Support",
+      "reputationManager": "Reputation Manager",
+      "headOfEngineering": "Head of Engineering"
     }
   },
   "blog": {

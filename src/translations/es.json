@@ -433,7 +433,10 @@
       "headOfDesign": "Jefe de Diseño",
       "headOfFinance": "Jefe de Finanzas",
       "humanResourceManager": "Gerente de Recursos Humanos",
-      "socialMediaManager": "Gerente de Redes Sociales"
+      "socialMediaManager": "Gerente de Redes Sociales",
+      "headOfCustomerSupport": "Jefe de Atención al Cliente",
+      "reputationManager": "Gerente de Reputación",
+      "headOfEngineering": "Jefe de Ingeniería"
     }
   },
   "blog": {
