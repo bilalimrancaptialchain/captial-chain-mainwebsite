@@ -1,19 +1,8 @@
 # 🚀 Quick Telegram Setup Guide
 
-## Option 1: Automated Setup (Recommended)
+## WordPress Admin Setup
 
-Run the setup script which will guide you through the process:
-
-```bash
-npm run setup:telegram
-```
-
-This will:
-- Ask for your bot token and chat ID
-- Automatically update the configuration file
-- Set up everything for you
-
-## Option 2: Manual Setup
+The Telegram integration is now handled through the WordPress admin panel for better security and centralized management.
 
 ### Step 1: Create Telegram Bot
 1. Open Telegram and search for `@BotFather`
@@ -27,26 +16,19 @@ This will:
 2. Send any message
 3. Copy your Chat ID (looks like: `123456789`)
 
-### Step 3: Update Configuration
-Edit `src/config/telegram.ts` and replace:
-```typescript
-BOT_TOKEN: 'YOUR_BOT_TOKEN_HERE',
-CHAT_ID: 'YOUR_CHAT_ID_HERE',
-```
+### Step 3: Configure in WordPress Admin
+1. Go to your WordPress admin panel
+2. Navigate to **Settings > Advanced Checkout**
+3. Scroll down to the **Telegram Notifications** section
+4. Check **"Enable Telegram notifications for popup email submissions"**
+5. Enter your **Bot Token** from Step 1
+6. Enter your **Chat ID** from Step 2
+7. Click **Save Changes**
 
-With your actual values:
-```typescript
-BOT_TOKEN: '1234567890:ABCdefGHIjklMNOpqrsTUVwxyz',
-CHAT_ID: '123456789',
-```
-
-## Step 4: Test the Integration
-
-```bash
-npm run test:telegram
-```
-
-You should receive a test message in your Telegram chat!
+### Step 4: Test the Integration
+1. Visit your main website
+2. Submit an email through the popup
+3. Check your Telegram for the notification!
 
 ## Step 5: Deploy and Test
 
