@@ -71,8 +71,8 @@ export default function EmailCapturePopup({
     setMessage('');
 
     try {
-      // Send to our internal API endpoint with Telegram notifications
-      const response = await fetch('/api/email-capture', {
+      // Send directly to WordPress API and handle Telegram notification
+      const response = await fetch('https://checkout.capitalchain.co/wp-json/advanced-checkout/v1/popup-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -81,7 +81,8 @@ export default function EmailCapturePopup({
           email,
           source: 'main_website_popup',
           trigger,
-          dontShowAgain
+          dontShowAgain,
+          page_url: typeof window !== 'undefined' ? window.location.href : 'https://capitalchain.co',
         }),
       });
 

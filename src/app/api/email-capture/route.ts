@@ -1,6 +1,10 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { TELEGRAM_CONFIG } from '@/config/telegram';
 
+// Configure for static export
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 interface EmailCaptureData {
   email: string;
   name?: string;
