@@ -71,8 +71,8 @@ export default function EmailCapturePopup({
     setMessage('');
 
     try {
-      // Send directly to WordPress REST API
-      const response = await fetch('https://checkout.capitalchain.co/wp-json/wp/v2/popup-email', {
+      // Send to our internal API endpoint with Telegram notifications
+      const response = await fetch('/api/email-capture', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
