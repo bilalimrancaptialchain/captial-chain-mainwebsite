@@ -38,36 +38,19 @@ const TeamSection: React.FC<TeamSectionProps> = ({ title, teamMembers }) => {
         </motion.h2>
 
         {/* Team Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:flex md:flex-wrap md:justify-center gap-6 md:gap-8 w-full md:w-fit">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8 w-full">
           {teamMembers.map((member, index) => {
-            // Check if this is one of the last two items and we're on desktop
-            const isLastTwoItems = index >= teamMembers.length - 2;
-            const shouldCenter = isLastTwoItems && teamMembers.length % 3 !== 0;
-
             return (
               <motion.div
                 key={member.id}
-                className={`min-h-96 md:min-w-80 w-full md:w-fit ${
-                  shouldCenter ? "lg:col-start-2 lg:col-end-3" : ""
-                } ${
-                  index === teamMembers.length - 2 &&
-                  teamMembers.length % 3 === 2
-                    ? "lg:col-start-1"
-                    : ""
-                }
-                ${
-                  index === teamMembers.length - 1 &&
-                  teamMembers.length % 3 === 2
-                    ? "lg:col-start-3"
-                    : ""
-                }`}
+                className="w-full"
                 variants={aboutTeamMemberVariants}
                 custom={index}
               >
                 <div className="bg-white rounded-xl border border-faq overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
                   {/* Image */}
                   <motion.div
-                    className="relative h-80"
+                    className="relative h-64 sm:h-72 md:h-80 w-full bg-gray-200"
                     variants={aboutTeamMemberImageVariants}
                   >
                     <Image
@@ -75,20 +58,32 @@ const TeamSection: React.FC<TeamSectionProps> = ({ title, teamMembers }) => {
                       alt={member.imageAlt}
                       fill
                       loading="lazy"
-                      className="object-cover"
+                      className="object-cover w-full h-full"
+                      sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                      onError={(e) => {
+                        console.error(`Failed to load image: ${member.imageSrc}`);
+                        e.currentTarget.style.display = 'none';
+                        // Show fallback
+                        const fallback = e.currentTarget.nextElementSibling as HTMLElement;
+                        if (fallback) fallback.style.display = 'flex';
+                      }}
                     />
+                    {/* Fallback placeholder - hidden by default */}
+                    <div className="absolute inset-0 flex items-center justify-center bg-gray-200 text-gray-500 text-sm" style={{ display: 'none' }}>
+                      {member.name}
+                    </div>
                   </motion.div>
 
                   {/* Info Section */}
                   <motion.div
-                    className="p-8 py-4"
+                    className="p-4 sm:p-6 md:p-8"
                     style={{ backgroundColor: "#000F1E" }}
                     variants={aboutTeamMemberInfoVariants}
                   >
-                    <h3 className="text-active font-display text-xl font-bold text-start">
+                    <h3 className="text-active font-display text-lg sm:text-xl font-bold text-center">
                       {member.name}
                     </h3>
-                    <p className="text-white text-sm text-start font-display">
+                    <p className="text-white text-xs sm:text-sm text-center font-display mt-1">
                       {t(member.positionKey)}
                     </p>
                   </motion.div>
