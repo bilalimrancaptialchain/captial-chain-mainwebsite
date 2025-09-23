@@ -338,7 +338,7 @@ export default function EmailCapturePopup({
           justify-content: center;
           position: relative;
           box-shadow: 0 0 30px rgba(0, 224, 224, 0.4);
-          animation: cc-rotate 3s linear infinite;
+          animation: cc-bounce 2s ease-in-out infinite;
         }
 
         .cc-logo-inner {
@@ -651,8 +651,12 @@ export default function EmailCapturePopup({
         }
 
         @keyframes cc-bounce {
-          0%, 100% { transform: translateY(0px); }
-          50% { transform: translateY(-3px); }
+          0%, 100% { 
+            transform: translateY(0px) scale(1);
+          }
+          50% { 
+            transform: translateY(-8px) scale(1.05);
+          }
         }
 
         @media (max-width: 768px) {
