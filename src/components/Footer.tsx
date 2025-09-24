@@ -164,6 +164,55 @@ export default function Footer() {
                 {t("footer.disclaimerText5")}
               </small>
             </div>
+
+            {/* Risk Warning and Company Information */}
+            <div className="footer-risk-warning-content mt-8">
+              <div className="space-y-6">
+                {/* Risk Warning */}
+                <div>
+                  <h3 className="text-white font-display font-bold text-[15px] mb-3">
+                    Risk Warning:
+                  </h3>
+                  <p className="text-white/60 font-display text-sm leading-relaxed">
+                    Trading in derivatives carries significant risks. It is not suitable for all investors, and if you are a professional client, you could lose substantially more than your initial investment. When acquiring our derivative products, you have no entitlement, right, or obligation to the underlying financial assets. Past performance is no indication of future performance, and tax laws are subject to change. The information on this website is general and doesn't take into account your objectives, financial circumstances, or needs. Accordingly, before acting on the advice, you should consider whether the advice is suitable for you having regard to your objectives, financial situation and needs. We encourage you to seek independent advice if necessary. Please read our legal documents and ensure that you fully understand the risks before you make any trading decisions.
+                  </p>
+                </div>
+
+                {/* Regional Restrictions */}
+                <div>
+                  <h3 className="text-white font-display font-bold text-[15px] mb-3">
+                    Regional Restrictions:
+                  </h3>
+                  <p className="text-white/60 font-display text-sm leading-relaxed">
+                    We do not offer our brokerage services to residents of certain jurisdictions such as USA, North Korea, and other regions. For more information, please refer to our FAQ page. The information on this site and the products and services offered are not intended for distribution to any person in any country or jurisdiction where such distribution or use would be contrary to local law or regulation.
+                  </p>
+                </div>
+
+                {/* Company Information */}
+                <div>
+                  <h3 className="text-white font-display font-bold text-[15px] mb-3">
+                    Company:
+                  </h3>
+                  <p className="text-white/60 font-display text-sm leading-relaxed mb-4">
+                    Capital Chain Group Ltd. is registered as an International Business Company in Saint Lucia with the Registration No. 2025-00674.
+                  </p>
+                  
+                  <h3 className="text-white font-display font-bold text-[15px] mb-3">
+                    Registered Address:
+                  </h3>
+                  <p className="text-white/60 font-display text-sm leading-relaxed mb-4">
+                    01, Ground Floor, Rodney Court Building, Rodney Bay, Gros-Islet, St Lucia
+                  </p>
+                  
+                  <h3 className="text-white font-display font-bold text-[15px] mb-3">
+                    Physical Address:
+                  </h3>
+                  <p className="text-white/60 font-display text-sm leading-relaxed">
+                    01, Ground Floor, Rodney Court Building, Rodney Bay, Gros-Islet, St. Lucia
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
