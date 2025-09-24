@@ -157,7 +157,6 @@ const TradingSolution = () => {
       description: t("tradingSolution.cards.metatrader5"),
       imageSrc: "/images/home/metatrader5.webp",
       imageAlt: "Metatrader5",
-      isComingSoon: true,
     },
   ];
 

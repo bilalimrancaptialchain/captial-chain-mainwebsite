@@ -158,7 +158,127 @@ const MetaTraderPage = () => {
         </div>
       </section>
 
-      {/* Integration Section */}
+      {/* MetaTrader 5 Desktop & Mobile Section */}
+      <section className="py-20 bg-gradient-to-b from-[#000F1E] to-[#0a1628]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+              Choose Your <span className="text-[#00E0E0]">Trading Platform</span>
+            </h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              Access MetaTrader 5 across all your devices with seamless synchronization and professional-grade tools.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            {/* Desktop Version */}
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="bg-gradient-to-br from-[#1a1a2e] to-[#16213e] rounded-2xl p-8 border border-[#00E0E0]/20"
+            >
+              <div className="text-center mb-6">
+                <div className="w-16 h-16 bg-[#00E0E0] rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <span className="text-[#000F1E] font-bold text-2xl">💻</span>
+                </div>
+                <h3 className="text-2xl font-bold text-white mb-2">MetaTrader 5 Desktop</h3>
+                <p className="text-[#00E0E0] font-semibold">Professional Trading Suite</p>
+              </div>
+              
+              <p className="text-gray-300 mb-6 leading-relaxed">
+                The desktop version delivers professional-grade tools for comprehensive technical analysis, 
+                advanced charting capabilities, and precise trade execution. Experience the full power of 
+                MetaTrader 5 with an extensive suite of trading tools and indicators designed to elevate 
+                your trading performance.
+              </p>
+
+              <div className="space-y-4 mb-6">
+                <div className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-[#00E0E0] rounded-full"></div>
+                  <span className="text-gray-300">Advanced technical analysis tools</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-[#00E0E0] rounded-full"></div>
+                  <span className="text-gray-300">Professional charting capabilities</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-[#00E0E0] rounded-full"></div>
+                  <span className="text-gray-300">Comprehensive trade execution</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-[#00E0E0] rounded-full"></div>
+                  <span className="text-gray-300">80+ technical indicators</span>
+                </div>
+              </div>
+
+              <button className="w-full bg-gradient-to-r from-[#00E0E0] to-[#10B981] text-black font-semibold px-6 py-3 rounded-lg hover:drop-shadow-[0_0_10px_rgba(0,224,224,0.5)] transition-all duration-200">
+                Download Desktop Version
+              </button>
+            </motion.div>
+
+            {/* Mobile Version */}
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="bg-gradient-to-br from-[#1a1a2e] to-[#16213e] rounded-2xl p-8 border border-[#00E0E0]/20"
+            >
+              <div className="text-center mb-6">
+                <div className="w-16 h-16 bg-[#00E0E0] rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <span className="text-[#000F1E] font-bold text-2xl">📱</span>
+                </div>
+                <h3 className="text-2xl font-bold text-white mb-2">MetaTrader 5 Mobile</h3>
+                <p className="text-[#00E0E0] font-semibold">Trade Anywhere, Anytime</p>
+              </div>
+              
+              <p className="text-gray-300 mb-6 leading-relaxed">
+                Perfect for traders on the go, the mobile app provides complete access to your trading 
+                activities from anywhere in the world. Manage your positions, monitor markets, and execute 
+                trades with the same professional tools available on desktop, optimized for mobile devices.
+              </p>
+
+              <div className="space-y-4 mb-6">
+                <div className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-[#00E0E0] rounded-full"></div>
+                  <span className="text-gray-300">24/7 market access</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-[#00E0E0] rounded-full"></div>
+                  <span className="text-gray-300">Real-time trade management</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-[#00E0E0] rounded-full"></div>
+                  <span className="text-gray-300">Multi-asset trading support</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-[#00E0E0] rounded-full"></div>
+                  <span className="text-gray-300">Intuitive mobile interface</span>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-2 gap-3">
+                <button className="bg-gradient-to-r from-[#00E0E0] to-[#10B981] text-black font-semibold px-4 py-3 rounded-lg hover:drop-shadow-[0_0_10px_rgba(0,224,224,0.5)] transition-all duration-200">
+                  iOS Download
+                </button>
+                <button className="bg-gradient-to-r from-[#00E0E0] to-[#10B981] text-black font-semibold px-4 py-3 rounded-lg hover:drop-shadow-[0_0_10px_rgba(0,224,224,0.5)] transition-all duration-200">
+                  Android Download
+                </button>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose MetaTrader 5 Section */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -169,21 +289,23 @@ const MetaTraderPage = () => {
               viewport={{ once: true }}
             >
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                Seamless <span className="text-[#00E0E0]">Integration</span>
+                Why Choose <span className="text-[#00E0E0]">MetaTrader 5</span>?
               </h2>
-              <p className="text-xl text-gray-300 mb-8">
-                Capital Chain&apos;s advanced technology seamlessly integrates with MetaTrader 5, 
-                providing you with enhanced features and capabilities that go beyond traditional trading platforms.
+              <p className="text-xl text-gray-300 mb-8 leading-relaxed">
+                MetaTrader 5 represents more than just a trading platform—it&apos;s a complete ecosystem 
+                designed for today&apos;s sophisticated traders. Whether you&apos;re a retail trader or 
+                professional, MT5 delivers all the essential tools for market analysis, trade management, 
+                and automated strategy execution.
               </p>
               
               <div className="space-y-6">
                 {[
-                  "Real-time risk management and position monitoring",
-                  "Advanced order types and execution algorithms",
-                  "Integrated news feeds and market sentiment analysis",
-                  "Custom indicators and trading tools",
-                  "Automated compliance and reporting",
-                  "24/7 technical support and maintenance"
+                  "Multi-platform accessibility across desktop, web, and mobile",
+                  "Comprehensive market analysis and research tools",
+                  "Advanced risk management and position monitoring",
+                  "Professional-grade execution and order management",
+                  "Extensive customization and automation capabilities",
+                  "Global market access with 24/7 trading support"
                 ].map((item, index) => (
                   <div key={index} className="flex items-center space-x-3">
                     <div className="w-6 h-6 bg-[#00E0E0] rounded-full flex items-center justify-center flex-shrink-0">
@@ -228,6 +350,129 @@ const MetaTraderPage = () => {
                 </div>
               </div>
             </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* What is MetaTrader 5 Section */}
+      <section className="py-20 bg-gradient-to-b from-[#000F1E] to-[#0a1628]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+              What is <span className="text-[#00E0E0]">MetaTrader 5</span>?
+            </h2>
+            <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+              MetaTrader 5 (MT5) is the industry-leading multi-asset trading platform designed for 
+              professional online trading across Forex, Stocks, Commodities, and Futures markets. 
+              Built for serious traders who demand excellence and precision.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            {[
+              {
+                title: "Multi-Asset Trading",
+                description: "Unlike previous versions, MT5 supports diverse asset classes including forex, stocks, commodities, indices, and futures, enabling comprehensive portfolio diversification.",
+                icon: "🌐"
+              },
+              {
+                title: "Advanced Trading Tools",
+                description: "Access 38 technical indicators, 44 drawing tools, 21 timeframes, and a built-in economic calendar for comprehensive market analysis and informed decision-making.",
+                icon: "📊"
+              },
+              {
+                title: "Diverse Order Types",
+                description: "Support for more order types than MT4, including stop limit orders, providing flexibility for sophisticated trading strategies and enhanced risk management.",
+                icon: "⚡"
+              }
+            ].map((feature, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.2 }}
+                viewport={{ once: true }}
+                className="bg-gradient-to-br from-[#1a1a2e] to-[#16213e] rounded-xl p-6 border border-[#00E0E0]/20 hover:border-[#00E0E0]/40 transition-all duration-300"
+              >
+                <div className="text-4xl mb-4">{feature.icon}</div>
+                <h3 className="text-xl font-semibold text-white mb-3">{feature.title}</h3>
+                <p className="text-gray-300 leading-relaxed">{feature.description}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Key Features Section */}
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+              Key Features of <span className="text-[#00E0E0]">MetaTrader 5</span>
+            </h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              Discover the powerful features that make MetaTrader 5 the preferred choice for professional traders worldwide.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                title: "High Performance & Speed",
+                description: "Optimized for maximum performance with lightning-fast trade execution and superior data processing capabilities.",
+                icon: "⚡"
+              },
+              {
+                title: "Market Depth (DOM)",
+                description: "Full access to market depth with real-time display of bid and ask prices across multiple price levels.",
+                icon: "📈"
+              },
+              {
+                title: "Built-in Strategy Tester",
+                description: "Test and optimize automated trading strategies using historical data with exceptional accuracy and reliability.",
+                icon: "🤖"
+              },
+              {
+                title: "Hedging & Netting Systems",
+                description: "Support for both hedging (multiple positions) and netting (single position) trading systems for maximum flexibility.",
+                icon: "🔄"
+              },
+              {
+                title: "Integrated Alerts",
+                description: "Set custom alerts for price changes and trading conditions with email and in-app notifications.",
+                icon: "🔔"
+              },
+              {
+                title: "One-Click Trading",
+                description: "Execute trades instantly with one-click functionality directly from charts or market depth windows.",
+                icon: "👆"
+              }
+            ].map((feature, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="bg-gradient-to-br from-[#1a1a2e] to-[#16213e] rounded-xl p-6 border border-[#00E0E0]/20 hover:border-[#00E0E0]/40 transition-all duration-300"
+              >
+                <div className="text-4xl mb-4">{feature.icon}</div>
+                <h3 className="text-xl font-semibold text-white mb-3">{feature.title}</h3>
+                <p className="text-gray-300 leading-relaxed">{feature.description}</p>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
