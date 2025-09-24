@@ -219,9 +219,14 @@ const MetaTraderPage = () => {
                 </div>
               </div>
 
-              <button className="w-full bg-gradient-to-r from-[#00E0E0] to-[#10B981] text-black font-semibold px-6 py-3 rounded-lg hover:drop-shadow-[0_0_10px_rgba(0,224,224,0.5)] transition-all duration-200">
+              <a 
+                href="https://download.mql5.com/cdn/web/metaquotes.software.corp/mt5/MetaTrader5.exe"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full bg-gradient-to-r from-[#00E0E0] to-[#10B981] text-black font-semibold px-6 py-3 rounded-lg hover:drop-shadow-[0_0_10px_rgba(0,224,224,0.5)] transition-all duration-200 inline-block text-center"
+              >
                 Download Desktop Version
-              </button>
+              </a>
             </motion.div>
 
             {/* Mobile Version */}
@@ -266,12 +271,22 @@ const MetaTraderPage = () => {
               </div>
 
               <div className="grid grid-cols-2 gap-3">
-                <button className="bg-gradient-to-r from-[#00E0E0] to-[#10B981] text-black font-semibold px-4 py-3 rounded-lg hover:drop-shadow-[0_0_10px_rgba(0,224,224,0.5)] transition-all duration-200">
+                <a 
+                  href="https://apps.apple.com/app/metatrader-5/id413251709"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-gradient-to-r from-[#00E0E0] to-[#10B981] text-black font-semibold px-4 py-3 rounded-lg hover:drop-shadow-[0_0_10px_rgba(0,224,224,0.5)] transition-all duration-200 text-center"
+                >
                   iOS Download
-                </button>
-                <button className="bg-gradient-to-r from-[#00E0E0] to-[#10B981] text-black font-semibold px-4 py-3 rounded-lg hover:drop-shadow-[0_0_10px_rgba(0,224,224,0.5)] transition-all duration-200">
+                </a>
+                <a 
+                  href="https://play.google.com/store/apps/details?id=net.metaquotes.metatrader5"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-gradient-to-r from-[#00E0E0] to-[#10B981] text-black font-semibold px-4 py-3 rounded-lg hover:drop-shadow-[0_0_10px_rgba(0,224,224,0.5)] transition-all duration-200 text-center"
+                >
                   Android Download
-                </button>
+                </a>
               </div>
             </motion.div>
           </div>

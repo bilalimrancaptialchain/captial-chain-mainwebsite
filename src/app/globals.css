@@ -17,9 +17,9 @@
   --header-backdrop-blur: blur(40.5px);
   --header-active-navbar: #00e0e0;
   --header-active-navbar-shadow: 0px 0px 14.7px 0px #00e0e08a;
-  --color-submenu-background: #99eeff69;
-  --color-subment-forground: #1c1c1c;
-  --color-subment-forground-hover: #00e0e047;
+  --color-submenu-background: #1a1a2e;
+  --color-subment-forground: #ffffff;
+  --color-subment-forground-hover: #00e0e0;
   --spacing-header: 1208px;
   --color-footer-border: #82ffff4a;
   --color-active: #00e0e0;
