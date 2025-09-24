@@ -107,10 +107,10 @@ const ContactAccordion: React.FC = () => {
           >
             <div className="flex-1">
               <h2 className="text-white text-2xl lg:text-3xl font-bold font-display mb-1">
-                {t("contact.emailTeam")}
+                {t("contact.sendMessage")}
               </h2>
               <p className="text-white/55 font-light text-lg font-display">
-                {t("contact.weAreHereToHelp")}
+                {t("contact.fillFormBelow")}
               </p>
             </div>
             <div className="ml-8">

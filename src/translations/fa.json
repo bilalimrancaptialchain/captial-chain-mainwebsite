@@ -2,6 +2,7 @@
   "navigation": {
     "home": "خانه",
     "partnership": "شراکت",
+    "metatrader": "MetaTrader",
     "blog": "وبلاگ",
     "aboutUs": "درباره ما",
     "contactUs": "تماس با ما",
@@ -271,6 +272,7 @@
       "pricing": "قیمت‌گذاری",
       "airdropProgram": "برنامه ایردراپ",
       "partnership": "شراکت",
+      "metatrader": "MetaTrader",
       "aboutUs": "درباره ما",
       "contact": "تماس",
       "blog": "وبلاگ",
@@ -293,9 +295,14 @@
     "emailPlaceholder": "آدرس ایمیل خود را وارد کنید"
   },
   "contact": {
-    "emailTeam": "ایمیل به تیم ما",
+    "getInTouch": "تماس با ما",
     "weAreHereToHelp": "ما اینجاییم تا کمک کنیم",
     "supportEmail": "support@capitalchain.co",
+    "landlineNumber": "+94781352833",
+    "emailUs": "ایمیل بزنید",
+    "callUs": "تماس بگیرید",
+    "sendMessage": "پیام بفرستید",
+    "fillFormBelow": "فرم زیر را پر کنید تا به شما پاسخ دهیم",
     "location": {
       "title": "مکان Capital Chain",
       "address": "میدان گرنداستند، طبقه ششم، جاده میدان، ناد الشبا، دبی، امارات متحده عربی",

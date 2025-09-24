@@ -44,6 +44,7 @@ export default function Footer() {
       { name: t("footer.links.pricing"), href: "#pricing" },
       { name: t("footer.links.airdropProgram"), href: "#airdrop-program" },
       { name: t("footer.links.partnership"), href: "/partnership" },
+      { name: t("footer.links.metatrader"), href: "/metatrader" },
     ],
     [t("footer.categories.Company")]: [
       { name: t("footer.links.aboutUs"), href: "/about_us" },

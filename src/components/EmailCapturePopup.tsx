@@ -17,7 +17,7 @@ export default function EmailCapturePopup({
   isVisible,
   trigger = 'scroll',
   title = 'Claim Your 100% FREE Trading Account',
-  subtitle = 'No hidden fees • No credit card required • Start trading today',
+  subtitle = 'No hidden fees • No credit card required • No Need to pay • Start trading today',
   buttonText = 'Claim Free Account Now',
   showCaptcha = true,
   onClose
@@ -95,10 +95,10 @@ export default function EmailCapturePopup({
             expires.setTime(expires.getTime() + (365 * 24 * 60 * 60 * 1000)); // 1 year
             document.cookie = `cc-popup-disabled=true; expires=${expires.toUTCString()}; path=/`;
           }
-          setMessage('Thank you! We\'ll be in touch soon.');
+          setMessage('Thank you! Redirecting to your free trading challenge...');
           setEmail('');
           setTimeout(() => {
-            handleClose();
+            window.location.href = 'https://checkout.capitalchain.co/reward-signup-free-user/';
           }, 2000);
         } else {
           setMessage(data.message || 'Something went wrong. Please try again.');
@@ -112,10 +112,10 @@ export default function EmailCapturePopup({
           expires.setTime(expires.getTime() + (365 * 24 * 60 * 60 * 1000)); // 1 year
           document.cookie = `cc-popup-disabled=true; expires=${expires.toUTCString()}; path=/`;
         }
-        setMessage('Thank you! We\'ll be in touch soon.');
+        setMessage('Thank you! Redirecting to your free trading challenge...');
         setEmail('');
         setTimeout(() => {
-          handleClose();
+          window.location.href = 'https://checkout.capitalchain.co/reward-signup-free-user/';
         }, 2000);
       }
   } catch (error) {
@@ -128,10 +128,10 @@ export default function EmailCapturePopup({
       expires.setTime(expires.getTime() + (365 * 24 * 60 * 60 * 1000)); // 1 year
       document.cookie = `cc-popup-disabled=true; expires=${expires.toUTCString()}; path=/`;
     }
-    setMessage('Thank you! We\'ll be in touch soon.');
+    setMessage('Thank you! Redirecting to your free trading challenge...');
     setEmail('');
     setTimeout(() => {
-      handleClose();
+      window.location.href = 'https://checkout.capitalchain.co/reward-signup-free-user/';
     }, 2000);
   } finally {
       setIsSubmitting(false);
@@ -156,9 +156,12 @@ export default function EmailCapturePopup({
             <div className="cc-logo">
               <div className="cc-logo-container">
                 <div className="cc-logo-circle">
-                  <div className="cc-logo-inner">
-                    <span className="cc-logo-text">100%</span>
-                  </div>
+        <div className="cc-logo-inner">
+          <div className="cc-logo-text-container">
+            <span className="cc-logo-text">100%</span>
+            <span className="cc-logo-free">FREE</span>
+          </div>
+        </div>
                 </div>
                 <div className="cc-logo-particles">
                   <div className="cc-particle cc-particle-1"></div>
@@ -352,12 +355,32 @@ export default function EmailCapturePopup({
           backdrop-filter: blur(10px);
         }
 
+        .cc-logo-text-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+        }
+
         .cc-logo-text {
           font-family: "Exo 2", sans-serif;
-          font-size: 18px;
+          font-size: 16px;
           font-weight: 800;
           color: #00E0E0;
           text-shadow: 0 0 10px rgba(0, 224, 224, 0.5);
+          line-height: 1;
+          margin-bottom: 2px;
+        }
+
+        .cc-logo-free {
+          font-family: "Exo 2", sans-serif;
+          font-size: 10px;
+          font-weight: 700;
+          color: #00E0E0;
+          text-shadow: 0 0 8px rgba(0, 224, 224, 0.4);
+          line-height: 1;
+          letter-spacing: 0.5px;
         }
 
         .cc-logo-particles {

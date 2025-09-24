@@ -2,6 +2,7 @@
   "navigation": {
     "home": "Inicio",
     "partnership": "Asociación",
+    "metatrader": "MetaTrader",
     "blog": "Blog",
     "aboutUs": "Acerca de Nosotros",
     "contactUs": "Contáctanos",
@@ -271,6 +272,7 @@
       "pricing": "Precios",
       "airdropProgram": "Programa Airdrop",
       "partnership": "Asociación",
+      "metatrader": "MetaTrader",
       "aboutUs": "Acerca de Nosotros",
       "contact": "Contacto",
       "blog": "Blog",
@@ -293,9 +295,14 @@
     "emailPlaceholder": "Ingresa tu dirección de email"
   },
   "contact": {
-    "emailTeam": "Envía un email a nuestro equipo",
+    "getInTouch": "Ponte en Contacto",
     "weAreHereToHelp": "Estamos aquí para ayudar",
     "supportEmail": "support@capitalchain.co",
+    "landlineNumber": "+94781352833",
+    "emailUs": "Envíanos un Email",
+    "callUs": "Llámanos",
+    "sendMessage": "Envíanos un Mensaje",
+    "fillFormBelow": "Completa el formulario a continuación y te responderemos",
     "location": {
       "title": "Ubicación de Capital Chain",
       "address": "Meydan Grandstand, 6º piso, Meydan Road, Nad Al Sheba, Dubai, U.A.E.",
