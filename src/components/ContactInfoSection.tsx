@@ -70,7 +70,8 @@ const ContactInfoSection = () => {
               </motion.button>
               
               {/* Phone Button */}
-              <motion.button
+              <motion.a
+                href="tel:+94781352833"
                 className="bg-gradient-to-b from-[#00E0E0] to-[#10B981] font-display cursor-pointer px-6 py-3 rounded-sm transition-all duration-200 text-base xl:text-lg shadow-lg hover:inset-shadow-button font-normal flex items-center gap-2"
                 variants={contactInfoButtonVariants}
                 whileHover="hover"
@@ -89,7 +90,7 @@ const ContactInfoSection = () => {
                   />
                 </svg>
                 <span className="text-black font-semibold" style={{ color: 'black' }}>{t("contact.callUs")}</span>
-              </motion.button>
+              </motion.a>
             </div>
           </div>
         </motion.div>
