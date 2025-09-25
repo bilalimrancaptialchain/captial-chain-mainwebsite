@@ -90,6 +90,28 @@ export default function Footer() {
               <p className="footer-description text-white text-lg leading-relaxed max-w-3xs font-display">
                 {t("footer.description")}
               </p>
+
+              {/* Contact Info */}
+              <div className="footer-contact-info mt-4 space-y-2">
+                <a
+                  href="tel:+94781352833"
+                  className="flex items-center gap-2 text-white/80 hover:text-active font-display text-sm"
+                >
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M3 5C3 3.895 3.895 3 5 3h3.279c.431 0 .813.276.949.684l1.498 4.493a1 1 0 0 1-.502 1.21l-2.257 1.128c1.102 2.445 3.072 4.415 5.517 5.517l1.128-2.257a1 1 0 0 1 1.21-.502l4.493 1.498c.408.136.684.518.684.949V19c0 1.105-.895 2-2 2h-1C9.716 21 3 14.284 3 6V5Z" fill="#00E0E0"/>
+                  </svg>
+                  +94 78 135 2833
+                </a>
+                <a
+                  href="mailto:info@capitalchain.co"
+                  className="flex items-center gap-2 text-white/80 hover:text-active font-display text-sm"
+                >
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm16 2-8 5-8-5v12h16V6Z" fill="#00E0E0"/>
+                  </svg>
+                  info@capitalchain.co
+                </a>
+              </div>
             </div>
 
             {/* Social Icons */}
@@ -197,7 +219,7 @@ export default function Footer() {
                     Physical Address:
                   </h3>
                   <p className="text-white/60 font-display text-sm leading-relaxed">
-                    No. 369/1/1A, Meewella Building, Galle Rd, Colombo 00400
+                    No. 369/1/1A, Meewella Building, Galle Rd, Colombo 00400, Sri Lanka
                   </p>
                 </div>
               </div>

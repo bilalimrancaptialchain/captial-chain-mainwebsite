@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import AboutContent from "@/components/AboutContent";
-import ImageSection from "@/components/ImageSection";
+// import ImageSection from "@/components/ImageSection";
 import MissionSection from "@/components/MissionSection";
 import { missionBoxes, missionSectionData } from "@/constants/aboutMission";
 import TeamSection from "@/components/TeamSection";

@@ -4,6 +4,8 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { useLanguageContext } from "@/contexts/LanguageContext";
 import axios from "axios";
+// Map temporarily disabled
+// import MapSection from "@/components/MapSection";
 import {
   contactInfoSectionVariants,
   contactInfoCardVariants,
@@ -107,7 +109,7 @@ const ContactInfoSection = () => {
       title: "Physical Address",
       content: [
         "No. 369/1/1A, Meewella Building,",
-        "Galle Rd, Colombo 00400"
+        "Galle Rd, Colombo 00400, Sri Lanka"
       ],
       clickable: false
     },
@@ -137,14 +139,14 @@ const ContactInfoSection = () => {
 
   return (
     <motion.div
-      className="bg-[#071327] py-16 px-4"
+      className="bg-[#071327] py-16 px-4 section-contact-info"
       variants={contactInfoSectionVariants}
       initial="hidden"
       whileInView="visible"
       viewport={contactViewport}
     >
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 section-contact-tiles">
           {contactItems.map((item, index) => {
             const content = (
               <motion.div
@@ -188,9 +190,11 @@ const ContactInfoSection = () => {
           })}
         </div>
 
+        {/* Map Section temporarily hidden */}
+
         {/* Contact Form Section */}
         <motion.div
-          className="mt-16"
+          className="mt-16 section-contact-form"
           variants={contactInfoSectionVariants}
           initial="hidden"
           whileInView="visible"

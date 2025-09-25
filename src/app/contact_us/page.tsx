@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ContactInfoSection from "@/components/ContactInfoSection";
-import MapSection from "@/components/MapSection";
 import {
   contactSectionVariants,
   contactHeroSectionVariants,
@@ -64,8 +63,7 @@ export default function ContactUs() {
           <ContactInfoSection />
         </motion.div>
 
-        {/* Map Section */}
-        <MapSection />
+        {/* Map Section moved inside ContactInfoSection */}
       </div>
       <Footer />
     </>

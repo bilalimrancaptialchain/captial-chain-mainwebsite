@@ -17,7 +17,7 @@ const MapSection: React.FC = () => {
   const { t } = useLanguageContext();
   const handleViewOnMap = () => {
     const address =
-      "Meydan Grandstand, 6th floor, Meydan Road, Nad Al Sheba, Dubai, U.A.E.";
+      "01, Ground Floor, Rodney Court Building, Rodney Bay, Gros-Islet, St Lucia";
     const encodedAddress = encodeURIComponent(address);
     const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodedAddress}`;
     window.open(googleMapsUrl, "_blank");
@@ -25,7 +25,7 @@ const MapSection: React.FC = () => {
 
   return (
     <motion.div 
-      className="relative rounded-4xl max-w-7xl mx-auto z-30 mt-60"
+      className="relative rounded-4xl max-w-7xl mx-auto z-30 mt-15"
       variants={contactMapSectionVariants}
       initial="hidden"
       whileInView="visible"

@@ -45,7 +45,7 @@ export default function NotFound() {
         <div className="mt-12 max-w-xl mx-auto">
           <div className="h-40 rounded-xl border border-[#0e2a46] bg-[#061A2F] flex items-center justify-center">
             <p className="text-white/60">
-              "Your ideas, our risk" — keep exploring Capital Chain.
+              &quot;Your ideas, our risk&quot; — keep exploring Capital Chain.
             </p>
           </div>
         </div>

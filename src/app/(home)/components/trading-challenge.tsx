@@ -633,6 +633,7 @@ const PricingCard = ({
   );
 };
 
+// Note: Keeping component for possible future use; not exported/used now to avoid lint warning
 const RefundableNotice = () => {
   const { t } = useLanguageContext();
 
