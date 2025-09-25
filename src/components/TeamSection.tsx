@@ -38,12 +38,12 @@ const TeamSection: React.FC<TeamSectionProps> = ({ title, teamMembers }) => {
         </motion.h2>
 
         {/* Team Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8 w-full">
+        <div className="flex flex-wrap justify-center gap-6 md:gap-8 w-full">
           {teamMembers.map((member, index) => {
             return (
               <motion.div
                 key={member.id}
-                className="w-full"
+                className="w-[300px] md:w-[320px]"
                 variants={aboutTeamMemberVariants}
                 custom={index}
               >
