@@ -174,7 +174,7 @@ const ContactInfoSection = () => {
               </motion.div>
             );
 
-            return item.clickable ? (
+            return item.clickable && item.href ? (
               <a
                 key={index}
                 href={item.href}
