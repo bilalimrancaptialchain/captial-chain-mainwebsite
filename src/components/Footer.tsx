@@ -165,19 +165,9 @@ export default function Footer() {
               </small>
             </div>
 
-            {/* Risk Warning and Company Information */}
+            {/* Company Information */}
             <div className="footer-risk-warning-content mt-8">
               <div className="space-y-6">
-                {/* Risk Warning */}
-                <div>
-                  <h3 className="text-white font-display font-bold text-[15px] mb-3">
-                    Risk Warning:
-                  </h3>
-                  <p className="text-white/60 font-display text-sm leading-relaxed">
-                    Trading in derivatives carries significant risks. It is not suitable for all investors, and if you are a professional client, you could lose substantially more than your initial investment. When acquiring our derivative products, you have no entitlement, right, or obligation to the underlying financial assets. Past performance is no indication of future performance, and tax laws are subject to change. The information on this website is general and doesn&apos;t take into account your objectives, financial circumstances, or needs. Accordingly, before acting on the advice, you should consider whether the advice is suitable for you having regard to your objectives, financial situation and needs. We encourage you to seek independent advice if necessary. Please read our legal documents and ensure that you fully understand the risks before you make any trading decisions.
-                  </p>
-                </div>
-
                 {/* Regional Restrictions */}
                 <div>
                   <h3 className="text-white font-display font-bold text-[15px] mb-3">
@@ -188,7 +178,6 @@ export default function Footer() {
                   </p>
                 </div>
 
-                {/* Company Information */}
                 <div>
                   <h3 className="text-white font-display font-bold text-[15px] mb-3">
                     Company:
