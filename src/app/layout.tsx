@@ -32,12 +32,21 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     siteName: "Capital Chain",
+    images: [
+      {
+        url: "/images/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Capital Chain Logo",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Capital Chain - Advanced Trading Solutions",
     description: "Professional trading platform with comprehensive business management tools.",
     creator: "@Capitalchain",
+    images: ["/images/logo.png"],
   },
   icons: {
     icon: "/favicon.webp",

@@ -14,6 +14,7 @@ import {
 
 interface MissionSectionProps {
   topTitle: string;
+  missionText: string;
   bottomText: string;
   backgroundImage: string;
   boxes: MissionBoxData[];
@@ -21,6 +22,7 @@ interface MissionSectionProps {
 
 const MissionSection: React.FC<MissionSectionProps> = ({
   topTitle,
+  missionText,
   bottomText,
   backgroundImage,
   boxes,

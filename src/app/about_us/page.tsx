@@ -45,17 +45,10 @@ export default function AboutUs() {
           />
         </div>
 
-        {/* Image Section */}
-        <ImageSection
-          imageSrc="/images/about_1.webp"
-          imageAlt="About Us Image"
-          greenText={t("about.greenText")}
-          whiteText={t("about.whiteText")}
-        />
-
         {/* Mission Section */}
         <MissionSection
           topTitle={t("about.missionTitle")}
+          missionText={t("about.whiteText")}
           bottomText={t("about.missionDescription")}
           backgroundImage={missionSectionData.backgroundImage}
           boxes={missionBoxes}

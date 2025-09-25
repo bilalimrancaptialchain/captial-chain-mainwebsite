@@ -35,12 +35,12 @@ export default function DesktopNavigation({
             {item.name}
           </a>
           {item.submenu && activeDropdown === item.name && (
-            <div className="absolute top-full left-0 bg-submenu-background rounded-lg shadow-lg py-2 flex flex-col items-center w-32">
+            <div className="absolute top-full left-0 bg-submenu-background rounded-lg shadow-lg py-1 flex flex-col w-32">
               {item.submenu.map((subItem) => (
                 <a
                   key={subItem.name}
                   href={subItem.href}
-                  className="block text-xs transition-colors text-center font-display font-medium text-subment-forground py-4 hover:text-subment-forground-hover"
+                  className="block text-xs transition-colors text-left font-display font-medium text-subment-forground py-2 px-4 hover:text-subment-forground-hover w-full"
                 >
                   {subItem.name}
                 </a>

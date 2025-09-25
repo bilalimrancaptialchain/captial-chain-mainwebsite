@@ -118,9 +118,9 @@ const ContactInfoSection = () => {
         </svg>
       ),
       title: "Mail Us",
-      content: ["info@capitalchain.com"],
+      content: ["info@capitalchain.co"],
       clickable: true,
-      href: "mailto:info@capitalchain.com"
+      href: "mailto:info@capitalchain.co"
     },
     {
       icon: (
@@ -149,7 +149,7 @@ const ContactInfoSection = () => {
             const content = (
               <motion.div
                 key={index}
-                className={`flex items-start space-x-4 ${item.clickable ? 'cursor-pointer hover:opacity-80 transition-opacity duration-200' : ''}`}
+                className={`flex items-start space-x-4 ${item.clickable ? 'cursor-pointer hover:bg-[#00E0E0]/10 rounded-lg p-2 -m-2 transition-all duration-200' : ''}`}
                 variants={contactInfoCardVariants}
                 whileHover={item.clickable ? "hover" : undefined}
               >

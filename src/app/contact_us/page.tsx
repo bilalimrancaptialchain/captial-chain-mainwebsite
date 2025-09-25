@@ -15,7 +15,7 @@ export default function ContactUs() {
   return (
     <>
       <Header />
-      <div className="min-h-screen bg-background pb-12">
+      <div className="min-h-screen bg-background pb-12 pt-24 md:pt-28">
         {/* Hero Section */}
         <motion.div 
           className="min-h-[30vh] relative"

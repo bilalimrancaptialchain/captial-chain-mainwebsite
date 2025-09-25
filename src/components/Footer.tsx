@@ -227,7 +227,7 @@ export default function Footer() {
               </p>
             </div>
             <form onSubmit={handleEmailSubmit} className="footer-newsletter-form space-y-4">
-              <div className="footer-newsletter-form-content flex flex-col md:flex-row gap-4 items-center">
+              <div className="footer-newsletter-form-content flex flex-col md:flex-row gap-4 items-start md:items-center">
                 <div className="footer-newsletter-input-container flex-1 w-full">
                   <input
                     type="email"
@@ -238,7 +238,7 @@ export default function Footer() {
                     required
                   />
                 </div>
-                <div className="footer-newsletter-consent flex items-center space-x-2">
+                <div className="footer-newsletter-consent flex items-center space-x-2 self-start">
                   <input
                     type="checkbox"
                     id="newsletter-consent"
