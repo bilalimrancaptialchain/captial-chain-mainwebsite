@@ -4,9 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import MapSection from "@/components/MapSection";
 import ContactInfoSection from "@/components/ContactInfoSection";
-import ContactAccordion from "@/components/ContactAccordion";
 import {
   contactSectionVariants,
   contactHeroSectionVariants,
@@ -20,7 +18,7 @@ export default function ContactUs() {
       <div className="min-h-screen bg-background pb-12">
         {/* Hero Section */}
         <motion.div 
-          className="min-h-[70vh] relative"
+          className="min-h-[30vh] relative"
           variants={contactHeroSectionVariants}
           initial="hidden"
           animate="visible"
@@ -42,8 +40,18 @@ export default function ContactUs() {
                 "linear-gradient(360deg, rgba(7, 19, 39, 0.75) 0%, #071327 81.87%)",
             }}
           ></div>
-          {/* Map Section */}
-          <MapSection />
+          
+          {/* Hero Content */}
+          <div className="relative z-20 flex items-center justify-center min-h-[30vh]">
+            <div className="text-center">
+              <h1 className="text-3xl md:text-5xl font-bold text-white font-display mb-3">
+                Contact Us
+              </h1>
+              <p className="text-lg text-white/80 font-display">
+                Get in touch with our team
+              </p>
+            </div>
+          </div>
         </motion.div>
         {/* Contact Info Section */}
         <motion.div
@@ -53,15 +61,6 @@ export default function ContactUs() {
           viewport={contactViewport}
         >
           <ContactInfoSection />
-        </motion.div>
-        {/* Contact Accordion */}
-        <motion.div
-          variants={contactSectionVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={contactViewport}
-        >
-          <ContactAccordion />
         </motion.div>
       </div>
       <Footer />
