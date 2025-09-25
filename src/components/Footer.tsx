@@ -216,16 +216,25 @@ export default function Footer() {
               </p>
             </div>
             <form onSubmit={handleEmailSubmit} className="footer-newsletter-form space-y-4">
-              <div className="footer-newsletter-form-content flex flex-col md:flex-row gap-4 items-start md:items-center">
-                <div className="footer-newsletter-input-container flex-1 w-full">
-                  <input
-                    type="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder={t("footer.emailPlaceholder")}
-                    className="footer-newsletter-input w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-active focus:ring-1 focus:ring-active transition-colors duration-200 font-display"
-                    required
-                  />
+              <div className="footer-newsletter-form-content flex flex-col gap-4 items-start w-full">
+                <div className="w-full flex flex-col md:flex-row items-stretch md:items-center gap-4">
+                  <div className="footer-newsletter-input-container flex-1 w-full">
+                    <input
+                      type="email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      placeholder={t("footer.emailPlaceholder")}
+                      className="footer-newsletter-input w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-active focus:ring-1 focus:ring-active transition-colors duration-200 font-display"
+                      required
+                    />
+                  </div>
+                  <button
+                    type="submit"
+                    disabled={isSubmitting || !isSubscribed}
+                    className="footer-newsletter-submit-button px-6 py-3 bg-gradient-to-r from-active to-green-500 text-white font-display font-medium rounded-lg hover:from-active/90 hover:to-green-500/90 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap"
+                  >
+                    {isSubmitting ? "Subscribing..." : "Subscribe"}
+                  </button>
                 </div>
                 <div className="footer-newsletter-consent flex items-center space-x-2 self-start">
                   <input
@@ -244,13 +253,6 @@ export default function Footer() {
                     {t("footer.consentText") || "I agree to receive newsletter updates"}
                   </label>
                 </div>
-                <button
-                  type="submit"
-                  disabled={isSubmitting || !isSubscribed}
-                  className="footer-newsletter-submit-button px-6 py-3 bg-gradient-to-r from-active to-green-500 text-white font-display font-medium rounded-lg hover:from-active/90 hover:to-green-500/90 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap"
-                >
-                  {isSubmitting ? "Subscribing..." : "Subscribe"}
-                </button>
               </div>
               {submitMessage && (
                 <p
