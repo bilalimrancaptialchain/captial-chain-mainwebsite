@@ -17,7 +17,7 @@ export default function AboutUs() {
       <Header />
       <div className="min-h-screen">
         {/* Hero Section */}
-        <div className="min-h-screen relative flex items-center justify-center">
+        <div className="min-h-[40vh] pt-40 md:pt-44 pb-20 relative flex items-center justify-center ">
           {/* Background Image */}
           <div
             className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
@@ -53,6 +53,7 @@ export default function AboutUs() {
           backgroundImage={missionSectionData.backgroundImage}
           boxes={missionBoxes}
         />
+
 
         {/* Team Section */}
         <TeamSection title={t("team.title")} teamMembers={teamMembers} />
