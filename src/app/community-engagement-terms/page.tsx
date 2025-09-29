@@ -38,7 +38,7 @@ export default function CommunityEngagementTermsPage() {
         <section className="max-w-5xl mx-auto px-6 md:px-12 py-12">
           <div className="rounded-xl border border-[#0f2b45] bg-[#061A2F] p-6 md:p-10 shadow-xl">
             <p className="text-white/80 mb-6">
-              By applying to and participating in the Community Engagement Program ("Program"), you agree to the following terms and conditions:
+              By applying to and participating in the Community Engagement Program (&quot;Program&quot;), you agree to the following terms and conditions:
             </p>
 
             <ol className="space-y-8 list-decimal pl-6">
@@ -62,7 +62,7 @@ export default function CommunityEngagementTermsPage() {
 
               <li>
                 <h2 className="text-[#00E0E0] font-display font-bold text-xl mb-2">Participant Obligations</h2>
-                <p className="text-white/80 mb-2">Approved participants ("Funded Traders") are required to:</p>
+                <p className="text-white/80 mb-2">Approved participants (&quot;Funded Traders&quot;) are required to:</p>
                 <ul className="list-disc pl-6 space-y-2 text-white/80">
                   <li>Collaborate in interviews, promotional content, or case studies as requested.</li>
                   <li>Post reviews and actively engage in social media and community initiatives.</li>
