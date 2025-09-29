@@ -16,7 +16,7 @@ interface EmailCapturePopupProps {
 export default function EmailCapturePopup({
   isVisible,
   trigger = 'scroll',
-  title = 'Claim Your 100% FREE Trading Account',
+  title = 'Claim Your 100% FREE $5kTrading Account',
   subtitle = 'No hidden fees • No credit card required • No Need to pay • Start trading today',
   buttonText = 'Claim Free Account Now',
   showCaptcha = true,

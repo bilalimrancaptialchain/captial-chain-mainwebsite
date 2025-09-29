@@ -19,8 +19,8 @@ export default function EmailPopupProvider({
   children,
   trigger = 'scroll',
   delay = 3000,
-  title = 'Get Your Free Trading Challenge',
-  subtitle = 'Join thousands of successful traders',
+  title = 'Get Your Free $5k Trading Challenge',
+  subtitle = 'Just by Engaging with the Community',
   buttonText = 'Get Started Now',
   showCaptcha = true,
   enabled = true
