@@ -196,7 +196,7 @@ export default function Footer() {
                     Regional Restrictions:
                   </h3>
                   <p className="text-white/60 font-display text-sm leading-relaxed">
-                    We do not offer our brokerage services to residents of certain jurisdictions such as USA, North Korea, and other regions. For more information, please refer to our FAQ page. The information on this site and the products and services offered are not intended for distribution to any person in any country or jurisdiction where such distribution or use would be contrary to local law or regulation.
+                    We do not offer our brokerage services to residents of certain jurisdictions such as USA, North Korea, UAE, and other regions. For more information, please refer to our FAQ page. The information on this site and the products and services offered are not intended for distribution to any person in any country or jurisdiction where such distribution or use would be contrary to local law or regulation.
                   </p>
                 </div>
 
