@@ -1,3 +1,7 @@
+"use client";
+
+import EmbedAwareProviders from "@/components/EmbedAwareProviders";
+
 export default function FragmentLayout({
   children,
 }: {
@@ -5,7 +9,9 @@ export default function FragmentLayout({
 }) {
   return (
     <html lang="en">
-      <body style={{ margin: 0, background: "transparent" }}>{children}</body>
+      <body style={{ margin: 0, background: "transparent" }}>
+        <EmbedAwareProviders>{children}</EmbedAwareProviders>
+      </body>
     </html>
   );
 }

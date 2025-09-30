@@ -54,11 +54,8 @@ export const metadata: Metadata = {
   viewport: "width=device-width, initial-scale=1",
 };
 
-import { LanguageProvider } from "../contexts/LanguageContext";
-import { LanguageWrapper } from "../components/LanguageWrapper";
-import FloatingChat from "../components/FloatingChat";
-import IntercomWrapper from "../components/IntercomWrapper";
-import EmailPopupProvider from "../components/EmailPopupProvider";
+import EmbedAwareProviders from "../components/EmbedAwareProviders";
+import LoadingScreenWrapper from "../components/LoadingScreenWrapper";
 
 export default function RootLayout({
   children,
@@ -112,19 +109,9 @@ export default function RootLayout({
         className={`${inter.variable} ${exo2.variable} ${vazirmatn.variable}`}
         suppressHydrationWarning={true}
       >
-        <IntercomWrapper>
-          <LanguageProvider>
-            <EmailPopupProvider 
-              trigger="time" 
-              delay={10000}
-              title="Get Your Free Trading Challenge"
-              subtitle="Join thousands of successful traders"
-            >
-              <LanguageWrapper>{children}</LanguageWrapper>
-              <FloatingChat />
-            </EmailPopupProvider>
-          </LanguageProvider>
-        </IntercomWrapper>
+        <LoadingScreenWrapper enabled={false}>
+          <EmbedAwareProviders>{children}</EmbedAwareProviders>
+        </LoadingScreenWrapper>
       </body>
     </html>
   );
