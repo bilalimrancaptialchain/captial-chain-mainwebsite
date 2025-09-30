@@ -5,7 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export default function CommunityEngagementTermsPage() {
-  const pdfUrl = "/documents/Community_Engagement_Program_Terms.pdf"; // Upload the PDF to public/documents/
+  const pdfUrl = "/documents/Community-Engagement-Program-Guideline-Terms.pdf";
 
   return (
     <>
@@ -101,7 +101,7 @@ export default function CommunityEngagementTermsPage() {
               <li>
                 <h2 className="text-[#00E0E0] font-display font-bold text-xl mb-2">Sign Up and Approval Flow</h2>
                 <p className="text-white/80">
-                  Please refer to the PDF guide for the approval guidelines and flow. If the link above does not open, ensure the file is uploaded to <code className="text-[#00E0E0]">public/documents/Community_Engagement_Program_Terms.pdf</code>.
+                  Please refer to the PDF guide for the detailed approval guidelines and flow.
                 </p>
               </li>
             </ol>
