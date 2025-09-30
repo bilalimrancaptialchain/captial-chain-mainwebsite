@@ -25,6 +25,7 @@ export default function HeaderButtons({
   const loginButtonClass = isMobile
     ? "w-full flex items-center justify-center gap-2"
     : "flex items-center gap-2 text-xs";
+  const freeAccountButtonClass = isMobile ? "w-full mt-2" : "md:text-xxs";
 
   if (!isMounted) {
     return (
@@ -32,6 +33,9 @@ export default function HeaderButtons({
         <Button variant="login" size="login" className={loginButtonClass}>
           <LoginIcon className="w-4 h-4" />
           {t("header.loginSignup")}
+        </Button>
+        <Button variant="freeAccount" size="trading" className={freeAccountButtonClass}>
+          {t("header.claimFreeAccount")}
         </Button>
         <Button variant="trading" size="trading" className={buttonClass}>
           {t("header.startTradingNow")}
@@ -50,6 +54,15 @@ export default function HeaderButtons({
         <Button variant="login" size="login" className={loginButtonClass}>
           <LoginIcon className="w-4 h-4" />
           {t("header.loginSignup")}
+        </Button>
+      </a>
+      <a
+        href="https://checkout.capitalchain.co/reward-signup-free-user/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Button variant="freeAccount" size="trading" className={freeAccountButtonClass}>
+          {t("header.claimFreeAccount")}
         </Button>
       </a>
       <a

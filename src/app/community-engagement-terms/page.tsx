@@ -5,7 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export default function CommunityEngagementTermsPage() {
-  const pdfUrl = "/documents/Community-Engagement-Program-Guideline-Terms.pdf";
+  const pdfUrl = "/documents/Community-Engagement-Program -Guideline-Terms.pdf";
 
   return (
     <>

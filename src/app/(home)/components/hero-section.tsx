@@ -68,19 +68,33 @@ const HeroSection = () => {
         >
           <Cards />
           
-          {/* Start Challenge Button - Mobile Only, After Cards */}
-          <motion.button
-            onClick={() => {
-              const element = document.getElementById('pricing');
-              element?.scrollIntoView({ behavior: 'smooth' });
-            }}
-            className="w-full bg-gradient-to-r from-active to-green-500 text-white font-display font-medium px-8 py-3 rounded-lg hover:from-active/90 hover:to-green-500/90 transition-all duration-200 shadow-lg hover:shadow-xl mt-8"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.8, duration: 0.4 }}
-          >
-            Start Challenge
-          </motion.button>
+          {/* Buttons - Mobile Only, After Cards */}
+          <div className="w-full flex flex-col gap-3 mt-8">
+            <motion.button
+              onClick={() => {
+                const element = document.getElementById('pricing');
+                element?.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className="w-full bg-gradient-to-r from-active to-green-500 text-white font-display font-medium px-8 py-3 rounded-lg hover:from-active/90 hover:to-green-500/90 transition-all duration-200 shadow-lg hover:shadow-xl"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.8, duration: 0.4 }}
+            >
+              Start Challenge
+            </motion.button>
+            
+            <motion.a
+              href="https://checkout.capitalchain.co/reward-signup-free-user/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full border-2 border-[#00E0E0] bg-transparent text-[#00E0E0] hover:bg-[#00E0E0] hover:text-black font-display font-medium px-8 py-3 rounded-lg transition-all duration-200 text-center"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.9, duration: 0.4 }}
+            >
+              {t("header.claimFreeAccount")}
+            </motion.a>
+          </div>
         </motion.div>
       </div>
 

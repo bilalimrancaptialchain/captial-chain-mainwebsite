@@ -22,6 +22,8 @@ const buttonVariants = cva(
         link: "text-primary underline-offset-4 hover:underline",
         login:
           "bg-[#D9D9D9] text-black hover:bg-[#D9D9D9]/90 font-display font-semibold text-[11px] leading-[13px] rounded-[7px] px-3 py-2 h-auto min-h-[39px]",
+        freeAccount:
+          "border-2 border-[#00E0E0] bg-transparent text-[#00E0E0] hover:bg-[#00E0E0] hover:text-black font-display font-semibold text-[11px] leading-[13px] rounded-[7px] px-3 py-2 h-auto min-h-[39px] hover:drop-shadow-[0_0_10px_rgba(0,224,224,0.5)] transition-all duration-200",
         trading:
           "bg-gradient-to-r from-[#00E0E0] to-[#10B981] text-black hover:opacity-90 font-display font-semibold text-[11px] leading-[13px] rounded-[7px] px-3 py-2 h-auto min-h-[39px] hover:drop-shadow-[0_0_10px_rgba(255,215,0,0.5)] transition-all hover:inset-shadow-button-home duration-200",
       },

@@ -613,22 +613,41 @@ const PricingCard = ({
           {stepDisplayName}
         </p>
       </div>
-      <motion.div
-        variants={tradingChallengeButtonVariants}
-        initial="hidden"
-        whileInView="visible"
-        whileHover="hover"
-        whileTap="tap"
-        viewport={tradingChallengeViewport}
-        className="w-full"
-      >
-        <Link
-          href={`https://Checkout.capitalchain.co?challenge_type=${encodeURIComponent(typeChallenge)}&challenge_step=${encodeURIComponent(stepChallenge)}&account_size=${encodeURIComponent(accountSize)}&price=${encodeURIComponent(pricing?.price || 0)}&product_name=${encodeURIComponent(`${typeChallenge} ${stepDisplayName} ${accountSize}`)}`}
-          className="w-full bg-gradient-to-r from-[#00E0E0] to-[#10B981] md:text-2xl text-lg text-black font-medium py-5 rounded-[7px] flex items-center justify-center hover:drop-shadow-[0_0_10px_rgba(255,215,0,0.5)] transition-all hover:inset-shadow-button-home duration-200"
+      <div className="w-full flex flex-col gap-3">
+        <motion.div
+          variants={tradingChallengeButtonVariants}
+          initial="hidden"
+          whileInView="visible"
+          whileHover="hover"
+          whileTap="tap"
+          viewport={tradingChallengeViewport}
+          className="w-full"
         >
-          {t("tradingChallenge.startChallenge")}
-        </Link>
-      </motion.div>
+          <Link
+            href={`https://Checkout.capitalchain.co?challenge_type=${encodeURIComponent(typeChallenge)}&challenge_step=${encodeURIComponent(stepChallenge)}&account_size=${encodeURIComponent(accountSize)}&price=${encodeURIComponent(pricing?.price || 0)}&product_name=${encodeURIComponent(`${typeChallenge} ${stepDisplayName} ${accountSize}`)}`}
+            className="w-full bg-gradient-to-r from-[#00E0E0] to-[#10B981] md:text-2xl text-lg text-black font-medium py-5 rounded-[7px] flex items-center justify-center hover:drop-shadow-[0_0_10px_rgba(255,215,0,0.5)] transition-all hover:inset-shadow-button-home duration-200"
+          >
+            {t("tradingChallenge.startChallenge")}
+          </Link>
+        </motion.div>
+        
+        <motion.div
+          variants={tradingChallengeButtonVariants}
+          initial="hidden"
+          whileInView="visible"
+          whileHover="hover"
+          whileTap="tap"
+          viewport={tradingChallengeViewport}
+          className="w-full hidden md:block"
+        >
+          <Link
+            href="https://checkout.capitalchain.co/reward-signup-free-user/"
+            className="w-full border-2 border-[#00E0E0] bg-transparent md:text-2xl text-lg text-[#00E0E0] hover:bg-[#00E0E0] hover:text-black font-medium py-5 rounded-[7px] flex items-center justify-center hover:drop-shadow-[0_0_10px_rgba(0,224,224,0.5)] transition-all duration-200"
+          >
+            {t("header.claimFreeAccount")}
+          </Link>
+        </motion.div>
+      </div>
     </motion.div>
   );
 };
