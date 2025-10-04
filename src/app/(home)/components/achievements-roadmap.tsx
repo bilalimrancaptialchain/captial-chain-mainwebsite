@@ -1,75 +1,23 @@
 "use client";
 import React, { useEffect, useState, useRef, useCallback } from "react";
-import { RoadmapItem } from "@/constants/roadmapData";
+import { RoadmapItem, roadmapData } from "@/constants/roadmapData";
 import { useLanguage } from "@/hooks/useLanguage";
 import TimelineItem from "./TimelineItem";
 
 const AchievementsRoadmap: React.FC = () => {
   const { t, getTranslation } = useLanguage();
 
-  // Create translated roadmap data
-  const translatedRoadmapData: RoadmapItem[] = [
-    {
-      id: 1,
-      year: "2025",
-      quarterInfo: t("roadmap.quarters.quarter1"),
-      title: t("roadmap.items.item1.title"),
+  // Create translated roadmap data using the updated roadmapData
+  const translatedRoadmapData: RoadmapItem[] = roadmapData.map((item, index) => {
+    const itemNumber = index + 1;
+    return {
+      ...item,
+      title: t(`roadmap.items.item${itemNumber}.title`),
       description: getTranslation(
-        "roadmap.items.item1.description"
+        `roadmap.items.item${itemNumber}.description`
       ) as string[],
-      position: "left",
-    },
-    {
-      id: 2,
-      year: "2025",
-      quarterInfo: t("roadmap.quarters.quarter2"),
-      title: t("roadmap.items.item2.title"),
-      description: getTranslation(
-        "roadmap.items.item2.description"
-      ) as string[],
-      position: "right",
-    },
-    {
-      id: 3,
-      year: "2025",
-      quarterInfo: t("roadmap.quarters.quarter3"),
-      title: t("roadmap.items.item3.title"),
-      description: getTranslation(
-        "roadmap.items.item3.description"
-      ) as string[],
-      position: "left",
-    },
-    {
-      id: 4,
-      year: "2025",
-      quarterInfo: t("roadmap.quarters.quarter4"),
-      title: t("roadmap.items.item4.title"),
-      description: getTranslation(
-        "roadmap.items.item4.description"
-      ) as string[],
-      position: "right",
-    },
-    {
-      id: 5,
-      year: "2026",
-      quarterInfo: t("roadmap.quarters.quarter1"),
-      title: t("roadmap.items.item5.title"),
-      description: getTranslation(
-        "roadmap.items.item5.description"
-      ) as string[],
-      position: "left",
-    },
-    {
-      id: 6,
-      year: "2026",
-      quarterInfo: t("roadmap.quarters.quarter2"),
-      title: t("roadmap.items.item6.title"),
-      description: getTranslation(
-        "roadmap.items.item6.description"
-      ) as string[],
-      position: "right",
-    },
-  ];
+    };
+  });
   const [animatedItems, setAnimatedItems] = useState<number[]>([]);
   const [lineProgress, setLineProgress] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);

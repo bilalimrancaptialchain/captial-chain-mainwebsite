@@ -31,7 +31,7 @@ export const roadmapData: RoadmapItem[] = [
   {
     id: 3,
     year: "2025",
-    quarterInfo: "Quarter-3",
+    quarterInfo: "Quarter-4",
     title: "Investors Side",
     description: [
       "+ Decentralized Smart Contracts development",
@@ -41,8 +41,8 @@ export const roadmapData: RoadmapItem[] = [
   },
   {
     id: 4,
-    year: "2025",
-    quarterInfo: "Quarter-4",
+    year: "2026",
+    quarterInfo: "Quarter-1",
     title: "Ordinary Prop",
     description: [
       "+ Oracle Development Investors",
@@ -54,7 +54,7 @@ export const roadmapData: RoadmapItem[] = [
   {
     id: 5,
     year: "2026",
-    quarterInfo: "Quarter-1",
+    quarterInfo: "Quarter-2",
     title: "Implementation",
     description: [
       "+ Token smart contract Audit",
@@ -65,7 +65,7 @@ export const roadmapData: RoadmapItem[] = [
   {
     id: 6,
     year: "2026",
-    quarterInfo: "Quarter-2",
+    quarterInfo: "Quarter-3",
     title: "Implementation",
     description: [
       "+ Investors Decentralized Side Implement",
