@@ -11,7 +11,8 @@
   },
   "header": {
     "loginSignup": "Login/Signup",
-    "startTradingNow": "Start Trading Now"
+    "startTradingNow": "Start Trading Now",
+    "claimFreeAccount": "Claim Free Account"
   },
   "hero": {
     "title": "The World's First",
@@ -428,13 +429,12 @@
       "headOfEngineering": "Head of Engineering",
       "riskManager": "Risk Manager",
       "businessDevelopmentManager": "Business Development Manager",
-      "headOfDesign": "Head of design",
+      "headOfDesign": "Head of Design",
       "headOfFinance": "Head of Finance",
-      "humanResourceManager": "Human resource manager",
+      "humanResourceManager": "Human Resource Manager",
       "socialMediaManager": "Social Media Manager",
       "headOfCustomerSupport": "Head Of Customer Support",
-      "reputationManager": "Reputation Manager",
-      "headOfEngineering": "Head of Engineering"
+      "reputationManager": "Reputation Manager"
     }
   },
   "blog": {
