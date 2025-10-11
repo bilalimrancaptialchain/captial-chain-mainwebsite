@@ -5,36 +5,36 @@
       "type": "Standard",
       "step": "1",
       "account_size": "5k",
-      "price": 31,
-      "originalPrice": 31
+      "price": 41,
+      "originalPrice": 41
     },
     "Standard-1-10k": {
       "type": "Standard",
       "step": "1",
       "account_size": "10k",
-      "price": 57,
-      "originalPrice": 57
+      "price": 75,
+      "originalPrice": 75
     },
     "Standard-1-25k": {
       "type": "Standard",
       "step": "1",
       "account_size": "25k",
-      "price": 139,
-      "originalPrice": 139
+      "price": 179,
+      "originalPrice": 179
     },
     "Standard-1-50k": {
       "type": "Standard",
       "step": "1",
       "account_size": "50k",
-      "price": 199,
-      "originalPrice": 199
+      "price": 289,
+      "originalPrice": 289
     },
     "Standard-1-100k": {
       "type": "Standard",
       "step": "1",
       "account_size": "100k",
-      "price": 419,
-      "originalPrice": 419
+      "price": 525,
+      "originalPrice": 525
     },
     "Standard-2-5k": {
       "type": "Standard",
@@ -82,8 +82,8 @@
       "type": "Atomic",
       "step": "1",
       "account_size": "10k",
-      "price": 77,
-      "originalPrice": 77
+      "price": 79,
+      "originalPrice": 79
     },
     "Atomic-1-25k": {
       "type": "Atomic",
@@ -103,8 +103,8 @@
       "type": "Atomic",
       "step": "1",
       "account_size": "100k",
-      "price": 577,
-      "originalPrice": 577
+      "price": 569,
+      "originalPrice": 569
     },
     "Atomic-2-5k": {
       "type": "Atomic",
@@ -124,22 +124,22 @@
       "type": "Atomic",
       "step": "2",
       "account_size": "25k",
-      "price": 220,
-      "originalPrice": 220
+      "price": 199,
+      "originalPrice": 199
     },
     "Atomic-2-50k": {
       "type": "Atomic",
       "step": "2",
       "account_size": "50k",
-      "price": 349,
-      "originalPrice": 349
+      "price": 299,
+      "originalPrice": 299
     },
     "Atomic-2-100k": {
       "type": "Atomic",
       "step": "2",
       "account_size": "100k",
-      "price": 599,
-      "originalPrice": 599
+      "price": 549,
+      "originalPrice": 549
     }
   }
 }

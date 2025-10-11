@@ -24,10 +24,10 @@
       },
       "pricing": {
         "5k_account": "$48.0",
-        "10k_account": "$77.0",
+        "10k_account": "$79.0",
         "25k_account": "$199.0",
         "50k_account": "$319.0",
-        "100k_account": "$577.0"
+        "100k_account": "$569.0"
       }
     },
     {
@@ -61,9 +61,9 @@
       "pricing": {
         "5k_account": "$54.0",
         "10k_account": "$85.0",
-        "25k_account": "$220.0",
-        "50k_account": "$349.0",
-        "100k_account": "$599.0"
+        "25k_account": "$199.0",
+        "50k_account": "$299.0",
+        "100k_account": "$549.0"
       }
     },
     {
@@ -89,11 +89,11 @@
         }
       },
       "pricing": {
-        "5k_account": "$31.0",
-        "10k_account": "$57.0",
-        "25k_account": "$139.0",
-        "50k_account": "$240.0",
-        "100k_account": "$419.0"
+        "5k_account": "$41.0",
+        "10k_account": "$75.0",
+        "25k_account": "$179.0",
+        "50k_account": "$289.0",
+        "100k_account": "$525.0"
       }
     },
     {

@@ -227,10 +227,10 @@ export const tradingChallengeData: TradingChallengeData = {
       },
       pricing: {
         "5k_account": "$48.0",
-        "10k_account": "$77.0",
+        "10k_account": "$79.0",
         "25k_account": "$199.0",
         "50k_account": "$319.0",
-        "100k_account": "$577.0",
+        "100k_account": "$569.0",
       },
     },
     {
@@ -265,9 +265,9 @@ export const tradingChallengeData: TradingChallengeData = {
       pricing: {
         "5k_account": "$54.0",
         "10k_account": "$85.0",
-        "25k_account": "$220.0",
-        "50k_account": "$349.0",
-        "100k_account": "$599.0",
+        "25k_account": "$199.0",
+        "50k_account": "$299.0",
+        "100k_account": "$549.0",
       },
     },
     {
@@ -294,11 +294,11 @@ export const tradingChallengeData: TradingChallengeData = {
         },
       },
       pricing: {
-        "5k_account": "$31.0",
-        "10k_account": "$57.0",
-        "25k_account": "$139.0",
-        "50k_account": "$240.0",
-        "100k_account": "$419.0",
+        "5k_account": "$41.0",
+        "10k_account": "$75.0",
+        "25k_account": "$179.0",
+        "50k_account": "$289.0",
+        "100k_account": "$525.0",
       },
     },
     {
@@ -480,32 +480,32 @@ export const challengePricing: Record<string, ChallengeConfig> = {
   "Standard-1-5k": {
     type: "Standard",
     step: "1",
-    price: 31,
-    originalPrice: 31,
+    price: 41,
+    originalPrice: 41,
   },
   "Standard-1-10k": {
     type: "Standard",
     step: "1",
-    price: 57,
-    originalPrice: 57,
+    price: 75,
+    originalPrice: 75,
   },
   "Standard-1-25k": {
     type: "Standard",
     step: "1",
-    price: 139,
-    originalPrice: 139,
+    price: 179,
+    originalPrice: 179,
   },
   "Standard-1-50k": {
     type: "Standard",
     step: "1",
-    price: 240,
-    originalPrice: 240,
+    price: 289,
+    originalPrice: 289,
   },
   "Standard-1-100k": {
     type: "Standard",
     step: "1",
-    price: 419,
-    originalPrice: 419,
+    price: 525,
+    originalPrice: 525,
   },
   // Standard Two Step
   "Standard-2-5k": {
@@ -540,24 +540,24 @@ export const challengePricing: Record<string, ChallengeConfig> = {
   },
   // Atomic One Step
   "Atomic-1-5k": { type: "Atomic", step: "1", price: 48, originalPrice: 48 },
-  "Atomic-1-10k": { type: "Atomic", step: "1", price: 77, originalPrice: 77 },
+  "Atomic-1-10k": { type: "Atomic", step: "1", price: 79, originalPrice: 79 },
   "Atomic-1-25k": { type: "Atomic", step: "1", price: 199, originalPrice: 199 },
   "Atomic-1-50k": { type: "Atomic", step: "1", price: 319, originalPrice: 319 },
   "Atomic-1-100k": {
     type: "Atomic",
     step: "1",
-    price: 577,
-    originalPrice: 577,
+    price: 569,
+    originalPrice: 569,
   },
   // Atomic Two Step
   "Atomic-2-5k": { type: "Atomic", step: "2", price: 54, originalPrice: 54 },
   "Atomic-2-10k": { type: "Atomic", step: "2", price: 85, originalPrice: 85 },
-  "Atomic-2-25k": { type: "Atomic", step: "2", price: 220, originalPrice: 220 },
-  "Atomic-2-50k": { type: "Atomic", step: "2", price: 349, originalPrice: 349 },
+  "Atomic-2-25k": { type: "Atomic", step: "2", price: 199, originalPrice: 199 },
+  "Atomic-2-50k": { type: "Atomic", step: "2", price: 299, originalPrice: 299 },
   "Atomic-2-100k": {
     type: "Atomic",
     step: "2",
-    price: 599,
-    originalPrice: 599,
+    price: 549,
+    originalPrice: 549,
   },
 };
