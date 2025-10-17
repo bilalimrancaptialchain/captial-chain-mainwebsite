@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { useLanguageContext } from "@/contexts/LanguageContext";
-import axios from "axios";
 // Declare optional Twitter pixel on Window to avoid 'any'
 declare global {
   interface Window {

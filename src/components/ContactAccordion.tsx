@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { useLanguageContext } from "@/contexts/LanguageContext";
-import axios from "axios";
 import {
   contactAccordionSectionVariants,
   contactAccordionHeaderVariants,

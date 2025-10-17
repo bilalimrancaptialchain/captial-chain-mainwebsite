@@ -106,7 +106,7 @@ export async function POST(req: Request) {
       body: JSON.stringify(payload),
     });
 
-    const data = await res.json().catch(() => ({}));
+    const data: unknown = await res.json().catch(() => ({} as unknown));
     if (!res.ok) {
       return NextResponse.json(
         { error: "Intercom error", details: data },
@@ -115,18 +115,20 @@ export async function POST(req: Request) {
     }
 
     // Success: return the created ticket minimal info
+    type IntercomTicketMinimal = { id?: string | number; title?: string; state?: string };
+    const ticket = data as IntercomTicketMinimal;
     return NextResponse.json(
       {
         ok: true,
         ticket: {
-          id: (data as any)?.id,
-          title: (data as any)?.title,
-          state: (data as any)?.state,
+          id: ticket?.id,
+          title: ticket?.title,
+          state: ticket?.state,
         },
       },
       { status: 200 }
     );
-  } catch (err) {
+  } catch {
     return NextResponse.json({ error: "Unexpected error" }, { status: 500 });
   }
 }

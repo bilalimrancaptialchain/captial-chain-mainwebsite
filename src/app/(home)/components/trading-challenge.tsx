@@ -645,25 +645,7 @@ const PricingCard = ({
   );
 };
 
-// Note: Keeping component for possible future use
-const RefundableNotice = () => {
-  const { t } = useLanguageContext();
-
-  return (
-    <motion.div
-      className="w-full md:h-20 h-16 md:rounded-2xl rounded-lg bg-blue-charcoal flex items-center justify-center"
-      variants={tradingChallengeFeatureVariants}
-      initial="hidden"
-      whileInView="visible"
-      whileHover="hover"
-      viewport={tradingChallengeViewport}
-    >
-      <p className="md:text-2xl text-lg text-white font-medium">
-        {t("tradingChallenge.refundableNotice")}
-      </p>
-    </motion.div>
-  );
-};
+// (RefundableNotice removed to avoid unused variable lint warning)
 
 const PaymentMethods = () => (
   <motion.div

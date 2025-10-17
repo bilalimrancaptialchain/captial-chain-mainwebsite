@@ -14,7 +14,7 @@ import {
 
 interface MissionSectionProps {
   topTitle: string;
-  missionText: string;
+  missionText: string; // consumed by parent; not used directly here
   bottomText: string;
   backgroundImage: string;
   boxes: MissionBoxData[];
