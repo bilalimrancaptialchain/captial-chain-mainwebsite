@@ -30,6 +30,7 @@ const ContactInfoSection = () => {
     name: "",
     topic: "",
     message: "",
+    hp: "", // honeypot
   });
 
   const handleInputChange = (
@@ -48,25 +49,25 @@ const ContactInfoSection = () => {
     setSubmitStatus('idle');
 
     try {
-      const options = {
+      const response = await fetch('/api/intercom/ticket', {
         method: 'POST',
-        url: 'https://checkout.capitalchain.co/wp-json/forminator-extc9f96fb7/v1/submitc9f96fb7/156',
-        headers: {
-          cookie: 'nfd-enable-cf-opt=63a6825d27cab0f204d3b602',
-          'Content-Type': 'application/json',
-          'X-Forminator-Secret': 'c9f96fb7-ba0c-4adb-83d6-253fce515fba',
-          'Accept': 'application/json'
-        },
-        data: {
-          'name-1': formData.name,
-          'email-1': formData.email,
-          'text-1': formData.topic,
-          'textarea-1': formData.message
-        }
-      };
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          email: formData.email,
+          name: formData.name,
+          topic: formData.topic,
+          message: formData.message,
+          hp: formData.hp,
+        })
+      });
 
-      const response = await axios.request(options);
-      console.log('Form submitted successfully:', response.data);
+      if (!response.ok) {
+        const details = await response.json().catch(() => ({}));
+        throw new Error(details?.error || 'Ticket creation failed');
+      }
+
+      const json = await response.json();
+      console.log('Ticket created successfully:', json);
       
       // Twitter conversion tracking for contact form submission
       if (typeof window !== 'undefined' && window.twq) {
@@ -79,6 +80,7 @@ const ContactInfoSection = () => {
         name: "",
         topic: "",
         message: "",
+        hp: "",
       });
       
       setTimeout(() => {
