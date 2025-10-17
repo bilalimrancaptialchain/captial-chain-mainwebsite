@@ -218,7 +218,7 @@ export const tradingChallengeData: TradingChallengeData = {
         payout_rules: {
           minimum_trading_days: 30,
           consistency_rule: "25%",
-          profit_split: "80%",
+          profit_split: "20%",
           minimum_payout: "$100.0",
           refundable_fee: "100%",
         },
@@ -254,7 +254,7 @@ export const tradingChallengeData: TradingChallengeData = {
         payout_rules: {
           minimum_trading_days: 30,
           consistency_rule: "25%",
-          profit_split: "80%",
+          profit_split: "20%",
           minimum_payout: "$100.0",
           refundable_fee: "100%",
         },
@@ -284,7 +284,7 @@ export const tradingChallengeData: TradingChallengeData = {
         payout_rules: {
           minimum_trading_days: 30,
           consistency_rule: "25%",
-          profit_split: "80%",
+          profit_split: "-",
           minimum_payout: "$100.0",
           refundable_fee: "100%",
         },
@@ -320,7 +320,7 @@ export const tradingChallengeData: TradingChallengeData = {
         payout_rules: {
           minimum_trading_days: 30,
           consistency_rule: "25%",
-          profit_split: "80%",
+          profit_split: "-",
           minimum_payout: "$100.0",
           refundable_fee: "100%",
         },

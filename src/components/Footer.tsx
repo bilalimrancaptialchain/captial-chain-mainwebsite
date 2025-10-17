@@ -28,6 +28,11 @@ export default function Footer() {
       // Simulate API call - replace with actual newsletter subscription logic
       await new Promise((resolve) => setTimeout(resolve, 1000));
 
+      // Twitter conversion tracking for newsletter signup
+      if (typeof window !== 'undefined' && (window as any).twq) {
+        (window as any).twq('event', 'tw-qc22r-qc22s', {});
+      }
+
       setSubmitMessage("Successfully subscribed to newsletter!");
       setEmail("");
     } catch (error) {

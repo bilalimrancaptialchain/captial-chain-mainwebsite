@@ -409,9 +409,18 @@ const ChallengeTableBody = ({
       id: 5,
       name: "Profit Split",
       image: "/images/home/division.png",
-      step1: selectedChallenge?.live_account_configuration.payout_rules.profit_split || "-",
-      step2: selectedChallenge?.live_account_configuration.payout_rules.profit_split || "-",
-      funded: selectedChallenge?.live_account_configuration.payout_rules.profit_split || "-",
+      step1:
+        selectedChallenge?.profit_split?.step1 ||
+        selectedChallenge?.live_account_configuration.payout_rules.profit_split ||
+        "-",
+      step2:
+        selectedChallenge?.profit_split?.step2 ||
+        selectedChallenge?.live_account_configuration.payout_rules.profit_split ||
+        "-",
+      funded:
+        selectedChallenge?.profit_split?.funded ||
+        selectedChallenge?.live_account_configuration.payout_rules.profit_split ||
+        "-",
     },
     {
       id: 6,

@@ -92,6 +92,11 @@ export interface Challenge {
     "50k_account": string;
     "100k_account": string;
   };
+  profit_split?: {
+    step1: string;
+    step2: string;
+    funded: string;
+  };
 }
 
 export interface ChallengeFeature {
@@ -220,7 +225,7 @@ export const tradingChallengeData: TradingChallengeData = {
         payout_rules: {
           minimum_trading_days: 30,
           consistency_rule: "25%",
-          profit_split: "80%",
+          profit_split: "20%",
           minimum_payout: "$100.0",
           refundable_fee: "100%",
         },
@@ -231,6 +236,11 @@ export const tradingChallengeData: TradingChallengeData = {
         "25k_account": "$199.0",
         "50k_account": "$319.0",
         "100k_account": "$569.0",
+      },
+      profit_split: {
+        step1: "20%",
+        step2: "-",
+        funded: "80%",
       },
     },
     {
@@ -257,7 +267,7 @@ export const tradingChallengeData: TradingChallengeData = {
         payout_rules: {
           minimum_trading_days: 30,
           consistency_rule: "25%",
-          profit_split: "80%",
+          profit_split: "20%",
           minimum_payout: "$100.0",
           refundable_fee: "100%",
         },
@@ -268,6 +278,11 @@ export const tradingChallengeData: TradingChallengeData = {
         "25k_account": "$199.0",
         "50k_account": "$299.0",
         "100k_account": "$549.0",
+      },
+      profit_split: {
+        step1: "20%",
+        step2: "20%",
+        funded: "80%",
       },
     },
     {
@@ -288,7 +303,7 @@ export const tradingChallengeData: TradingChallengeData = {
         payout_rules: {
           minimum_trading_days: 30,
           consistency_rule: "25%",
-          profit_split: "80%",
+          profit_split: "-",
           minimum_payout: "$100.0",
           refundable_fee: "100%",
         },
@@ -299,6 +314,11 @@ export const tradingChallengeData: TradingChallengeData = {
         "25k_account": "$179.0",
         "50k_account": "$289.0",
         "100k_account": "$525.0",
+      },
+      profit_split: {
+        step1: "-",
+        step2: "-",
+        funded: "80%",
       },
     },
     {
@@ -325,7 +345,7 @@ export const tradingChallengeData: TradingChallengeData = {
         payout_rules: {
           minimum_trading_days: 30,
           consistency_rule: "25%",
-          profit_split: "80%",
+          profit_split: "20%",
           minimum_payout: "$100.0",
           refundable_fee: "100%",
         },
@@ -336,6 +356,11 @@ export const tradingChallengeData: TradingChallengeData = {
         "25k_account": "$149.0",
         "50k_account": "$269.0",
         "100k_account": "$449.0",
+      },
+      profit_split: {
+        step1: "-",
+        step2: "-",
+        funded: "80%",
       },
     },
   ],

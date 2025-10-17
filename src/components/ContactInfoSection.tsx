@@ -62,6 +62,11 @@ const ContactInfoSection = () => {
       const response = await axios.request(options);
       console.log('Form submitted successfully:', response.data);
       
+      // Twitter conversion tracking for contact form submission
+      if (typeof window !== 'undefined' && (window as any).twq) {
+        (window as any).twq('event', 'tw-qc22r-qc22s', {});
+      }
+      
       setSubmitStatus('success');
       setFormData({
         email: "",
