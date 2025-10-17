@@ -27,7 +27,7 @@ const HeroSection = () => {
           animate="visible"
         >
           <Image
-            src="/images/home/hero-image.webp"
+            src="/images/home/EnhancedOrb-Png.png"
             alt="Hero Background"
             fill
             priority
@@ -107,7 +107,7 @@ const HeroSection = () => {
           animate="visible"
         >
           <Image
-            src="/images/home/hero-image.webp"
+            src="/images/home/EnhancedOrb-Png.png"
             alt="Hero Background"
             fill
             priority
