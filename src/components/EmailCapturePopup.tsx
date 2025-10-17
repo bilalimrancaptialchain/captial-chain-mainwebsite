@@ -90,8 +90,8 @@ export default function EmailCapturePopup({
         const data = await response.json();
         if (data.success) {
           // Twitter conversion tracking for email capture
-          if (typeof window !== 'undefined' && (window as any).twq) {
-            (window as any).twq('event', 'tw-qc22r-qc22s', {});
+          if (typeof window !== 'undefined' && (window as unknown as { twq?: (a: string, b: string, c?: Record<string, unknown>) => void }).twq) {
+            (window as unknown as { twq?: (a: string, b: string, c?: Record<string, unknown>) => void }).twq?.('event', 'tw-qc22r-qc22s', {});
           }
           
           // Set cookie if user doesn't want to see popup again

@@ -4,6 +4,12 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { useLanguageContext } from "@/contexts/LanguageContext";
 import axios from "axios";
+// Declare optional Twitter pixel on Window to avoid 'any'
+declare global {
+  interface Window {
+    twq?: (action: string, event: string, data?: Record<string, unknown>) => void;
+  }
+}
 // Map temporarily disabled
 // import MapSection from "@/components/MapSection";
 import {
@@ -63,8 +69,8 @@ const ContactInfoSection = () => {
       console.log('Form submitted successfully:', response.data);
       
       // Twitter conversion tracking for contact form submission
-      if (typeof window !== 'undefined' && (window as any).twq) {
-        (window as any).twq('event', 'tw-qc22r-qc22s', {});
+      if (typeof window !== 'undefined' && window.twq) {
+        window.twq('event', 'tw-qc22r-qc22s', {});
       }
       
       setSubmitStatus('success');

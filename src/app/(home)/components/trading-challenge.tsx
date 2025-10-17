@@ -4,13 +4,11 @@ import {
   paymentMethods,
   challengeFeatures,
   challengePricing,
-  challengeDetails,
   tradingChallengeData,
   Challenge,
   type ChallengeData,
   type PaymentMethod,
   type ChallengeConfig,
-  type ChallengeDetails,
 } from "@/constants/trading-challenge";
 import Image from "next/image";
 import Link from "next/link";
@@ -55,9 +53,7 @@ const TradingChallenge = () => {
     return challengePricing[key];
   }, [typeChallenge, stepChallenge, accountSize]);
 
-  const currentChallengeDetails = useMemo(() => {
-    return challengeDetails[typeChallenge];
-  }, [typeChallenge]);
+  // Derived details from constants were previously used; now sourced directly per-row
 
   return (
     <motion.section
@@ -83,7 +79,6 @@ const TradingChallenge = () => {
             stepChallenge={stepChallenge}
             stepDisplayName={stepDisplayName}
             accountSize={accountSize}
-            currentChallengeDetails={currentChallengeDetails}
             onTypeChange={setTypeChallenge}
             onStepChange={setStepChallenge}
             onAccountSizeChange={setAccountSize}
@@ -211,7 +206,6 @@ interface ChallengeDetailsPanelProps {
   stepChallenge: StepType;
   stepDisplayName: string;
   accountSize: AccountSizeType;
-  currentChallengeDetails: ChallengeDetails;
   onTypeChange: (type: ChallengeType) => void;
   onStepChange: (step: StepType) => void;
   onAccountSizeChange: (size: AccountSizeType) => void;
@@ -222,7 +216,6 @@ const ChallengeDetailsPanel = ({
   stepChallenge,
   stepDisplayName,
   accountSize,
-  currentChallengeDetails,
   onTypeChange,
   onStepChange,
   onAccountSizeChange,
@@ -260,7 +253,6 @@ const ChallengeDetailsPanel = ({
         typeChallenge={typeChallenge}
         stepChallenge={stepChallenge}
         stepDisplayName={stepDisplayName}
-        currentChallengeDetails={currentChallengeDetails}
       />
     </div>
   );
@@ -270,14 +262,12 @@ interface ChallengeTableProps {
   typeChallenge: ChallengeType;
   stepChallenge: StepType;
   stepDisplayName: string;
-  currentChallengeDetails: ChallengeDetails;
 }
 
 const ChallengeTable = ({
   typeChallenge,
   stepChallenge,
   stepDisplayName,
-  currentChallengeDetails,
 }: ChallengeTableProps) => (
   <motion.div
     style={{
@@ -299,7 +289,6 @@ const ChallengeTable = ({
     <ChallengeTableBody
       typeChallenge={typeChallenge}
       stepChallenge={stepChallenge}
-      currentChallengeDetails={currentChallengeDetails}
     />
 
     <ChallengeFeatures />
@@ -351,13 +340,11 @@ const ChallengeTableHeader = ({
 interface ChallengeTableBodyProps {
   typeChallenge: ChallengeType;
   stepChallenge: StepType;
-  currentChallengeDetails: ChallengeDetails;
 }
 
 const ChallengeTableBody = ({
   typeChallenge,
   stepChallenge,
-  currentChallengeDetails,
 }: ChallengeTableBodyProps) => {
   // Use tradingChallengeData for dynamic values
   // Find the correct challenge object for the selected type and step
@@ -438,7 +425,6 @@ const ChallengeTableBody = ({
         <ChallengeTableRow
           key={item.id}
           item={item}
-          typeChallenge={typeChallenge}
           stepChallenge={stepChallenge}
           isLast={index === dynamicChallengeData.length - 1}
         />
@@ -449,14 +435,12 @@ const ChallengeTableBody = ({
 
 interface ChallengeTableRowProps {
   item: ChallengeData;
-  typeChallenge: ChallengeType;
   stepChallenge: StepType;
   isLast: boolean;
 }
 
 const ChallengeTableRow = ({
   item,
-  typeChallenge,
   stepChallenge,
   isLast,
 }: ChallengeTableRowProps) => {
@@ -661,7 +645,7 @@ const PricingCard = ({
   );
 };
 
-// Note: Keeping component for possible future use; not exported/used now to avoid lint warning
+// Note: Keeping component for possible future use
 const RefundableNotice = () => {
   const { t } = useLanguageContext();
 
