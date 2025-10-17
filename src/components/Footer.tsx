@@ -58,7 +58,11 @@ export default function Footer() {
     ],
     [t("footer.categories.Legal")]: [
       { name: t("footer.links.termsOfService"), href: "/terms-of-use" },
-      { name: t("footer.links.riskDisclosure"), href: "#risk-disclosure" },
+      { name: t("footer.links.privacyPolicy"), href: "/policies/privacy" },
+      { name: t("footer.links.cookiePolicy"), href: "/policies/cookies" },
+      { name: t("footer.links.refundPolicy"), href: "/policies/refund" },
+      { name: t("footer.links.kycAmlPolicy"), href: "/policies/kyc-aml" },
+      { name: t("footer.links.riskDisclosure"), href: "/policies/risk-disclosure" },
     ],
     [t("footer.categories.QuickAccess")]: [
       { name: t("footer.links.homepage"), href: "/" },
