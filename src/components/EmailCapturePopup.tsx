@@ -15,7 +15,7 @@ interface EmailCapturePopupProps {
 
 export default function EmailCapturePopup({
   isVisible,
-  trigger = 'scroll',
+  trigger: _trigger = 'scroll',
   title = 'Claim Your 100% FREE $5kTrading Account',
   subtitle = 'No hidden fees • No credit card required • No Need to pay • Start trading today',
   buttonText = 'Claim Free Account Now',
@@ -26,7 +26,7 @@ export default function EmailCapturePopup({
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [message, setMessage] = useState('');
   const [captcha, setCaptcha] = useState('');
-  const [captchaAnswer, setCaptchaAnswer] = useState('');
+  const [captchaAnswer, _setCaptchaAnswer] = useState('');
   const [captchaNumbers, setCaptchaNumbers] = useState({ num1: 0, num2: 0 });
   const [dontShowAgain, setDontShowAgain] = useState(false);
 
