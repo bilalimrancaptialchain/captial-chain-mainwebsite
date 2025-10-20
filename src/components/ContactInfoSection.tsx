@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import axios from "axios";
 import { motion } from "framer-motion";
 import { useLanguageContext } from "@/contexts/LanguageContext";
 // Declare optional Twitter pixel on Window to avoid 'any'
