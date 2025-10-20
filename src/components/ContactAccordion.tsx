@@ -44,25 +44,25 @@ const ContactAccordion: React.FC = () => {
     setSubmitStatus('idle');
 
     try {
-      const response = await fetch('/api/intercom/ticket', {
+      const options = {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          email: formData.email,
-          name: formData.name,
-          topic: formData.topic,
-          message: formData.message,
-          hp: formData.hp,
-        })
-      });
+        url: 'https://checkout.capitalchain.co/wp-json/forminator-extc9f96fb7/v1/submitc9f96fb7/156',
+        headers: {
+          cookie: 'nfd-enable-cf-opt=63a6825d27cab0f204d3b602',
+          'Content-Type': 'application/json',
+          'X-Forminator-Secret': 'c9f96fb7-ba0c-4adb-83d6-253fce515fba',
+          'Accept': 'application/json'
+        },
+        data: {
+          'name-1': formData.name,
+          'email-1': formData.email,
+          'text-1': formData.topic,
+          'textarea-1': formData.message
+        }
+      } as const;
 
-      if (!response.ok) {
-        const details = await response.json().catch(() => ({}));
-        throw new Error(details?.error || 'Ticket creation failed');
-      }
-
-      const json = await response.json();
-      console.log('Ticket created successfully:', json);
+      const response = await axios.request(options);
+      console.log('Form submitted successfully:', response.data);
       
       setSubmitStatus('success');
       setFormData({
