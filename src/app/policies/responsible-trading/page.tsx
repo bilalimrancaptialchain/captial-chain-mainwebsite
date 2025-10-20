@@ -47,7 +47,7 @@ export default function ResponsibleTradingPage() {
               <p className="text-white/80">Place no more than 20% of your equity on one trade.</p>
               <p className="text-white/80">
                 The key factors of smart investing are low leverage and portfolio diversity, a fact attested to
-                by the portfolios of Capital Chain's top traders.
+                by the portfolios of Capital Chain&apos;s top traders.
               </p>
             </div>
 

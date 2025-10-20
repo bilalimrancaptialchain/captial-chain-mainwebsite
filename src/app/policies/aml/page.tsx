@@ -31,7 +31,7 @@ export default function AmlPolicyPage() {
               <p className="text-white/80">
                 Capital Chain is committed to preventing money laundering and terrorist financing. This policy
                 applies to all employees, contractors, and business partners. Unwavering compliance with
-                applicable laws and regulations shall serve to safeguard Capital Chain's reputation and uphold
+                applicable laws and regulations shall serve to safeguard Capital Chain&apos;s reputation and uphold
                 public trust in Capital Chain.
               </p>
               <p className="text-white/80">

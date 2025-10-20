@@ -30,7 +30,7 @@ export default function PrivacyPolicyPage() {
           <div className="rounded-xl border border-[#0f2b45] bg-[#061A2F] p-6 md:p-10 shadow-xl space-y-8">
             <p className="text-white/80">
               When you use our services, we collect and store personal data about you. This Privacy Statement
-              (the 'Policy') informs you of the methods used to handle your personal data.
+              (the &#39;Policy&#39;) informs you of the methods used to handle your personal data.
             </p>
 
             <div className="space-y-2">
