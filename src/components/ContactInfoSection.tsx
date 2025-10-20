@@ -120,8 +120,7 @@ const ContactInfoSection = () => {
       ),
       title: "Physical Address",
       content: [
-        "No. 369/1/1A, Meewella Building,",
-        "Galle Rd, Colombo 00400, Sri Lanka"
+        "Opal Tower, Bussiness Bay, Dubai"
       ],
       clickable: false
     },

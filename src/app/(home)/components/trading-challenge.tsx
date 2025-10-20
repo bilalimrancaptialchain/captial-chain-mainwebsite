@@ -633,12 +633,7 @@ const PricingCard = ({
           viewport={tradingChallengeViewport}
           className="w-full hidden md:block"
         >
-          <Link
-            href="https://checkout.capitalchain.co/reward-signup-free-user/"
-            className="w-full border-2 border-[#00E0E0] bg-transparent md:text-2xl text-lg text-[#00E0E0] hover:bg-[#00E0E0] hover:text-black font-medium py-5 rounded-[7px] flex items-center justify-center hover:drop-shadow-[0_0_10px_rgba(0,224,224,0.5)] transition-all duration-200"
-          >
-            {t("header.claimFreeAccount")}
-          </Link>
+          {/* Removed Claim Free Account button */}
         </motion.div>
       </div>
     </motion.div>

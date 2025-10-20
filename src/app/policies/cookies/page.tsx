@@ -4,8 +4,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export default function CookiesPolicyPage() {
-  const pdfUrl = "/documents/Policies.pdf";
-
   return (
     <>
       <Header />
@@ -21,34 +19,80 @@ export default function CookiesPolicyPage() {
             <p className="mt-3 text-white/70">
               Understand how we use cookies and similar technologies.
             </p>
-            <div className="mt-5">
-              <a
-                href={pdfUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 rounded-lg bg-gradient-to-b from-[#00E0E0] to-[#10B981] text-[#001018] font-semibold"
-              >
-                View Full Policies PDF
-              </a>
+            <div className="mt-5 text-white/70 max-w-3xl mx-auto">
+              Details on cookies, local storage, and similar technologies we use.
             </div>
           </div>
         </section>
 
         {/* Content */}
         <section className="max-w-5xl mx-auto px-6 md:px-12 py-12">
-          <div className="rounded-xl border border-[#0f2b45] bg-[#061A2F] p-6 md:p-10 shadow-xl">
-            <p className="text-white/80 mb-6">
-              This page outlines our Cookie Policy. For the official version, please refer to the full
-              document using the button above.
-            </p>
-            <div className="rounded-lg overflow-hidden border border-[#0f2b45] bg-[#031224]">
-              <object
-                data={`${pdfUrl}`}
-                type="application/pdf"
-                className="w-full h-[75vh]"
-              >
-                <iframe src={`${pdfUrl}`} className="w-full h-[75vh]" />
-              </object>
+          <div className="rounded-xl border border-[#0f2b45] bg-[#061A2F] p-6 md:p-10 shadow-xl space-y-8">
+            <div className="space-y-4">
+              <h2 className="text-[#00E0E0] font-display font-bold text-xl">1. What Are Cookies?</h2>
+              <p className="text-white/80">
+                Cookies are small text files stored on your device when you visit a website. We also use
+                similar technologies such as local storage, session storage, and pixels to remember
+                preferences, improve performance, and enhance your experience.
+              </p>
+            </div>
+
+            <div className="space-y-4">
+              <h2 className="text-[#00E0E0] font-display font-bold text-xl">2. Types of Cookies We Use</h2>
+              <ul className="list-disc pl-6 text-white/80 space-y-2">
+                <li>
+                  Essential Cookies: required for core functionality (e.g., navigation, language, and
+                  security).
+                </li>
+                <li>
+                  Performance and Analytics: help us understand how you use the site to improve stability and
+                  features.
+                </li>
+                <li>
+                  Preference Cookies: remember settings such as language and display options.
+                </li>
+                <li>
+                  Marketing/Attribution: measure campaigns and conversions where applicable.
+                </li>
+              </ul>
+            </div>
+
+            <div className="space-y-4">
+              <h2 className="text-[#00E0E0] font-display font-bold text-xl">3. Your Choices</h2>
+              <ul className="list-disc pl-6 text-white/80 space-y-2">
+                <li>
+                  Browser Controls: you can block or delete cookies via your browser settings; essential
+                  cookies may be required for the site to function.
+                </li>
+                <li>
+                  Consent: where required, we will request your consent before placing non-essential cookies.
+                </li>
+                <li>
+                  Do Not Track: we honor applicable signals to the extent technically feasible.
+                </li>
+              </ul>
+            </div>
+
+            <div className="space-y-4">
+              <h2 className="text-[#00E0E0] font-display font-bold text-xl">4. Third-Party Cookies</h2>
+              <p className="text-white/80">
+                Some cookies are set by third parties (e.g., analytics or payment providers). We do not
+                control these providers and recommend reviewing their respective policies.
+              </p>
+            </div>
+
+            <div className="space-y-4">
+              <h2 className="text-[#00E0E0] font-display font-bold text-xl">5. Updates</h2>
+              <p className="text-white/80">
+                We may update this policy to reflect changes in technology or regulation. Please check back
+                periodically for updates.
+              </p>
+            </div>
+
+            <div className="space-y-2">
+              <h2 className="text-[#00E0E0] font-display font-bold text-xl">6. Contact</h2>
+              <p className="text-white/80">Capital Chain Group Ltd., Opal Tower, Bussiness Bay, Dubai</p>
+              <p className="text-white/80">Email: info@capitalchain.co</p>
             </div>
           </div>
         </section>

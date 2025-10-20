@@ -16,8 +16,7 @@ import {
 const MapSection: React.FC = () => {
   const { t } = useLanguageContext();
   const handleViewOnMap = () => {
-    const address =
-      "01, Ground Floor, Rodney Court Building, Rodney Bay, Gros-Islet, St Lucia";
+    const address = "Opal Tower, Bussiness Bay, Dubai";
     const encodedAddress = encodeURIComponent(address);
     const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodedAddress}`;
     window.open(googleMapsUrl, "_blank");

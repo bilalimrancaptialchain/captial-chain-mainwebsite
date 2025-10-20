@@ -223,13 +223,7 @@ export default function Footer() {
                   <p className="text-white/60 font-display text-sm leading-relaxed mb-4">
                     01, Ground Floor, Rodney Court Building, Rodney Bay, Gros-Islet, St Lucia
                   </p>
-                  
-                  <h3 className="text-white font-display font-bold text-[15px] mb-3">
-                    Physical Address:
-                  </h3>
-                  <p className="text-white/60 font-display text-sm leading-relaxed">
-                    No. 369/1/1A, Meewella Building, Galle Rd, Colombo 00400, Sri Lanka
-                  </p>
+                  {/* Physical Address removed as per requirement */}
                 </div>
               </div>
             </div>
