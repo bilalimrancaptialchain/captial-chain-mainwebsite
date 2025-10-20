@@ -39,7 +39,7 @@ export default function PrivacyPolicyPage() {
                 <li>How do you get in touch with the person in charge of your personal data?</li>
                 <li>In what ways do we obtain and what information do we gather about you?</li>
                 <li>How do we make use of the information you provide about yourself?</li>
-                <li>How do we keep our customers' personal information safe and secure?</li>
+                <li>How do we keep our customers&#39; personal information safe and secure?</li>
                 <li>We share your personal information with whom?</li>
                 <li>What about international organizations and third countries?</li>
                 <li>When it comes to enforcing your rights, how do you go about it?</li>

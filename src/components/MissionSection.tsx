@@ -22,7 +22,7 @@ interface MissionSectionProps {
 
 const MissionSection: React.FC<MissionSectionProps> = ({
   topTitle,
-  missionText,
+  // missionText is provided by parent; not used directly in this component
   bottomText,
   backgroundImage,
   boxes,
