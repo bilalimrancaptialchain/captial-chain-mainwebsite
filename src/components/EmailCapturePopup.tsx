@@ -25,7 +25,7 @@ export default function EmailCapturePopup({
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [message, setMessage] = useState('');
   const [captcha, setCaptcha] = useState('');
-  const [captchaAnswer] = useState('');
+  const [_captchaAnswer, setCaptchaAnswer] = useState('');
   const [captchaNumbers, setCaptchaNumbers] = useState({ num1: 0, num2: 0 });
   const [dontShowAgain, setDontShowAgain] = useState(false);
 
