@@ -56,6 +56,7 @@ export const metadata: Metadata = {
 
 import EmbedAwareProviders from "../components/EmbedAwareProviders";
 import LoadingScreenWrapper from "../components/LoadingScreenWrapper";
+import NotificationBar from "../components/NotificationBar";
 
 export default function RootLayout({
   children,
@@ -127,6 +128,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           />
         </noscript>
         <LoadingScreenWrapper enabled={false}>
+          <NotificationBar />
           <EmbedAwareProviders>{children}</EmbedAwareProviders>
         </LoadingScreenWrapper>
       </body>

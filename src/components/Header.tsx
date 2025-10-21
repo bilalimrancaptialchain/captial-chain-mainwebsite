@@ -99,7 +99,7 @@ export default function Header() {
   };
 
   return (
-    <header className="header header-gradient fixed top-0 left-0 right-0 z-50 max-w-header mx-auto">
+    <header className="header header-gradient fixed top-8 left-0 right-0 z-50 max-w-header mx-auto">
       <div className="header-container mx-auto px-4">
         <div className="header-content flex justify-between items-center h-full min-h-20 md:min-h-20">
           <DesktopNavigation
