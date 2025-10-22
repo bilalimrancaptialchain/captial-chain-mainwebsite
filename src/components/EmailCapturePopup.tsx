@@ -15,7 +15,6 @@ interface EmailCapturePopupProps {
 
 export default function EmailCapturePopup({
   isVisible,
-  trigger = 'scroll',
   title = 'Claim Your 100% FREE $5kTrading Account',
   subtitle = 'No hidden fees • No credit card required • No Need to pay • Start trading today',
   buttonText = 'Claim Free Account Now',
@@ -26,7 +25,7 @@ export default function EmailCapturePopup({
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [message, setMessage] = useState('');
   const [captcha, setCaptcha] = useState('');
-  const [captchaAnswer, setCaptchaAnswer] = useState('');
+  const [_captchaAnswer, setCaptchaAnswer] = useState('');
   const [captchaNumbers, setCaptchaNumbers] = useState({ num1: 0, num2: 0 });
   const [dontShowAgain, setDontShowAgain] = useState(false);
 
@@ -56,91 +55,10 @@ export default function EmailCapturePopup({
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
-    if (!email) {
-      setMessage('⚠️ Please enter your email address');
-      return;
-    }
-
-    if (showCaptcha && captcha !== captchaAnswer) {
-      setMessage('❌ Wrong answer! Please solve the math problem correctly');
-      return;
-    }
-
-    setIsSubmitting(true);
-    setMessage('');
-
-    try {
-      // Send directly to WordPress API and handle Telegram notification
-      const response = await fetch('https://checkout.capitalchain.co/wp-json/advanced-checkout/v1/popup-email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          email,
-          source: 'main_website_popup',
-          trigger,
-          dontShowAgain,
-          page_url: typeof window !== 'undefined' ? window.location.href : 'https://capitalchain.co',
-        }),
-      });
-
-      if (response.ok) {
-        const data = await response.json();
-        if (data.success) {
-          // Twitter conversion tracking for email capture
-          if (typeof window !== 'undefined' && (window as unknown as { twq?: (a: string, b: string, c?: Record<string, unknown>) => void }).twq) {
-            (window as unknown as { twq?: (a: string, b: string, c?: Record<string, unknown>) => void }).twq?.('event', 'tw-qc22r-qc22s', {});
-          }
-          
-          // Set cookie if user doesn't want to see popup again
-          if (dontShowAgain) {
-            const expires = new Date();
-            expires.setTime(expires.getTime() + (365 * 24 * 60 * 60 * 1000)); // 1 year
-            document.cookie = `cc-popup-disabled=true; expires=${expires.toUTCString()}; path=/`;
-          }
-          setMessage('Thank you! Redirecting to your free trading challenge...');
-          setEmail('');
-          setTimeout(() => {
-            window.location.href = 'https://checkout.capitalchain.co/reward-signup-free-user/';
-          }, 2000);
-        } else {
-          setMessage(data.message || 'Something went wrong. Please try again.');
-        }
-      } else {
-        // Fallback: Just log the email and show success
-        console.log('Popup email submission (fallback):', { email, source: 'main_website_popup', trigger });
-        // Set cookie if user doesn't want to see popup again
-        if (dontShowAgain) {
-          const expires = new Date();
-          expires.setTime(expires.getTime() + (365 * 24 * 60 * 60 * 1000)); // 1 year
-          document.cookie = `cc-popup-disabled=true; expires=${expires.toUTCString()}; path=/`;
-        }
-        setMessage('Thank you! Redirecting to your free trading challenge...');
-        setEmail('');
-        setTimeout(() => {
-          window.location.href = 'https://checkout.capitalchain.co/reward-signup-free-user/';
-        }, 2000);
-      }
-  } catch (error) {
-    console.error('Popup submission error:', error);
-    // Fallback: Just log the email and show success
-    console.log('Popup email submission (fallback):', { email, source: 'main_website_popup', trigger });
-    // Set cookie if user doesn't want to see popup again
-    if (dontShowAgain) {
-      const expires = new Date();
-      expires.setTime(expires.getTime() + (365 * 24 * 60 * 60 * 1000)); // 1 year
-      document.cookie = `cc-popup-disabled=true; expires=${expires.toUTCString()}; path=/`;
-    }
-    setMessage('Thank you! Redirecting to your free trading challenge...');
-    setEmail('');
-    setTimeout(() => {
-      window.location.href = 'https://checkout.capitalchain.co/reward-signup-free-user/';
-    }, 2000);
-  } finally {
-      setIsSubmitting(false);
-    }
+    // Disabled: show expiry/support message and do nothing else
+    setMessage('This offer has expired. Please contact support at info@capitalchain.co.');
+    setIsSubmitting(false);
+    return;
   };
 
   if (!isVisible) return null;
