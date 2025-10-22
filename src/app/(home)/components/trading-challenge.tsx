@@ -631,7 +631,7 @@ const PricingCard = ({
           whileHover="hover"
           whileTap="tap"
           viewport={tradingChallengeViewport}
-          className="w-full hidden md:block"
+          className="w-full"
         >
           <Link
             href="https://checkout.capitalchain.co/reward-signup-free-user/"
