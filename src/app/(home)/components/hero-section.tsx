@@ -82,6 +82,18 @@ const HeroSection = () => {
             >
               Start Challenge
             </motion.button>
+            
+            <motion.a
+              href="https://checkout.capitalchain.co/reward-signup-free-user/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full border-2 border-[#00E0E0] bg-transparent text-[#00E0E0] hover:bg-[#00E0E0] hover:text-black font-display font-medium px-8 py-3 rounded-lg transition-all duration-200 text-center"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.9, duration: 0.4 }}
+            >
+              {t("header.claimFreeAccount")}
+            </motion.a>
           </div>
         </motion.div>
       </div>
