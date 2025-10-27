@@ -40,7 +40,7 @@ export default function EmbedAwareProviders({ children }: { children: React.Reac
   return (
     <IntercomWrapper>
       <LanguageProvider>
-        <EmailPopupProvider trigger="time" delay={10000} title="Get Your $5k Free Trading Challenge" subtitle="Just by Engaging with the Community" enabled={false}>
+        <EmailPopupProvider trigger="time" delay={10000} title="Get Your $5k Free Trading Challenge" subtitle="Just by Engaging with the Community" enabled={true}>
           <LanguageWrapper>{children}</LanguageWrapper>
           <FloatingChat />
         </EmailPopupProvider>
