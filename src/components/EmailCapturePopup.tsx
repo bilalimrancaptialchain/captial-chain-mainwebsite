@@ -55,10 +55,15 @@ export default function EmailCapturePopup({
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Disabled: show expiry/support message and do nothing else
-    setMessage('This offer has expired. Please contact support at info@capitalchain.co.');
-    setIsSubmitting(false);
-    return;
+    try {
+      setIsSubmitting(true);
+      // Redirect to Free Reward signup page (WordPress)
+      if (typeof window !== 'undefined') {
+        window.location.href = 'https://checkout.capitalchain.co/community-engagement-program';
+      }
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   if (!isVisible) return null;
