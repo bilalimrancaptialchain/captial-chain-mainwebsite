@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from 'react';
+import type { AnimationItem } from 'lottie-web';
 
 interface LoadingScreenProps {
   onLoadingComplete?: () => void;
@@ -11,7 +12,7 @@ const LoadingScreen: React.FC<LoadingScreenProps> = ({ onLoadingComplete }) => {
   const containerRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    let animation: any;
+    let animation: AnimationItem | undefined;
     let timeoutId: ReturnType<typeof setTimeout> | undefined;
 
     const load = async () => {
@@ -26,7 +27,7 @@ const LoadingScreen: React.FC<LoadingScreenProps> = ({ onLoadingComplete }) => {
             path: '/animation/data.json',
           });
         }
-      } catch (e) {
+      } catch {
         // no-op; if lottie fails, still complete after timeout
       }
 
