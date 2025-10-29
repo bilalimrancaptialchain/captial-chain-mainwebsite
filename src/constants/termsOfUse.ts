@@ -59,5 +59,10 @@ export const termsOfUseData: TermsOfUseItem[] = [
     id: 11,
     titleKey: "terms.items.finalClauses.title",
     contentKey: "terms.items.finalClauses.content"
+  },
+  {
+    id: 12,
+    titleKey: "terms.items.payments.title",
+    contentKey: "terms.items.payments.content"
   }
 ];

@@ -600,6 +600,10 @@
   "finalClauses": {
     "title": "Final Clauses",
     "content": "<p>By participating in any Capital Chain program, the Customer confirms that they have read, understood, and agreed to all Terms of Use. The Company reserves the right to update or modify these Terms at any time. Updates will be communicated via the official website.</p><br/><p>Capital Chain shall not be liable for any direct or indirect losses resulting from the use of its services. The Customer acknowledges that trading carries risk and agrees that they participate voluntarily and at their own discretion.</p>"
+  },
+  "payments": {
+    "title": "Payments",
+    "content": "<p><strong>Payment Processing by Odeonpay ALE S.R.L (\"Paysagi\")</strong></p><p>All payments, or payments for specific parts or regions, are processed by Odeonpay ALE S.R.L (\"Paysagi\") acting as the Merchant of Record (MOR). These payments are subject to Paysagi's Terms of Use, which can be found at <a href=\"https://paysagi.com/terms-of-use/\" target=\"_blank\" rel=\"noopener noreferrer\">https://paysagi.com/terms-of-use/</a>. Customers will be presented with these terms during the payment process.</p>"
   }
     }
   },

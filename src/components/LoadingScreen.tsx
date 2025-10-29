@@ -5,48 +5,63 @@ import type { AnimationItem } from 'lottie-web';
 
 interface LoadingScreenProps {
   onLoadingComplete?: () => void;
+  delayMs?: number; // show after this delay (avoid flicker)
+  autoHideMs?: number | null; // hide automatically after N ms; null = don't auto-hide
 }
 
-const LoadingScreen: React.FC<LoadingScreenProps> = ({ onLoadingComplete }) => {
-  const [isLoading, setIsLoading] = useState(true);
+const LoadingScreen: React.FC<LoadingScreenProps> = ({ onLoadingComplete, delayMs = 0, autoHideMs = 5000 }) => {
+  const [isVisible, setIsVisible] = useState(delayMs === 0);
   const containerRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     let animation: AnimationItem | undefined;
-    let timeoutId: ReturnType<typeof setTimeout> | undefined;
+    let showTimeoutId: ReturnType<typeof setTimeout> | undefined;
+    let hideTimeoutId: ReturnType<typeof setTimeout> | undefined;
 
     const load = async () => {
-      try {
-        const Lottie = (await import('lottie-web')).default;
-        if (containerRef.current) {
-          animation = Lottie.loadAnimation({
-            container: containerRef.current,
-            renderer: 'svg',
-            loop: true,
-            autoplay: true,
-            path: '/animation/data.json',
-          });
+      // Delay before showing to avoid brief flashes
+      const start = async () => {
+        setIsVisible(true);
+        try {
+          const Lottie = (await import('lottie-web')).default;
+          if (containerRef.current) {
+            animation = Lottie.loadAnimation({
+              container: containerRef.current,
+              renderer: 'svg',
+              loop: true,
+              autoplay: true,
+              path: '/animation/data.json',
+            });
+          }
+        } catch {
+          // no-op
         }
-      } catch {
-        // no-op; if lottie fails, still complete after timeout
-      }
 
-      // Minimum visible time to avoid flash (matches wrapper timing expectations)
-      timeoutId = setTimeout(() => {
-        setIsLoading(false);
-        onLoadingComplete?.();
-      }, 5000);
+        if (typeof autoHideMs === 'number') {
+          hideTimeoutId = setTimeout(() => {
+            setIsVisible(false);
+            onLoadingComplete?.();
+          }, autoHideMs);
+        }
+      };
+
+      if (delayMs > 0) {
+        showTimeoutId = setTimeout(start, delayMs);
+      } else {
+        start();
+      }
     };
 
     load();
 
     return () => {
-      if (timeoutId) clearTimeout(timeoutId);
+      if (showTimeoutId) clearTimeout(showTimeoutId);
+      if (hideTimeoutId) clearTimeout(hideTimeoutId);
       if (animation) animation.destroy();
     };
-  }, [onLoadingComplete]);
+  }, [onLoadingComplete, delayMs, autoHideMs]);
 
-  if (!isLoading) return null;
+  if (!isVisible) return null;
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80">
