@@ -127,7 +127,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             style={{ display: "none", visibility: "hidden" }}
           />
         </noscript>
-        <LoadingScreenWrapper enabled={false}>
+        <LoadingScreenWrapper enabled={true}>
           <NotificationBar />
           <EmbedAwareProviders>{children}</EmbedAwareProviders>
         </LoadingScreenWrapper>
