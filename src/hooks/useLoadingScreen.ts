@@ -6,12 +6,8 @@ export const useLoadingScreen = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Always show once on initial mount, then auto-hide after a delay
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 5000);
-
-    return () => clearTimeout(timer);
+    // Start visible; will be hidden by LoadingScreen when the page is ready
+    setIsLoading(true);
   }, []);
 
   const handleLoadingComplete = () => {
