@@ -102,15 +102,7 @@ export default function Footer() {
 
               {/* Contact Info */}
               <div className="footer-contact-info mt-4 space-y-2">
-                <a
-                  href="tel:+94781352833"
-                  className="flex items-center gap-2 text-white/80 hover:text-active font-display text-sm"
-                >
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                    <path d="M3 5C3 3.895 3.895 3 5 3h3.279c.431 0 .813.276.949.684l1.498 4.493a1 1 0 0 1-.502 1.21l-2.257 1.128c1.102 2.445 3.072 4.415 5.517 5.517l1.128-2.257a1 1 0 0 1 1.21-.502l4.493 1.498c.408.136.684.518.684.949V19c0 1.105-.895 2-2 2h-1C9.716 21 3 14.284 3 6V5Z" fill="#00E0E0"/>
-                  </svg>
-                  +94 78 135 2833
-                </a>
+                
                 <a
                   href="mailto:info@capitalchain.co"
                   className="flex items-center gap-2 text-white/80 hover:text-active font-display text-sm"

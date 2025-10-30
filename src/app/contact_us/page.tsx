@@ -53,6 +53,12 @@ export default function ContactUs() {
             </div>
           </div>
         </motion.div>
+        {/* Quick link to Support Ticket form */}
+        <div className="max-w-7xl mx-auto px-4 mt-6">
+          <a href="/support-ticket" className="inline-block bg-gradient-to-b from-[#00E0E0] to-[#10B981] text-white font-display px-6 py-3 rounded-lg">
+            Create a Support Ticket
+          </a>
+        </div>
         {/* Contact Info Section */}
         <motion.div
           variants={contactSectionVariants}
