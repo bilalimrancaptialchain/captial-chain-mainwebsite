@@ -39,11 +39,16 @@ export default function SupportTicketPage() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
       });
-      if (!res.ok) throw new Error("Request failed");
+      if (!res.ok) {
+        const text = await res.text().catch(() => "");
+        console.error("Ticket submit failed", res.status, text);
+        throw new Error("Request failed");
+      }
       setState("success");
       setForm({ email: "", name: "", topic: TOPICS[0], message: "", hp: "" });
       setTimeout(() => setState("idle"), 4000);
-    } catch {
+    } catch (e) {
+      console.error("Ticket submit unexpected error", e);
       setState("error");
       setTimeout(() => setState("idle"), 4000);
     }

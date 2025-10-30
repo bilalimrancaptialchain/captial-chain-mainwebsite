@@ -75,6 +75,10 @@ export async function POST(req: Request) {
     const assigneeId = process.env.INTERCOM_ASSIGNEE_ID;
 
     if (!accessToken || !ticketTypeId) {
+      console.error("[ticket] Missing configuration:", {
+        hasAccessToken: Boolean(accessToken),
+        hasTicketTypeId: Boolean(ticketTypeId),
+      });
       return NextResponse.json({ error: "Server not configured" }, { status: 500 });
     }
 
@@ -108,6 +112,7 @@ export async function POST(req: Request) {
 
     const data: unknown = await res.json().catch(() => ({} as unknown));
     if (!res.ok) {
+      console.error("[ticket] Intercom API error", res.status, data);
       return NextResponse.json(
         { error: "Intercom error", details: data },
         { status: res.status }
@@ -128,7 +133,8 @@ export async function POST(req: Request) {
       },
       { status: 200 }
     );
-  } catch {
+  } catch (err) {
+    console.error("[ticket] Unexpected error", err);
     return NextResponse.json({ error: "Unexpected error" }, { status: 500 });
   }
 }
