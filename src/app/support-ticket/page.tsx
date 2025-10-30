@@ -56,7 +56,7 @@ export default function SupportTicketPage() {
         <div className="max-w-3xl mx-auto px-4">
           <div className="mb-8 text-center">
             <h1 className="text-3xl md:text-4xl font-display font-bold text-white">Create a Support Ticket</h1>
-            <p className="text-white/70 mt-2">Choose a topic and describe the issue. We'll reach out via email.</p>
+            <p className="text-white/70 mt-2">Choose a topic and describe the issue. We&apos;ll reach out via email.</p>
           </div>
 
           <form onSubmit={onSubmit} className="space-y-6 border border-[#00E0E0] bg-[#041933] rounded-lg p-6">
