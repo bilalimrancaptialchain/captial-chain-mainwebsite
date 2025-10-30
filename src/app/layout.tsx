@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     siteName: "Capital Chain",
     images: [
       {
-        url: "/images/logo.png",
+        url: "/images/others/logo-for-links.jpg",
         width: 1200,
         height: 630,
         alt: "Capital Chain Logo",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "Capital Chain - Advanced Trading Solutions",
     description: "Professional trading platform with comprehensive business management tools.",
     creator: "@Capitalchain",
-    images: ["/images/logo.png"],
+    images: ["/images/others/logo-for-links.jpg"],
   },
   icons: {
     icon: "/favicon.webp",
