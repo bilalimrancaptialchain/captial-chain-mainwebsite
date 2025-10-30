@@ -69,10 +69,10 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
     }
 
-    const accessToken ="dG9rOmJiZDA1MGUzXzA3MWVfNDQyOF84ZjYwXzQzYTNlMjBmN2IxZDoxOjA=";
-    const ticketTypeId = "2950797";
-    const teamId = null;
-    const assigneeId ="8831839";
+    const accessToken = process.env.INTERCOM_ACCESS_TOKEN;
+    const ticketTypeId = process.env.INTERCOM_TICKET_TYPE_ID;
+    const teamId = process.env.INTERCOM_TEAM_ID;
+    const assigneeId = process.env.INTERCOM_ASSIGNEE_ID;
 
     if (!accessToken || !ticketTypeId) {
       return NextResponse.json({ error: "Server not configured" }, { status: 500 });
